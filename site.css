@@ -520,6 +520,13 @@ div.product button{
     font-weight: bold;
     transition: all 0.35s ease-in;
 }
+@media (max-width:800px) {
+    div.feature-product{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+}
 
 #ratinoscan:hover{
     box-shadow: 0 0 25px 1px tomato;
