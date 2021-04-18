@@ -89,7 +89,7 @@ button.contact-btn{
     
     font-size: large;
     padding: 25px;
-    min-width: 300px;
+    width: 300px;
     opacity: 1;
     background: transparent;
     color:white;
@@ -121,7 +121,30 @@ button.contact-btn:hover {
     header h2 a{
         font-size: medium;
     }
+  
+
     
+}
+@media (max-width:400px) {
+    header{
+        padding: 5px 10px;
+    }
+    header nav a{
+        padding: 2px;
+    }
+    button.contact-btn{
+        width: 50px;
+    }
+    section.bg{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    section p{
+        line-height: normal;
+    }
 }
 
 
@@ -204,15 +227,16 @@ section{
 
     }
     .bg h1{
-        font-size: 48px;
-        margin-top: -120px;
+        font-size: 38px;
+        /* margin-top: -120px; */
     }
     .bg h2{
-        font-size: 24px;
+        font-size: 20px;
     }
 
-    a.contact-btn{
+    button.contact-btn{
         padding: 15px 40px;
+        width: 200px;
         font-size: medium;
     }
 }
@@ -229,7 +253,8 @@ section{
         font-size: 14px;
     }
 
-    a.contact-btn{
+    button.contact-btn{
+        width: 200px;
         padding: 15px 30px;
         font-size: small;
     }
@@ -446,6 +471,23 @@ div.about-content h2{
     font-size: 35px;
 }
 
+
+@media (max-width:400px) {
+    section.About img{
+        height: 300px;
+        width: 300px;
+    }
+    div.about-content h2{
+        font-size: larger;
+    }
+    div.about-content h1{
+        font-size: large;
+    }
+    div.about-content p{
+        font-size: small;
+    }
+}
+
 section.ai{
     display: flex;
     flex-direction: row;
@@ -455,7 +497,7 @@ section.ai{
     background-repeat: no-repeat;
     background-size: cover;
     border: 1px solid #496D76;
-    margin: 10px;
+    
 
 }
 div.acc-by{
@@ -475,6 +517,29 @@ div.acc-content{
     margin-bottom: 20px;
     text-align: center;
     font-weight: bold;
+}
+
+@media (max-width:800px) {
+    section.ai{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:400px) {
+    div.acc-content p{
+        padding: 2px;
+        font-size: small;
+    }
+    div.acc-by{
+        font-size: small;
+    }
+    div.acc-by img{
+        height: 150px;
+        width: 150px;
+    }
 }
 
 section.product-section{
@@ -552,6 +617,12 @@ div.product button{
     }
     
 }
+@media (max-width:400px) {
+    div.product-des p{
+        padding: 5px;
+        font-size: small;
+    }
+}
 
 #ratinoscan:hover{
     box-shadow: 0 0 25px 1px #0B0D17;
@@ -609,9 +680,21 @@ section.services p{
 @media  (max-width:800px) {
     div.services-container{
         flex-direction: column;
+       
+    
+    }
+    div.service p,div.service h4{
+        font-size: medium;
     }
     
 }
+@media (max-width:400px) {
+    div.service p,div.service h4{
+        font-size: small;
+    }
+}
+
+
 section.testimonials-container{
     background:  linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #C5CFFF;
     background-size: cover;
@@ -652,6 +735,24 @@ div.testimonials p::after{
     font-size: 50px;
     
 }
+@media (max-width:400px){
+    section.testimonials-container{
+        justify-content: center;
+        align-items: center;
+    }
+    section.testimonials-container h1{
+        font-size: larger;
+    }
+    div.testimonials p{
+        font-size: small;
+        padding: 0;
+        margin-left: -15px;
+    }
+    div.testimonials img{
+        height: 35px;
+        width: 35px;
+    }
+}
 section.contact{
     flex-direction: row;
 }
@@ -666,6 +767,40 @@ div.image-gallery{
 div.image-gallery img{
     margin: 10px;
     flex-basis: 40%;
+}
+#img1{
+    width: 250px;height: 334px;
+}
+#img2{
+    width: 270px; height: 270px;
+}
+#img3{
+    width: 164px;height: 285px;
+}
+#img4{
+    width: 356px;height: 356px;
+}
+@media (max-width:400px) {
+    #img1{
+        height: 200px;
+        width: 200px;
+    }
+    #img2{
+        height: 200px;
+        width: 200px;
+    }
+    #img3{
+        height: 200px;
+        width: 200px;
+    }
+    #img4{
+        height: 200px;
+        width: 200px;
+    }
+    div.image-gallery img{
+        height: 80px;
+        width: 80px;
+    }
 }
 div.user-form{
     flex-direction: column;
@@ -725,6 +860,20 @@ div.user-form{
     display: flex;
     flex-wrap: wrap;
 }
+@media (max-width:400px) {
+    form{
+        padding: 5px;
+        margin: 0;
+    }
+    div.user-form h1{
+        font-size: larger;
+        margin-top: 10px;
+    }
+    form button{
+        width: 100px;
+        font-size: medium;
+    }
+}
 
 footer{
     display: flex;
@@ -757,6 +906,11 @@ footer p {
     align-self: center;
 
 
+}
+@media (max-width:400px) {
+    footer p,footer p i,footer ul li i{
+        font-size: small;
+    }
 }
 
 @media (max-width:800px) {
