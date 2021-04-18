@@ -14,38 +14,79 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
+
     <!--Navbar-->
-    <header >
+    <div class="container">
+        <div class="bg-image" style="background-image: url(3.jpg);"></div>
+        <header>
+            <h2>Manentia Advisory</h2>
+        
+           <nav>
+    <!--            
+               <li><a class="nav_items" href="#about-section">About</a></li>
+               <li><a class="nav_items" href="#product-section">Product</a></li>
+               <li><a class="nav_items" href="contact-section">Services</a></li>
+               <li><a class="nav_items" href="">Testimonials</a></li> -->
+               <div class="items">
+                <li><a class='nav-links' href="#about-section">About</a></li>
+                </div>
+                <div class="items">
+                    <li><a class='nav-links' href="#product-section">Products</a></li>
+                </div>
+                <div class="items">
+                    <li><a class='nav-links' href="">Services</a></li>
+                </div>
+                
+                <div class="items">
+                    <li><a class='nav-links' href="#contact-section">Contact</a></li>
+                </div>
+        
+            </nav>
+        </header>
+        <section class="bg">
+           <!--<div class="bg-image" style="background-image: url(3.jpg);"></div>-->
+            <div class="bg-content">
+                <h1>Manentia Advisory</h1>
+                <h2>Finding newer, intelligent ways to care for the world.</h2>
+                <a href="" class="contact-btn">Contact Us</a>
+            </div>
+        </section>
+    </div>
+   
+    <!-- <header >
         <img src="ManentiaAdvisory.png" alt="">
         <nav>
             <div class="nav_items">
                 <div class="items">
-                    <li><a class="steady-link" href="">About</a></li>
+                    <li><a  href="#about-section">About</a></li>
                 </div>
                 <div class="items">
-                    <li><a class="steady-link" href="">Products</a></li>
+                    <li><a  href="#product-section">Products</a></li>
                 </div>
                 <div class="items">
-                    <li><a class="steady-link" href="">Services</a></li>
+                    <li><a  href="">Services</a></li>
                 </div>
                 <div class="items">
-                    <li><a class="steady-link" href="">Testimonials</a></li>
+                    <li><a  href="">Testimonials</a></li>
                 </div>
-
+                <div class="items">
+                    <li><a  href="#contact-section">Contact</a></li>
+                </div>
             </div>
         </nav>
     </header>
 
-    <!--Cover Section-->
+    Cover Section
     <section class="home" style="background-image: url(LANDINGPAGEBG\ \(1\).svg);">
         <h1>Unearthing<br> Intuitive Systems <br> <span>To the Prospering World</span> </h1>
         <div class="image_container">
             <div class="introductory_image"></div>
         </div>
-    </section>
+    </section> -->
 
     <!--About Section-->
-    <section class="About">
+    
+    <section class="About" id="about-section">
         <img src="image2.jpg" alt="" data-aos="fade-right"  data-aos-duration="1000"  data-aos-easing="ease-in-out">
         <div class="about-content" data-aos="fade-in"  data-aos-duration="1000"  data-aos-easing="ease-in-out">
             <h2>Manentia Advisory</h2>
@@ -55,7 +96,7 @@
         </div>
         
     </section>
-    <section class="ai" style="background-image: url(acc.png);">
+    <section class="ai" style="background-image: url(acc.png);" >
         <div class="acc-by" data-aos="zoom-in"  data-aos-duration="1000"  data-aos-easing="ease-in-out">
             <h2>Accelerated By</h2>
             <img src="aisea.png" alt="">
@@ -67,36 +108,97 @@
 
     <!--Product-->
 
-    <section class="product-section">
+    <section class="product-section" id="product-section">
         <h1 class="title">Our Product</h1>
-        <div class="product" data-aos="fade-right"  data-aos-duration="1000"  data-aos-easing="ease-in-out">
-            <div class="product-image">
-                <img src="ratinoscan.png" alt="">
+        <div class="feature-product">
+            <div class="product" data-aos="fade-right"  data-aos-duration="1000"  data-aos-easing="ease-in-out">
+                <div class="product-image">
+                    <img src="ratinoscan.png" alt="">
+                </div>
+                <div class="product-des">
+                    <h1>Ratinoscan</h1>
+                    <p>RatinoScan is platform which can detects the symptoms of Diabetes Retinopathy using fundus image and shows area effected by Microaneurysms, Hemorrhages & exudates.</p>
+                </div>
+                <button id="ratinoscan" style="border-color: tomato;">Know More</button>
+                
+                
             </div>
-            <div class="product-des">
-                <h1>Ratinoscan</h1>
-                <p>RatinoScan is platform which can detects the symptoms of Diabetes Retinopathy using fundus image and shows area effected by Microaneurysms, Hemorrhages & exudates.</p>
+            
+            <div class="product" data-aos="fade-left"  data-aos-duration="1000"  data-aos-easing="ease-in-out">
+                <div class="product-image" style="background:#0f0f0f;" >
+                    <img src="RayScan.png" alt="">
+                </div>
+                <div class="product-des" >
+                    <h1>RayScan</h1>
+                    <p>It's an user-friendly and readily available Web-based diagnosing system that aims at detecting respiratory and lung diseases with significant symptoms using X-ray & CT-scan images and provides quick diagnosis reports, And also marks the infected areas within the images for easy examination.</p>
+                </div>
+                <button id="rayscan" style="border-color: #1d1d1d;">Know More</button>
+                
             </div>
-            <button style="border-color: #C4DAFF;">Know More</button>
-            
-            
         </div>
-        <div class="product" data-aos="fade-left"  data-aos-duration="1000"  data-aos-easing="ease-in-out">
-            <div class="product-image" style="background:#717AA6;" >
-                <img src="RayScan.png" alt="">
+        
+    </section>
+
+    <!--Services-->
+
+    <section class="services">
+        
+        <div class="services-container">
+            <div class="service">
+                <i class="fas fa-newspaper fa-4x"></i>
+                <h4>Hands-On Report Generation</h2>
+                <p>AI Diagnosis: RayScan uses Artificial Intelligence and the latest technologies to provide patients rapid diagnosis reports with high accuracy.</h4>
+                
             </div>
-            <div class="product-des" >
-                <h1>RayScan</h1>
-                <p>It's an user-friendly and readily available Web-based diagnosing system that aims at detecting respiratory and lung diseases with significant symptoms using X-ray & CT-scan images and provides quick diagnosis reports, And also marks the infected areas within the images for easy examination.</p>
+            <div class="service">
+                <i class="fas fa-address-card fa-4x"></i>
+                <h4>Expeditious Results</h4>
+                <p>Our app is embedded with modern-day technology to provide its users with accurate results in a fraction of seconds.</p>
             </div>
-            <button style="border-color: #717AA6;">Know More</button>
-            
+            <div class="service">
+                <i class="fas fa-cloud-upload-alt fa-4x"></i>
+                <h4>Cloud Based Storage</h4>
+                <p>We also provide cloud storage to our users where they can store all their previous reports and refer to them in the future anytime and anywhere they want.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-laptop-medical fa-4x"></i>
+                <h4>Detailed Screening</h4>
+                <p>Our screening technology has the ability to detect more than 13 lungs-diseases like Covid-19, pneumonia, etc.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-chart-area fa-4x"></i>
+                <h4>Easy to Analyze</h4>
+                <p>Our system not just provides the diagnosis reports but also detects and marks the infected areas within the reports for easy understanding of users.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Testimonials-->
+    <section class="testimonials-container">
+        <h1>Testimonials</h1>
+        <div class="testimonials">
+            <p>AI diagnosis Its not only about the fast result but its also a innovation in medical health diagnosis. This system will work as a new discoverment in medical field.</p>
+            <img src="doctor-profile.jpg" alt="">
+        </div>
+        <div class="testimonials">
+            <p>AI diagnosis provides a brand innovative solutions using AI , which is required in the medical field as it saves some time which can be used treating other patients</p>
+            <img src="doctor-profile.jpg" alt="">
+        </div>
+        <div class="testimonials">
+            <p>AI diagnosis provides a handy solution as their report provides particular markings of the infected area That help to doctor to focus on infacted areas.</p>
+            <img src="doctor-profile.jpg" alt="">
+
+        </div>
+        <div class="testimonials">
+            <p>Manentia Advisory is providing a AI bead diagnosis web based system name is AI diagnosis. It will help doctor to easily examination of Xary report within few seconds</p>
+            <img src="doctor-profile.jpg" alt="">
+
         </div>
     </section>
 
     <!--Contact-->
 
-    <section class="contact">
+    <section class="contact" id="contact-section">
         
         <div class="image-gallery">
             <img src="nci.jpg" alt="" style="width: 250px;height: 334px;" data-aos="flip-right"  data-aos-duration="2000"  data-aos-easing="ease-in-out">
@@ -113,10 +215,17 @@
                     <input type="text" name="name" placeholder="Name*" required><br>
                     <label for="email">E-mail</label>
                     <input type="email" name="email" placeholder="Email*" required><br>
-                    <label for="phone">Number</label>
-                    <input type="text" name="phone" placeholder="Number*" required><br>
+                    <label for="phone">Phone Number</label>
+                    <input type="text" name="phone" placeholder="Phone Number*" required><br>
                     <label for="us">How did you hear about us?</label>
-                    <input type="text" name="us"  required><br>
+                    <select name="us" aria-placeholder="How did you hear about us?">
+                        <option id="dropdown" value="" disabled selected>Select your option</option>
+                        <option >Social Media</option>
+                        <option >Friends</option>
+                        <option >Newspaper</option>
+                        <option >Blog or Publication</option>
+                        <option >Other</option>
+                    </select>
                     <label for="message">Message</label>
                     <textarea name="message" form="user-form" rows="10" cols="100" placeholder="Type your message here" required></textarea>
                     <button>Submit</button>
@@ -150,21 +259,37 @@
 
 
 
-<!--
+
 <script>
    const header = document.querySelector('header');
-   const nav = document.getElementsByClassName("items")
+   
     window.onscroll = () => {
     if (window.scrollY > 300) {
         header.classList.add('nav-active');
         
-        nav.classList.add('nav-active-link');
+        
     } else {
         header.classList.remove('nav-active');
-        nav.classList.remove('nav-active-link');
+        
       
     }
-};-->
+}
+
+
+</script>
+<script>
+    var nav = document.getElementsByClassName("nav-links")
+    for(i=0;i<nav.length;i++){
+        nav[i].addEventListener('click', function (e) {
+         e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+    
+    }
+</script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
@@ -172,6 +297,6 @@
         
       });
     </script>
-</script>
+
 </body>
 </html>
