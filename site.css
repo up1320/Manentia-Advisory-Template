@@ -458,7 +458,7 @@ section.product-section{
     flex-wrap: wrap;
     justify-content: center;
     align-items: baseline;
-    background-image: url(/views/product.png);
+    background:  linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #C5CFFF;
     
     z-index: -1;
     background-size: cover;
@@ -499,7 +499,7 @@ div.product h1{
     margin-bottom: 15px;
 }
 div.product-image{
-    background-color:tomato ;
+    background-color:#233148; ;
     padding: 5px;
     
 }
@@ -580,7 +580,7 @@ section.services p{
     
 }
 section.testimonials-container{
-    
+    background:  linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #C5CFFF;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -597,6 +597,7 @@ div.testimonials{
     background-color: ivory;
     margin-bottom: 20px; 
     padding: 20px;
+    border-radius: 8px;
 }
 div.testimonials::after{
     content: "- doctor";
