@@ -701,7 +701,9 @@ footer{
     color: white;
     padding: 20px 0;
 }
-
+footer ul li  i{
+    color: white;
+}
 footer ul {
     display: flex;
     flex-wrap: wrap;
