@@ -382,7 +382,7 @@ section.About{
     width: 100%;
     background-repeat: no-repeat;
     overflow-x: hidden;
-    background-image: url(about.png);
+    background-image: url(/views/about.png);
     background-size:cover;
     
     
@@ -458,7 +458,7 @@ section.product-section{
     flex-wrap: wrap;
     justify-content: center;
     align-items: baseline;
-    background-image: url(product.png);
+    background-image: url(/views/product.png);
     
     z-index: -1;
     background-size: cover;
