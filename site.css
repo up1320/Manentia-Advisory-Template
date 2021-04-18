@@ -382,7 +382,7 @@ section.About{
     width: 100%;
     background-repeat: no-repeat;
     overflow-x: hidden;
-    background-image: url(/views/about.png);
+    background-image: url(./views/about.png);
     background-size:cover;
     
     
