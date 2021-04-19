@@ -1,11 +1,10 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="{%static 'assets/img/apple-icon.png' %}">
-  <link rel="icon" type="image/png" href="{%static 'assets/img/ratinoscan.png' %}">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="assets/img/ratinoscan.png">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta content="Diabetes Retinopathy Detection App" name="descriptison">
   <!-- <meta content="covid19, covid, corona virus, Lungs Cancer, xrays, ct-scan " name="keywords"> -->
@@ -23,8 +22,8 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
 
   <!-- CSS Files -->
-  <link href="{%static 'assets/css/bootstrap.min.css' %}" rel="stylesheet" />
-  <link href="{%static 'assets/css/paper-kit.css' %}" rel="stylesheet" />
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/css/paper-kit.css" rel="stylesheet" />
 
   <style>
     #upload {
@@ -68,51 +67,10 @@
 <body class="landing-page sidebar-collapse">
   <!-- Navbar -->
 
-  {% if result %}
-
-  <div class="section section-dark text-center landing-section" id="demo">
-    <div class="container">
-      <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-        <h1 class="display-4 text-light">Result</h1>
-        <p class="lead text-light">This is only protype version, please don't consider it as Final Product.</p>
-        <!-- <small>It’s built with default Bootstrap components and utilities with little customization.</small> -->
-      </div>
-      <div class="col-lg-12">
-        <div
-          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative text-left">
-          <div class="col p-4 d-flex flex-column position-static">
-            <h4 class="d-inline-block mb-2 text-{{colour}}">ID: {{id}}</h4>
-            <!-- <h3 class="mb-0 text-light">Paitent Age: {{ age }}</h3> -->
-            <div class="mt-2 text-light">
-              <h5>
-                <script>
-                  var today = new Date()
-                  document.write(today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today
-                    .getDate() + ', ' + today.getHours() + ":" + today.getMinutes() + ":" +
-                    today.getSeconds())
-                </script>
-              </h5>
-            </div>
-            <p class="mb-auto mt-1 text-light">{{message}} <strong>{{result}}</strong> {{message2}}</p>
-            <p class="mb-auto text-warning"><strong>{{symptoms}}</strong></p>
-            <a href="/ratinoscan/" class="stretched-link text-danger"><strong>Test another image</strong></a>
-          </div>
-          <div class="col-auto d-none d-lg-block">
-            <img src="{{path}}" width="280" height="250">
-          </div>
-          <!-- <div class="col-auto d-none d-lg-block">
-                <img src="{{resultImage}}" width="280" height="250">
-            </div> -->
-
-        </div>
-      </div>
-    </div>
-  </div>
-  {% else %}
   <nav class="navbar navbar-expand-lg nav-down navbar-absolute navbar-transparent">
     <div class="container">
       <div class="navbar-translate">
-        <a class="navbar-brand" href="/ratinoscan/" rel="tooltip" title="RetinoScan" data-placement="bottom">
+        <a class="navbar-brand" href="#" rel="tooltip" title="RetinoScan" data-placement="bottom">
           RetinoScan
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
@@ -122,10 +80,10 @@
           <span class="navbar-toggler-bar bar3"></span>
         </button>
       </div>
-      <div class="collapse navbar-collapse" data-nav-image="{%static 'assets/img/bg.jpg' %}" data-color="orange">
+      <div class="collapse navbar-collapse" data-nav-image="assets/img/bg.jpg" data-color="orange">
         <ul class="navbar-nav ml-auto">
           <li class="dropdown nav-item">
-            <a href="/demo/" class="nav-link" aria-expanded="false">Home </a>
+            <a href="http://manentiaadvosiroy.ml:8000/ratinoscan/" class="nav-link" aria-expanded="false">Home </a>
           </li>
           <li class="dropdown nav-item">
             <a href="#demo" class="nav-link" aria-expanded="false">Demo </a>
@@ -139,8 +97,7 @@
   </nav>
   <!-- End Navbar -->
   <div class="page-header" data-parallax="true"
-    style="background-image: linear-gradient(to right bottom,rgba(48, 45, 45, 0.516), rgba(48, 48, 48, 0.427)), url( {% static 'assets/img/bg.jpg' %} );">
-    <!-- <img src="{%static 'assets/img/bg.jpg' %}" style="background-repeat: no-repeat; background-attachment: fixed; alt="bg"> -->
+    style="background-image: linear-gradient(to right bottom,rgba(48, 45, 45, 0.516), rgba(48, 48, 48, 0.427)), url(assets/img/bg.jpg);">
     <div class="filter"></div>
     <div class="content-center">
       <div class="container">
@@ -164,7 +121,7 @@
               shows area effected by Microaneurysms, Hemorrhages & exudates.</h5>
             <br />
             <!-- <a href="#paper-kit" class="btn btn-danger btn-fill btn-round">See Details</a> -->
-            <img src="{%static 'assets/img/Output.png' %}" width="100%" alt="">
+            <img src="assets/img/Output.png" width="100%" alt="">
             <small><span class="text-danger">*</span>These are the result demonstration of the platform. </small>
           </div>
         </div>
@@ -184,7 +141,6 @@
         <div class="row py-5">
           <div class="col-lg-6 mx-auto">
             <form method="POST" action="drResult" enctype="multipart/form-data">
-              {% csrf_token %}
               <!-- Upload image input-->
               <div class="input-group mb-5 px-2 py-2 rounded-pill bg-white shadow-sm">
                 <input id="upload" name="drImage" type="file" onchange="readURL(this);" class="form-control border-0"
@@ -210,11 +166,6 @@
           </div>
         </div>
       </div>
-
-      {% endif %}
-
-
-
     </div>
   </div>
   <div id="contact" class="section landing-section">
@@ -223,7 +174,6 @@
         <div class="col-md-8 ml-auto mr-auto">
           <h2 class="text-center">Contact Us</h2>
           <form class="contact-form" action="contact" method="post">
-            {% csrf_token %}
             <div class="row">
               <div class="col-md-6">
                 <label>Name</label>
@@ -254,7 +204,7 @@
       <div class="row">
         <nav class="footer-nav">
           <ul>
-            <li><a href="/ratinoscan/">RetinoScan</a></li>
+            <li><a href="http://manentiaadvosiroy.ml:8000/ratinoscan/">RetinoScan</a></li>
           </ul>
         </nav>
         <div class="credits ml-auto">
@@ -301,9 +251,9 @@
   </script>
 
   <!--   Core JS Files   -->
-  <script src="{%static 'assets/js/core/jquery.min.js' %}" type="text/javascript"></script>
-  <script src="{%static 'assets/js/core/bootstrap.min.js' %}" type="text/javascript"></script>
-  <script src="{%static 'assets/js/paper-kit.js' %}" type="text/javascript"></script>
+  <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+  <script src="assets/js/paper-kit.js" type="text/javascript"></script>
 </body>
 
 </html>

@@ -1,12 +1,11 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Diagnosis: RayScan | Manentia Advisory</title>
-    <link rel="stylesheet" href="{%static 'assets/css/build.css' %}">
-    <link rel="shortcut icon" href="{%static 'assets/images/RayScan.png' %}" type="image/x-icon">
+    <title>RayScan | Manentia Advisory</title>
+    <link rel="stylesheet" href="assets/css/build.css">
+    <link rel="shortcut icon" href="assets/images/RayScan.png" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
 </head>
 <body>
@@ -17,8 +16,8 @@
             <nav class="relative flex items-center justify-between sm:h-10 md:justify-center">
                 <div class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
                     <div class="flex items-center justify-between w-full md:w-auto">
-                        <a href="/demo/">
-                            <img class="h-8 w-auto sm:h-10" src="{%static 'assets/images/ManentiaAdvisory.png' %}" alt="Manentia Advisory" />
+                        <a href="index.html">
+                            <img class="h-8 w-auto sm:h-10" src="assets/images/ManentiaAdvisory.png" alt="Manentia Advisory" />
                         </a>
                         <div class="-mr-2 flex items-center md:hidden">
                             <button @click="open = true" type="button"
@@ -32,7 +31,7 @@
                     </div>
                 </div>
                 <div class="hidden md:block">
-                    <a href="/demo"
+                    <a href="index.html"
                         class="finline-flex font-medium text-gray-500 hover:text-red-500 focus:outline-none focus:text-red-500 transition duration-150 ease-in-out">Home
                     </a>
                         
@@ -58,12 +57,12 @@
                             <div class="rounded-lg shadow-lg">
                                 <div class="rounded-lg shadow-xs">
                                     <div class="z-20 relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-                                        <a href="/demo/rayscan/"
+                                        <a href="http://manentiaadvosiroy.ml:8000/demo/rayscan/"
                                             class="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
-                                            <img class="w-16" src="{%static 'assets/images/RayScan.png' %}" alt="">
+                                            <img class="w-16" src="assets/images/RayScan.png" alt="">
                                             <div class="space-y-1">
                                                 <p class="text-base leading-6 font-medium text-gray-900">
-                                                    AI Diagnosis: RayScan
+                                                    AI diagnosis
                                                 </p>
                                                 <p class="text-sm leading-5 text-gray-500">
                                                     Finding newer, Intelligent ways to care for the world.
@@ -71,25 +70,10 @@
                                             </div>
                                         </a>
                                     </div>
-                                    
-                                    <div class="z-20 relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-                                      <a href="/ratinoscan/"
-                                          class="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
-                                          <img class="w-16" src="{%static 'assets/images/ratinoscan.png' %}" alt="">
-                                          <div class="space-y-1">
-                                              <p class="text-base leading-6 font-medium text-gray-900">
-                                                  RatinoScan
-                                              </p>
-                                              <p class="text-sm leading-5 text-gray-500">
-                                                Diabetes Retinopathy Detection App.
-                                              </p>
-                                          </div>
-                                      </a>
-                                  </div>
                                     <div
                                         class="px-5 py-5 bg-gray-50 rounded-b-lg space-y-6 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
                                         <div class="flow-root">
-                                            <a href="/demo#product"
+                                            <a href="http://manentiaadvosiroy.ml:8000/demo/app"
                                                 class="-m-3 p-3 flex items-center space-x-3 rounded-md text-base leading-6 font-medium text-gray-900 hover:bg-gray-100 transition ease-in-out duration-150">
                                                 <svg class="flex-shrink-0 h-6 w-6 text-gray-400" fill="none"
                                                     stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -124,7 +108,7 @@
 
                 <div class="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
                     <span class="z-50 inline-flex rounded-md shadow">
-                        <a href="/demo/app"
+                        <a href="http://manentiaadvosiroy.ml:8000/demo/app"
                             class="inline-flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-red-500 bg-white hover:bg-red-500 hover:text-white focus:outline-none focus:shadow-outline-blue active:bg-gray-50 active:text-red-700 transition duration-150 ease-in-out">
                             Demo
                         </a>
@@ -142,7 +126,7 @@
                 <div class="rounded-lg bg-white shadow-xs overflow-hidden">
                     <div class="px-5 pt-4 flex items-center justify-between">
                         <div>
-                            <img class="h-8 w-auto" src="{%static 'assets/images/ManentiaAdvisory.png' %}" alt="Manentia Advisory" />
+                            <img class="h-8 w-auto" src="assets/images/ManentiaAdvisory.png" alt="Manentia Advisory" />
                         </div>
                         <div class="-mr-2">
                             <button @click="open = false" type="button"
@@ -155,7 +139,7 @@
                         </div>
                     </div>
                     <div class="px-2 pt-2 pb-3">
-                      <a href="/demo/"
+                      <a href="index.html"
                           class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">Home</a>
                         <a href="#products"
                             class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">Product</a>
@@ -163,7 +147,7 @@
                             class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">Features</a>
                     </div>
                     <div>
-                        <a href="/demo/app"
+                        <a href="http://manentiaadvosiroy.ml:8000/demo/app"
                             class="block w-full px-5 py-3 text-center font-medium text-red-600 bg-gray-50 hover:bg-gray-100 hover:text-red-700 focus:outline-none focus:bg-gray-100 focus:text-red-700 transition duration-150 ease-in-out">
                             Demo
                         </a>
@@ -177,15 +161,15 @@
           <div class="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 xl:mt-28">
             <div class="text-center">
                 <div class="flex flex-row pb-8 justify-center content-center items-center">
-                    <img class="w-16 lg:w-20" src="{%static 'assets/images/RayScan.png' %}" alt="AI Diagnosis: RayScan">
-                    <h2 class="text-4xl tracking-tight leading-10 font-bold text-white sm:text-5xl sm:leading-none md:text-6xl">AI Diagnosis: RayScan</h2>
+                    <img class="w-16 lg:w-20" src="assets/images/RayScan.png" alt="RayScan">
+                    <h2 class="text-4xl tracking-tight leading-10 font-bold text-white sm:text-5xl sm:leading-none md:text-6xl">AI diagnosis</h2>
                 </div>
               <p class="max-w-md mx-auto text-xl md:mt-5 md:text-2xl lg:text-3xl md:max-w-3xl">
                 Finding newer, Intelligent ways to care for the world.
               </p>
               <div class="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
                 <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-                  <a href="/demo/app/" class="w-full flex items-center justify-center px-8 py-3 border-2 bg-none border-transparent text-base leading-6 font-medium rounded-md border-white text-white hover:text-red-500 hover:bg-white focus:outline-none focus:shadow-outline-blue transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+                  <a href="http://manentiaadvosiroy.ml:8000/demo/app" class="w-full flex items-center justify-center px-8 py-3 border-2 bg-none border-transparent text-base leading-6 font-medium rounded-md border-white text-white hover:text-red-500 hover:bg-white focus:outline-none focus:shadow-outline-blue transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
                     Live demo
                   </a>
                 </div>
@@ -198,7 +182,7 @@
             <div class="max-w-screen-xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 lg:grid lg:grid-cols-3 lg:col-gap-8">
               <div>
                 <!-- <h2 class="text-base leading-6 font-semibold text-white uppercase tracking-wide">Everything you need</h2> -->
-                <p class="mt-2 text-3xl leading-9 font-extrabold text-red-500">What is AI Diagnosis: RayScan?</p>
+                <p class="mt-2 text-3xl leading-9 font-extrabold text-red-500">What is AI diagnosis?</p>
                 <p class="mt-4 text-lg leading-7 text-gray-600">The manual analysis of X-Rays and CT Scan Reports is very consuming, it is high time we use leading technologies to inflate competence. We provide a seamless online system. Our objective is to reduce the analysis period of X-Ray and CT scan, to save time and enhance efficiency in the Medical sector.</p>
               </div>
               <div class="mt-12 lg:mt-0 lg:col-span-2">
@@ -211,7 +195,7 @@
                     <div class="space-y-2">
                       <dt class="text-lg leading-6 font-medium">Hands-on Report Generation</dt>
                       <dd class="flex space-x-3 lg:py-0 lg:pb-4">
-                        <span class="text-base leading-6 text-gray-600">AI Diagnosis: RayScan uses Artificial Intelligence and the latest technologies to provide patients rapid diagnosis reports with high accuracy.</span>
+                        <span class="text-base leading-6 text-gray-600">AI diagnosis uses Artificial Intelligence and the latest technologies to provide patients rapid diagnosis reports with high accuracy.</span>
                       </dd>
                     </div>
                   </div>
@@ -276,7 +260,7 @@
               <p class="m-8 text-xl">As of now, our product is completely free and soon we'll be rolling out new features based on the user reviews. you can explore and use our product by clicking on the link below.</p>
               <div class="mt-8 flex justify-center">
                 <div class="ml-3 inline-flex">
-                  <a href="/demo/app/" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-red-700 bg-white hover:text-white hover:bg-red-600 focus:outline-none focus:shadow-outline focus:border-white transition duration-150 ease-in-out">
+                  <a href="http://manentiaadvosiroy.ml:8000/demo/app/" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-red-700 bg-white hover:text-white hover:bg-red-600 focus:outline-none focus:shadow-outline focus:border-white transition duration-150 ease-in-out">
                     Try Demo
                   </a>
                 </div>
@@ -309,8 +293,7 @@
                 </h2>
               </div>
               <div class="mt-12">
-                <form action="/demo/contact" method="POST" class="grid grid-cols-1 row-gap-6 sm:grid-cols-2 sm:col-gap-8">
-                  {% csrf_token %}
+                <form action="/contact" method="POST" class="grid grid-cols-1 row-gap-6 sm:grid-cols-2 sm:col-gap-8">
                   <div class="sm:col-span-2">
                     <label for="name" class="block text-sm font-medium leading-5 text-gray-700">Name</label>
                     <div class="mt-1 relative rounded-md shadow-sm">
