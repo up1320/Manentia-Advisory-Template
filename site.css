@@ -1016,6 +1016,7 @@ button.trial-btn:hover{
     text-align: center;
     height: 100%;
     overflow-y:hidden ;
+    height: fit-content;
     
     
     
