@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="site.css">
+    <link rel="icon" href="./views/RayScan.png">
+    <script src="https://kit.fontawesome.com/1c3eab352a.js" crossorigin="anonymous"></script>
+    <title>RayScan</title>
+</head>
+<body>
+    <header class="rayscan-nav">
+        <h2> <a href="#home-section"><img src="./views/Symbol.png" alt="">Manentia Advisory</a> </h2>
+    
+       <nav>
+   
+           <div class="items">
+            <li><a href="">Home</a></li>
+            </div>
+            <div class="items">
+                <li><a class='nav-links' href="#product-section">Products</a></li>
+            </div>
+            <div class="items">
+                <li><a class='nav-links' href="#service-section">Features</a></li>
+            </div>
+            
+            
+    
+        </nav>
+        <button id="nav-btn" class="demo-btn">Demo</button>
+    </header>
+    <section class="rayscan-container">
+        <img src="./views/rs-cont (2).jpg" alt="">
+        <h2 class="rs-head">A.I. Diagnosis</h2>
+        <h1 class="rs-title">RayScan</h1>
+        <button  class="demo-btn">Try it</button>
+    </section>
+    <section class="ai-diagnosis">
+        <h1>AI Diagnosis</h1>
+        <p>The manual analysis of X-Rays and CT Scan Reports is very consuming, it is high time we use leading technologies to inflate competence. We provide a seamless online system. Our objective is to reduce the analysis period of X-Ray and CT scan, to save time and enhance efficiency in the Medical sector.</p>
+        <hr>
+    </section>
+    <section class="rs-services-container">
+        <div class="rs-service">
+            <h1>Hands-on Report Generation</h1>
+            <p>AI Diagnosis: RayScan uses Artificial Intelligence and the latest technologies to provide patients rapid diagnosis reports with high accuracy.</p>
+        
+        </div>
+        <div class="rs-service">
+            <h1>Expeditious Results</h1>
+            <p>Our app is embedded with modern-day technology to provide its users with accurate results in a fraction of seconds.</p>
+
+        </div>
+        <div class="rs-service">
+            <h1>Cloud Based Storage</h1>
+            <p>We also provide cloud storage to our users where they can store all their previous reports and refer to them in the future anytime and anywhere they want.</p>
+        </div>
+        <div class="rs-service">
+            <h1>Detailed Screening</h1>
+            <p>Our screening technology has the ability to detect more than 13 lungs-diseases like Covid-19, pneumonia, etc.</p>
+        </div>
+        <div class="rs-service">
+            <h1>Easy to Analyze</h1>
+            <p>Our system not just provides the diagnosis reports but also detects and marks the infected areas within the reports for easy understanding of users.</p>
+        </div>
+    </section>
+    <section class="rs-trial">
+        <h1>Ready to Dive in?</h1>
+        <p>As of now, our product is completely free and soon we'll be rolling out new features based on the user reviews. You can explore and use our product by clicking on the link below.</p><hr>
+        <button class="trial-btn">Try Demo</button>
+    </section>
+
+    <section class="rs-contact">
+        <h1>Contact Us</h1>
+        <div class="user-form">
+            
+                <form action="" name="user-form">
+                    
+                    <input type="text" name="name" placeholder="Name*" required><br>
+                    
+                    <input type="email" name="email" placeholder="Email*" required><br>
+                    
+                    <input type="text" name="phone" placeholder="Phone Number*" required><br>
+                    
+                    <select name="us" aria-placeholder="How did you hear about us?">
+                        <option id="dropdown" value="" disabled selected>How did you hear about us?</option>
+                        <option >Social Media</option>
+                        <option >Friends</option>
+                        <option >Newspaper</option>
+                        <option >Blog or Publication</option>
+                        <option >Other</option>
+                    </select>
+                    
+                    <textarea name="message" form="user-form" rows="10" cols="100" placeholder="Type your message here" required></textarea>
+                    <button>Submit</button>
+                </form>
+            
+            
+        </div>
+        <div class="rs-info">
+
+        </div>
+    </section>
+    
+    <footer style="width: 100%;">
+        <p>Manentia Advisory</p>
+        <p><i class="far fa-copyright" style="color: white;"></i> 2020 All rights reserved</p>
+        <ul>
+            <li><a href=""><i class="fab fa-facebook-square fa-2x"></i></a></li>
+            <li><a href=""><i class="fab fa-instagram fa-2x"></i></a></li>
+            <li><a href=""><i class="fab fa-linkedin fa-2x"></i></a></li>
+        </ul>
+    </footer> 
+
+
+
+
+
+    <script>
+        const header = document.querySelector('header');
+        
+        window.onscroll = () => {
+        if (window.scrollY > 300) {
+            header.classList.add('nav-active');
+            header.classList.remove('rayscan-nav');
+            
+             
+        } else {
+            header.classList.remove('nav-active');
+            header.classList.add('rayscan-nav');
+            
+           
+        }
+    }
+    </script>
+    <!-- <script>
+    const nav_button = document.getElementById('nav-btn');
+    window.onscroll = () => {
+        if (window.scrollY > 2) {
+            nav_button.classList.add('btn-active');
+            nav_button.classList.remove('demo-btn');
+            
+             
+        } else {
+            nav_button.classList.remove('btn-active');
+            nav_button.classList.add('demo-btn');
+            
+           
+        }
+    }
+     
+     
+    </script> -->
+</body>
+</html>
