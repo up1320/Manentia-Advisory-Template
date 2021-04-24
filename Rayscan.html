@@ -7,60 +7,62 @@
     <link rel="stylesheet" href="site.css">
     <link rel="icon" href="./views/RayScan.png">
     <script src="https://kit.fontawesome.com/1c3eab352a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>RayScan</title>
 </head>
 <body>
     <header class="rayscan-nav">
-        <h2> <a href="#home-section"><img src="./views/Symbol.png" alt="">Manentia Advisory</a> </h2>
+        <h2> <a href="https://app.manentiaadvisory.com/"><img src="./views/Symbol.png" alt="">Manentia Advisory</a> </h2>
     
        <nav>
    
            <div class="items">
-            <li><a href="">Home</a></li>
+            <li><a href="https://app.manentiaadvisory.com/">Home</a></li>
             </div>
             <div class="items">
-                <li><a class='nav-links' href="#product-section">Products</a></li>
+                <li><a href="https://app.manentiaadvisory.com/#product-section">Products</a></li>
             </div>
             <div class="items">
-                <li><a class='nav-links' href="#service-section">Features</a></li>
+                <li><a class='nav-links' href="#feature">Features</a></li>
             </div>
             
             
     
         </nav>
-        <button id="nav-btn" class="demo-btn">Demo</button>
+        <button id="nav-btn" class="demo-btn" onclick="location.href='http://manentiaadvisory.com:8000/demo/app'">Demo</button>
     </header>
     <section class="rayscan-container">
-        <img src="./views/rs-cont (2).jpg" alt="">
-        <h2 class="rs-head">A.I. Diagnosis</h2>
+        <img src="./views/rs-cont (2).jpeg" alt="">
+        <h2 class="rs-head">AI Diagnosis</h2>
         <h1 class="rs-title">RayScan</h1>
-        <button  class="demo-btn">Try it</button>
+        <button  class="demo-btn" onclick="location.href='http://manentiaadvisory.com:8000/demo/app'">Try it</button>
     </section>
-    <section class="ai-diagnosis">
-        <h1>AI Diagnosis</h1>
-        <p>The manual analysis of X-Rays and CT Scan Reports is very consuming, it is high time we use leading technologies to inflate competence. We provide a seamless online system. Our objective is to reduce the analysis period of X-Ray and CT scan, to save time and enhance efficiency in the Medical sector.</p>
-        <hr>
+    <section class="ai-diagnosis" >
+        
+        <h1 data-aos="zoom-in"  data-aos-duration="1000"  data-aos-easing="ease-in-out">AI Diagnosis</h1>
+        <p data-aos="zoom-in"  data-aos-duration="1000"  data-aos-easing="ease-in-out">The manual analysis of X-Rays and CT Scan Reports is very consuming, it is high time we use leading technologies to inflate competence. We provide a seamless online system. Our objective is to reduce the analysis period of X-Ray and CT scan, to save time and enhance efficiency in the Medical sector.</p>
+        <hr data-aos="zoom-in"  data-aos-duration="1000"  data-aos-easing="ease-in-out">
     </section>
-    <section class="rs-services-container">
+    <section class="rs-services-container" id="feature" data-aos="fade-left"  data-aos-duration="1000"  data-aos-easing="ease-in-out">
         <div class="rs-service">
             <h1>Hands-on Report Generation</h1>
             <p>AI Diagnosis: RayScan uses Artificial Intelligence and the latest technologies to provide patients rapid diagnosis reports with high accuracy.</p>
         
         </div>
-        <div class="rs-service">
+        <div class="rs-service" data-aos="fade-left"  data-aos-duration="1000"  data-aos-easing="ease-in-out">
             <h1>Expeditious Results</h1>
             <p>Our app is embedded with modern-day technology to provide its users with accurate results in a fraction of seconds.</p>
 
         </div>
-        <div class="rs-service">
+        <div class="rs-service" data-aos="fade-left"  data-aos-duration="1000"  data-aos-easing="ease-in-out">
             <h1>Cloud Based Storage</h1>
             <p>We also provide cloud storage to our users where they can store all their previous reports and refer to them in the future anytime and anywhere they want.</p>
         </div>
-        <div class="rs-service">
+        <div class="rs-service" data-aos="fade-left"  data-aos-duration="1000"  data-aos-easing="ease-in-out">
             <h1>Detailed Screening</h1>
             <p>Our screening technology has the ability to detect more than 13 lungs-diseases like Covid-19, pneumonia, etc.</p>
         </div>
-        <div class="rs-service">
+        <div class="rs-service" data-aos="fade-left"  data-aos-duration="1000"  data-aos-easing="ease-in-out">
             <h1>Easy to Analyze</h1>
             <p>Our system not just provides the diagnosis reports but also detects and marks the infected areas within the reports for easy understanding of users.</p>
         </div>
@@ -68,10 +70,10 @@
     <section class="rs-trial">
         <h1>Ready to Dive in?</h1>
         <p>As of now, our product is completely free and soon we'll be rolling out new features based on the user reviews. You can explore and use our product by clicking on the link below.</p><hr>
-        <button class="trial-btn">Try Demo</button>
+        <button class="trial-btn" onclick="location.href='http://manentiaadvisory.com:8000/demo/app'" data-aos="zoom-in"  data-aos-duration="1000"  data-aos-easing="ease-in">Try Demo</button>
     </section>
 
-    <section class="rs-contact">
+    <!-- <section class="rs-contact">
         <h1>Contact Us</h1>
         <div class="user-form">
             
@@ -101,7 +103,46 @@
         <div class="rs-info">
 
         </div>
+    </section> -->
+    <section class="rs-form-container">
+        <div class="wrapper" data-aos="slide-right"  data-aos-duration="1000"  data-aos-easing="ease-in-out">
+            <div class="rs-form">
+                <h1>Contact Us</h1>
+                <form action="">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="text" placeholder="Phone Number" required>
+                    <select >
+                        <option id="dropdown" value="" disabled selected>How did you hear about us?</option>
+                        <option >Social Media</option>
+                        <option >Friends</option>
+                        <option >Newspaper</option>
+                        <option >Blog or Publication</option>
+                        <option >Other</option>
+                        <textarea   cols="100" rows="10" placeholder="Type your message here" required></textarea>
+                        <button>Submit</button>
+                </form>
+            </div>
+            <div class="form-bg">
+                
+                <div class="form-bg-content">
+                    <div class="rs-contact-info">
+                        <i class="fas fa-map-pin fa-2x"></i>
+                        <h3>Address</h3>
+                        <p>PDPU Innovation & Incubation Centre <br>PDPU Campus, Raisan, Gandhinagar,Gujarat-382007</p>
+                        <i class="fas fa-phone-alt fa-2x"></i> 
+                        <h3>Contact</h3>
+                        <p>7283964334</p>
+                        <i class="fas fa-at fa-2x"></i> 
+                        <h3>Support Mail</h3>
+                        <p>manentiaadvisory@gmail.com</p> 
+                    </div>
+                </div>
+                
+            </div>
+        </div>
     </section>
+    
     
     <footer style="width: 100%;">
         <p>Manentia Advisory</p>
@@ -121,7 +162,7 @@
         const header = document.querySelector('header');
         
         window.onscroll = () => {
-        if (window.scrollY > 300) {
+        if (window.scrollY > 100) {
             header.classList.add('nav-active');
             header.classList.remove('rayscan-nav');
             
@@ -133,6 +174,26 @@
            
         }
     }
+    </script>
+    <script>
+        var nav = document.getElementsByClassName("nav-links")
+        for(i=0;i<nav.length;i++){
+            nav[i].addEventListener('click', function (e) {
+             e.preventDefault();
+    
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+        
+        }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        
+        
+      });
     </script>
     <!-- <script>
     const nav_button = document.getElementById('nav-btn');

@@ -1,6 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+
 
 *{
     margin: 0;
@@ -191,7 +193,7 @@ section{
 }
 @keyframes load-image{
     100%{
-        opacity:0.85;
+        opacity:0.7;
     }
 }
 .bg .bg-content{
@@ -555,6 +557,7 @@ section.services p{
 
 section.testimonials-container{
     background:  linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #C5CFFF;
+    
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -796,19 +799,20 @@ footer p {
     margin-bottom: 15px;
 }
 .rayscan-nav h2 a{
-    /* color: white; */
-    color: black;
+    color: white;
+    /* color: black; */
     
 }
 .rayscan-nav div.items li a{
     border-radius: 25px;
-    /* color: white; */
-    color: black;
+    color: white;
+    /* color: black; */
     font-weight: bold;
 }
 .rayscan-nav div.items li a:hover{
-    background-color:#6a9ed3 ;
-    color: white;
+    
+    color: black;
+    
     
 }
 button.demo-btn{
@@ -835,7 +839,7 @@ header button:hover{
     
     font-size: 80px;
     margin: 20px;
-    color: #427bb4;
+    color: white;
     opacity: 0;
     animation: load-rs 1s ease-in 1s forwards;
     
@@ -846,7 +850,7 @@ header button:hover{
     margin-bottom: 45px;
     opacity: 0;
     animation: load-rs 1s ease-in 1s forwards;
-    /* color: white; */
+    color: white;
 
     
 }
@@ -855,7 +859,7 @@ header button:hover{
     height: 100vh;
     color: black;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     
     
 }
@@ -864,8 +868,8 @@ header button:hover{
     position: absolute;
     top: 0;
     left: 0;
-    opacity: .5;
-    filter: grayscale(1);
+    opacity: 1;
+    /* filter: grayscale(1); */
     height: 100vh;
     width: 100%;
     z-index: -1;
@@ -879,8 +883,8 @@ header button:hover{
     width: 300px;
     height: 70px;
     background: transparent;
-    /* color: white; */
-    color: black;
+    color: white;
+    /* color: black; */
     font-size: 25px;
     opacity: 0;
     animation: load-rs 1s ease-in 1s forwards;
@@ -912,7 +916,9 @@ header button:hover{
     color: black; 
     
 }
-
+.ai-diagnosis{
+    background-color: #0f1214;
+}
 .ai-diagnosis h1{
     margin-bottom: 20px;
     font-size: 40px;
@@ -920,7 +926,7 @@ header button:hover{
 }
 .ai-diagnosis p{
    margin-bottom: 24px;
-    
+   color: white;
 
     
 }
@@ -937,14 +943,15 @@ header button:hover{
 }
 .rs-service{
     text-align: center;
+    background-color: white;
     border: 1px solid black;
     margin: 10px;
     height: 400px;
     width: 400px;
     padding: 10px;
     flex-basis: 30%;
-    box-shadow: 0px 4px 4px #717AA6;
-    border-radius: 12px;
+    box-shadow: 10px 10px 8px #888888;
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -964,9 +971,7 @@ hr{
     width: 300px;
 }
 
-.rs-trial{
-    background-color: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, rgba(217, 241, 248, 0.7) 99.98%, rgba(108, 210, 242, 0.7) 99.99%, rgba(95, 193, 223, 0.7) 100%), rgba(239, 245, 255, 0.61);
-}
+
 .rs-trial h1{
     margin-bottom: 20px;
     font-size: 40px;
@@ -988,12 +993,78 @@ hr{
 button.trial-btn:hover{
     box-shadow: inset 0 250px 0 0 #2e557c;
 }
-.rs-contact{
-   background:  linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%), #75E3EA;
-}
+
 .rs-contact h1{
     font-size: 40px;
     margin-bottom: 40px;
+}
+.wrapper{
+    width: 1100px;
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    border: 3px solid #282828;
+    height: 70vh;
+    box-shadow:10px 10px 8px #888888 ;
+    border-radius: 10px;
+    background-color: white;
+}
+.rs-form{
+    width: 50%;
+    padding-right: 35px;
+    text-align: center;
+    height: 100%;
+    
+    
+    
+    
+}
+
+.rs-form button{
+    background-color: #6a9ed3;
+}
+.rs-form h1{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.rs-form input {
+    margin-bottom: 20px;
+}
+.rs-form select{
+    margin-bottom: 20px;
+}
+.rs-form textarea{
+    margin-bottom: 20px;
+}
+
+
+.form-bg{
+    background-image: url(./views/contact-rs.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    color: white;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    
+}
+.form-bg-content{
+    background-color: #212529ce;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rs-contact-info h3{
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.rs-contact-info p{
+    margin-bottom: 25px;
+    font-size: medium;
 }
 
 
