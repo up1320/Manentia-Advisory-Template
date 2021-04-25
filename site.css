@@ -815,6 +815,15 @@ footer p {
     
     
 }
+
+ @media (max-width:800px) {
+    .rayscan-nav{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+} 
 button.demo-btn{
     padding: 10px;
     width: 200px;
@@ -845,36 +854,13 @@ header button:hover{
     
 }
 
+
 .rs-title{
     font-size: 150px;
     margin-bottom: 45px;
     opacity: 0;
     animation: load-rs 1s ease-in 1s forwards;
     color: white;
-
-    
-}
-.rayscan-container {
-    /* background-color:#222629 ; */
-    height: 100vh;
-    color: black;
-    justify-content: center;
-    align-items: center;
-    
-    
-}
-
-.rayscan-container img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 1;
-    /* filter: grayscale(1); */
-    height: 100vh;
-    width: 100%;
-    z-index: -1;
-    
-    
 
     
 }
@@ -901,6 +887,62 @@ header button:hover{
     box-shadow: inset 300px 0 0 0 #427bb4;
     color: white;
 }
+@media (max-width:800px) {
+    .rs-head{
+        font-size: 40px;
+        margin: 10px;
+    }
+    .rs-title{
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+    .rayscan-container button{
+        width: 200px;
+    }
+}
+@media (max-width:400px) {
+    .rs-head{
+        font-size: 20px;
+        margin: 10px;
+    }
+    .rs-title{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .rayscan-container button{
+        width: 150px;
+    }
+}
+.rayscan-container {
+    /* background-color:#222629 ; */
+    height: 100vh;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.rs-bg-img{
+    background-image: url(./views/HD_PD.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.rayscan-container img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    /* filter: grayscale(1); */
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    
+    
+
+    
+}
+
 .btn-active{
     padding: 10px;
     width: 200px;
@@ -935,6 +977,28 @@ header button:hover{
     height: 3px;
     width: 300px;
 }
+
+@media (max-width:800px) {
+    .ai-diagnosis{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .ai-diagnosis h1{
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+    .ai-diagnosis p{
+        font-size: medium;
+        margin-bottom: 15px;
+        padding: 0 10px;
+        line-height: 2;
+    }
+    .ai-diagnosis hr{
+        width: 100px;
+    }
+}
 .rs-services-container{
     background: #F3F5FF;
     flex-direction: row;
@@ -965,11 +1029,7 @@ header button:hover{
     
     text-align: center;
 }
-hr{
-    background-color: #6a9ed3;
-    height: 3px;
-    width: 300px;
-}
+
 
 
 .rs-trial h1{
@@ -998,6 +1058,30 @@ button.trial-btn:hover{
 .rs-contact h1{
     font-size: 40px;
     margin-bottom: 40px;
+}
+.rs-trial hr{
+    background-color: #6a9ed3;
+    height: 3px;
+    width: 300px;
+}
+@media (max-width:800px) {
+    .rs-trial h1{
+        margin-bottom: 10px;
+        width: 210px;
+        font-size: 24px;
+    }
+    .rs-trial p{
+        font-size: medium;
+        margin-bottom: 15px;
+        padding: 0 10px;
+        line-height: 2;
+    }
+    .trial-btn{
+        width: 150px;
+    }
+    .rs-trial hr{
+        width: 100px;
+    }
 }
 .wrapper{
     width: 1100px;
@@ -1075,5 +1159,42 @@ button.trial-btn:hover{
     margin-bottom: 25px;
     font-size: medium;
 }
+
+@media (max-width:800px) {
+    .wrapper{
+        width: 300px;
+        
+        flex-wrap: wrap;
+    }
+    .rs-form button{
+        width: 50%;
+        font-size: small;
+        padding: 5px;
+    }
+    .rs-form h1{
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .rs-form input {
+        margin-bottom: 5px;
+    }
+    .rs-form select{
+        margin-bottom: 5px;
+    }
+    .rs-form textarea{
+        margin-bottom: 5px;
+    }
+    .form-bg{
+        width: 50%;
+    }
+    div.rs-contact-info h1{
+        font-size: small;
+    }
+    div.rs-contact-info p{
+        font-size: small;
+        width: 150px;
+    }
+}
+
 
 
