@@ -116,21 +116,25 @@
         <div class="wrapper" data-aos="slide-right"  data-aos-duration="1000"  data-aos-easing="ease-in-out">
             <div class="rs-form">
                 <h1>Contact Us</h1>
-                <form action="">
-                    <input type="text" placeholder="Name" required>
-                    <input type="email" placeholder="Email" required>
-                    <input type="text" placeholder="Phone Number" required>
-                    <select >
-                        <option id="dropdown" value="" disabled selected>How did you hear about us?</option>
-                        <option >Social Media</option>
-                        <option >Friends</option>
-                        <option >Newspaper</option>
-                        <option >Blog or Publication</option>
-                        <option >Other</option>
-                        <textarea   cols="100" rows="10" placeholder="Type your message here" required></textarea>
-                        <button>Submit</button>
-                </form>
+                <div class="rs-form-element">
+                    <form action="">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="text" placeholder="Phone Number" required>
+                        <select >
+                            <option id="dropdown" value="" disabled selected>How did you hear about us?</option>
+                            <option >Social Media</option>
+                            <option >Friends</option>
+                            <option >Newspaper</option>
+                            <option >Blog or Publication</option>
+                            <option >Other</option>
+                            <textarea   cols="100" rows="10" placeholder="Type your message here" required></textarea>
+                            <button>Submit</button>
+                    </form>
+                </div>
+                
             </div>
+            
             <div class="form-bg">
                 
                 <div class="form-bg-content">
@@ -148,6 +152,32 @@
                 </div>
                 
             </div>
+        </div>
+        <div class="user-form rs-800">
+            <h1>Contact Us
+            </h1>
+                <form action="" name="user-form">
+                    
+                    <input type="text" name="name" placeholder="Name*" required><br>
+                    
+                    <input type="email" name="email" placeholder="Email*" required><br>
+                    
+                    <input type="text" name="phone" placeholder="Phone Number*" required><br>
+                    
+                    <select name="us" aria-placeholder="How did you hear about us?">
+                        <option id="dropdown" value="" disabled selected>How did you hear about us?</option>
+                        <option >Social Media</option>
+                        <option >Friends</option>
+                        <option >Newspaper</option>
+                        <option >Blog or Publication</option>
+                        <option >Other</option>
+                    </select>
+                    
+                    <textarea name="message" form="user-form" rows="10" cols="100" placeholder="Type your message here" required></textarea>
+                    <button>Submit</button>
+                </form>
+            
+            
         </div>
     </section>
     

@@ -823,6 +823,9 @@ footer p {
         justify-content: center;
         align-items: center;
     }
+    div.items{
+        margin-right: 5px; 
+    }
 } 
 button.demo-btn{
     padding: 10px;
@@ -1111,17 +1114,21 @@ button.trial-btn:hover{
         width: 100px;
     }
 }
+.rs-form-container{
+    position: relative;
+}
 .wrapper{
-    width: 1100px;
+    width: 60vw;
     font-family: 'Manrope', sans-serif;
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
     border: 3px solid #282828;
-    height: 81vh;
+    height: 100vh;
     box-shadow:10px 10px 8px #888888 ;
     border-radius: 10px;
     background-color: white;
+    transition: opacity .5s ease-in;
 }
 .rs-form{
     width: 50%;
@@ -1130,7 +1137,10 @@ button.trial-btn:hover{
     height: 100%;
     overflow-y:hidden ;
     height: fit-content;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
     
     
@@ -1187,10 +1197,23 @@ button.trial-btn:hover{
     margin-bottom: 25px;
     font-size: medium;
 }
+.rs-800{
+    position: absolute;
+    top: 30vh;
+    
+    opacity: 0;
+    transition: all .35s ease-in;
+}
+
 
 @media (max-width:800px) {
+    .rs-800{
+        opacity: 1;
+        width: 80%;
+        
+    }
     .wrapper{
-        width: 300px;
+        width: 60vw;
         
         flex-wrap: wrap;
     }
@@ -1221,6 +1244,11 @@ button.trial-btn:hover{
     div.rs-contact-info p{
         font-size: small;
         width: 150px;
+    }
+}
+@media (max-width:400px) {
+    .wrapper{
+        opacity: 0;
     }
 }
 
