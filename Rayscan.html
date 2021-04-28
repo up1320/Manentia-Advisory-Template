@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="container rs-bg-img">
-        <header>
+        <header class="rs-nav">
         <!-- <header class="rayscan-nav"> -->
             <h2> <a href="https://app.manentiaadvisory.com/"><img src="./views/Symbol.png" alt="">Manentia Advisory</a> </h2>
         
@@ -193,7 +193,24 @@
     </footer> 
 
 
-
+    <script>
+        const nav_items = document.querySelectorAll('div.items li a');
+        window.onscroll = () => {
+        if (window.scrollY > 100) {
+            for(var i=0; i<nav_items.length;i++){
+                nav_items[i].classList.add('scroll-items')
+                nav_items[i].classList.remove('items')
+            }
+        }
+        else{
+            for(var i=0; i<nav_items.length;i++){
+                nav_items[i].classList.add('items')
+                nav_items[i].classList.remove('scroll-items')
+                
+            }
+        }
+        }
+    </script>
 
 
     <script>
@@ -213,6 +230,7 @@
         }
     }
     </script>
+
     <script>
         var nav = document.getElementsByClassName("nav-links")
         for(i=0;i<nav.length;i++){

@@ -785,7 +785,18 @@ footer p {
     }
 }
 
-
+/* --------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+----------------------------------------------------------------------------- */
 
 /* Rayscan Page */
 
@@ -809,9 +820,12 @@ footer p {
     /* color: black; */
     font-weight: bold;
 }
-.rayscan-nav div.items li a:hover{
+.rs-nav div.scroll-items li a:hover{
+    color: #6a9ed3;
+}
+.rs-nav div.items li a:hover{
     
-    color: black;
+    color: rgb(238, 235, 75);
     
     
 }
@@ -1251,6 +1265,182 @@ button.trial-btn:hover{
         opacity: 0;
     }
 }
+
+/* --------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+----------------------------------------------------------------------------- */
+.rs-upload{
+    background-color: #222629;
+}
+.rs-upload h2 a{
+    color: white;
+}
+.rs-upload li a{
+    font-weight: bold;
+    color: white;
+}
+ .rs-items{
+    color: #222629;
+ }
+
+.rs-upload-sec{
+    min-height: 400px;
+    margin-top: 50px;
+}
+.upload-head{
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.upload-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+
+}
+
+
+
+
+
+.upload-info{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    flex-basis: 40%;
+    margin: 20px;
+    border-radius: 12px;
+    z-index: 2;
+}
+.upload-info h1{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #3A0CA3;
+    color: white;
+    font-size: 32px;
+    border-radius: inherit;
+    z-index: -1;
+}
+.upload-info table{
+    width: 400px;
+    height: 500px;
+}
+.upload-info table tr{
+    margin-bottom: 40px;
+}
+
+.label{
+    
+    text-align: -webkit-left; 
+} 
+.upload-info table input{
+    border: 1px solid gray;
+    border-radius: 8px; 
+    max-width: 200px;
+    transition: all .35s ease-in;
+    /* outline-color: #275EA1; */
+    outline: none;
+}
+.upload-info table select{
+    border: 1px solid gray;
+    max-width: 200px;
+    border-radius: 8px; 
+    outline: none;
+}
+.upload-line{
+    width: 200px;
+    height: 3px;
+    background-color: cornflowerblue;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.upload-form-btn{
+    background-color: transparent;
+    color: #275ea1;
+    font-size: large;
+    border-color: #275EA1;
+    width: 200px;
+    height: 50px;
+    border-radius: 12px;
+    margin-top: 5px;
+    margin-bottom: none;
+}
+.upload-info table input:focus{
+    outline-color: #275EA1; 
+    box-shadow: 0 0 10px #275EA1;
+}
+.upload-info table select:focus{
+    outline-color: #275EA1;
+    box-shadow: 0 0 10px #275EA1;
+}
+
+.form-icon{
+    height: 35px;
+    width: 35px;
+    vertical-align: middle;
+}
+@media (max-width:800px) {
+    .rs-upload{
+        padding: 10px 30px;
+    }
+    .rs-demo-btn{
+        margin-bottom: 5px;
+    }
+    .upload-head{
+        font-size: 20px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .rs-upload-sec p{
+        width: 200px;
+        margin-bottom: 10px;
+        font-size: medium;
+        padding: 0 10px;
+    }
+    .upload-info table{
+        width: 200px;
+        height: 500px;
+    }
+    .upload-info table tr{
+        margin-bottom: 20px;
+    }
+    .upload-info table th{
+        font-size: 20px;
+    }
+    .upload-info h1{
+        font-size: 20px;
+    }
+    .upload-info table td input,select{
+        width: 150px;
+    }
+    .upload-form-btn{
+        width: 100px;
+        font-size: 15px;
+    }
+}
+
+
+
+
+
 
 
 
