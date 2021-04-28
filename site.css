@@ -1320,11 +1320,12 @@ button.trial-btn:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid black;
+    border: 1px solid #3A0CA3;
     flex-basis: 40%;
     margin: 20px;
     border-radius: 12px;
     z-index: 2;
+    box-shadow: 10px 10px 10px #3A0CA3;
 }
 .upload-info h1{
     text-align: center;
@@ -1416,7 +1417,7 @@ button.trial-btn:hover{
         padding: 0 10px;
     }
     .upload-info table{
-        width: 200px;
+        width: 400px;
         height: 500px;
     }
     .upload-info table tr{
@@ -1436,7 +1437,12 @@ button.trial-btn:hover{
         font-size: 15px;
     }
 }
-
+@media (max-width:400px) {
+    .upload-info table{
+        width: 200px;
+        height: 500px;
+    }
+}
 
 
 
