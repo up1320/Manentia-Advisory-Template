@@ -1291,14 +1291,20 @@ button.trial-btn:hover{
  .rs-items{
     color: #222629;
  }
+ .upload-container{
+    background-image: url(./views/HD_Upload_Page.png);
+    background-size: cover;
+    background-position: center;
+ }
 
 .rs-upload-sec{
-    min-height: 400px;
-    margin-top: 50px;
+    min-height: 600px;
+    
+    
 }
 .upload-head{
     font-size: 60px;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 40px;
 }
 .upload-box{
@@ -1346,7 +1352,7 @@ button.trial-btn:hover{
 }
 
 .label{
-    
+    font-weight: bold;
     text-align: -webkit-left; 
 } 
 .upload-info table input{
