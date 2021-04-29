@@ -1279,7 +1279,7 @@ button.trial-btn:hover{
 -----------------------------------------------------------------------------
 ----------------------------------------------------------------------------- */
 .rs-upload{
-    background-color: #222629;
+    background: transparent;
 }
 .rs-upload h2 a{
     color: white;
@@ -1294,18 +1294,56 @@ button.trial-btn:hover{
  .upload-container{
     background-image: url(./views/HD_Upload_Page.png);
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
+    background-color:#390ca356;
+    /* transform: translateY(-125px); */
+    /* animation-name:upload-load ;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in; */
  }
-
-.rs-upload-sec{
+ .rs-upload-sec{
     min-height: 600px;
     
+    animation-name:upload-load ;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
     
 }
+ @keyframes upload-load{
+     0%{
+        opacity: 0; 
+     }
+    100%{
+        opacity: 1;
+        /* transform: translateY(125px); */
+    }
+ }
+
+
+
+.rs-upload-sec p{
+    color: whitesmoke; font-weight: bold; margin-bottom: 40px;font-size: 25px;
+    animation-name:upload-load ;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
+.rs-upload-sec hr{
+    background-color: #6a9ed3;
+    height: 3px;
+    width: 300px;
+}
 .upload-head{
-    font-size: 60px;
+    font-size: 70px;
     margin-top: 30px;
     margin-bottom: 40px;
+    animation-name:upload-load ;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    
 }
 .upload-box{
     display: flex;
@@ -1331,7 +1369,7 @@ button.trial-btn:hover{
     margin: 20px;
     border-radius: 12px;
     z-index: 2;
-    box-shadow: 10px 10px 10px #3A0CA3;
+    box-shadow: 10px 10px 10px #888888;
 }
 .upload-info h1{
     text-align: center;
@@ -1353,6 +1391,7 @@ button.trial-btn:hover{
 
 .label{
     font-weight: bold;
+    font-size: 20px;
     text-align: -webkit-left; 
 } 
 .upload-info table input{
@@ -1409,10 +1448,13 @@ button.trial-btn:hover{
     .rs-demo-btn{
         margin-bottom: 5px;
     }
+    .rs-upload-sec hr{
+        width: 150px;
+    }
     .upload-head{
         font-size: 20px;
-        margin-top: 30px;
-        margin-bottom: 10px;
+        margin-top: 50px;
+        margin-bottom: 20px;
         text-align: center;
     }
 
@@ -1439,8 +1481,9 @@ button.trial-btn:hover{
         width: 150px;
     }
     .upload-form-btn{
-        width: 100px;
+        width: 120px;
         font-size: 15px;
+        height: 60px;
     }
 }
 @media (max-width:400px) {
@@ -1448,6 +1491,98 @@ button.trial-btn:hover{
         width: 200px;
         height: 500px;
     }
+}
+.ml-demo-container{
+    display: flex;
+    min-height: 600px;
+    background-image: url(./views/ml-demo-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    margin-bottom: -40px;
+}
+.ml-demo{
+    
+    position: relative;
+}
+.not-infected{
+    height: 550px;
+    width: 700px;
+}
+.infected{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 550px;
+    width: 700px;
+    opacity: 0;
+    animation: ml-demo 3s ease-in infinite alternate;
+}
+.ml-demo{
+    margin-bottom: -20px;
+    margin-top: -20px;
+}
+.ml-demo-p{
+    margin-bottom: -20px;
+    margin-top: -20px;
+}
+.ml-demo-p h1{
+    font-size:32px ; 
+    margin-bottom: 20px; 
+    text-align: center; 
+    color:black;
+}
+.ml-demo-p hr{
+    width: 400px;
+    height:3px ;
+    margin: auto;
+    background-color: black;
+}
+@keyframes ml-demo{
+    25%{
+        opacity: .25;
+    }
+    50%{
+        opacity: .5;
+    }
+    75%{
+        opacity: .75;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@media (max-width:400px) {
+    .not-infected{
+        height: 300px;
+        width: 300px;
+    }
+    .infected{
+        height: 300px;
+        width: 300px;
+    }
+}
+@media (max-width:400px) {
+    .ml-demo-p h1{
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .ml-demo-p p{
+        font-size: medium;
+        width: 250px;
+    } 
+    .ml-demo-p{
+        width: 300px;
+        margin-bottom: 40px;
+    }
+    .ml-demo-p hr{
+        width: 150px;
+        margin: auto;
+    }
+
 }
 
 

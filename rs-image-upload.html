@@ -37,18 +37,26 @@
     
         <section class="rs-upload-sec" >
             <h2 class="upload-head" style="color: whitesmoke;">AI Diagnosis Image Upload</h2>
-            <p style="color: whitesmoke; font-weight: bold;" >Currently this prototype is diagnosing COVID 19, Tuberculosis, Edema and Pneumonia from an X - Ray and COVID 19 from CT Scan.</p>
+            <p >Currently this prototype is diagnosing COVID 19, Tuberculosis, Edema and Pneumonia from an <br>X - Ray and COVID 19 from CT Scan.</p><hr>
+            <!-- <h1 style="font-size:32px ; margin-bottom: 20px; text-align: center; color: whitesmoke;" >Register New Patient</h1>
+            <p style="font-weight: bold; color: whitesmoke;">Please select the type of image you want to diagnose and enter patient details.</p> -->
         </section>
+        
 
     </div>
-    <section>
-        <h1 style="font-size:32px ; margin-bottom: 20px; text-align: center;">Register New Patient</h1>
-        <p style="font-weight: bold;">Please select the type of image you want to diagnose and enter patient details.</p>
-    </section>
-    <!-- <section>
-        <img src="./views/infected-lungs.jpeg" alt="">
-        <img src="./views/non-infected.jpeg" alt="">
-    </section> -->
+   
+    <section class="ml-demo-container">
+        <div  class="ml-demo-p">
+            <h1 >Register New Patient</h1>
+            <p style="font-weight: bold; color: black;">Please select the type of image you want to diagnose and enter patient details <hr > </p><p style="font-weight: bold;"> We developed XChesNet, a deep learning algorithm which predict 4 types of diease and mark the infected area with image processing in chest radiographs within 20 Seconds. This algorithm is 91% accurate and currently under develpoment phase.</p>
+        </div>
+        <div class="ml-demo" style="margin-bottom: -20px;margin-top: -20px;" >
+            <img src="./views/bw.png" class="not-infected" alt="">
+            <img src="./views/Gradcam.png" class="infected" alt="">
+            
+        </div>
+        
+    </section> 
     
     <section class="upload-box">
        
@@ -89,11 +97,11 @@
                             
                             <tr>
                                 <td>
-                                    <button class="upload-form-btn" style="border-color:#3A0CA3">Diagnose</button>
-                                   
+                                    
+                                    <button class="upload-form-btn" style="background: #3A0CA3; color: rgb(255, 255, 255);">Select Image</button>
                                 </td>
                                 <td>
-                                    <button class="upload-form-btn" style="background: #3A0CA3; color: whitesmoke;">Upload</button>
+                                    <button class="upload-form-btn" style="border-color:#3A0CA3">Diagnose</button>
                                 </td>
                             </tr>
                         </table>
@@ -105,8 +113,8 @@
             
             
               
-                <div class="upload-info" style="border-color: #5A189A;box-shadow: 10px 10px 10px #5A189A;">
-                    <h1 style="background:#9D4EDD ;">Test CT Scan Images</h1>
+                <div class="upload-info" style="border-color: #5A189A;box-shadow: 10px 10px 10px #888888;">
+                    <h1 style="background:#9d4edd ;color: rgb(255, 255, 255);">Test CT Scan Images</h1>
                    
                     <form action="" >
                         <table >
@@ -142,11 +150,12 @@
                             
                             <tr>
                                 <td>
-                                    <button class="upload-form-btn" style="border-color:#9D4EDD; color: #9D4EDD;">Diagnose</button>
+                                   <button class="upload-form-btn" style="background:#9D4EDD ;color: whitesmoke;">Select Image</button>
                                    
                                 </td>
                                 <td>
-                                    <button class="upload-form-btn" style="background:#9D4EDD ;color: whitesmoke;">Upload</button>
+                                    
+                                    <button class="upload-form-btn" style="border-color:#9D4EDD; color: #9D4EDD;">Diagnose</button>
                                 </td>
                             </tr>
                         </table>
@@ -171,5 +180,26 @@
             <li><a href=""><i class="fab fa-linkedin fa-2x"></i></a></li>
         </ul>
     </footer>
+
+
+    <script>
+        const header = document.querySelector('header');
+        
+        window.onscroll = () => {
+        if (window.scrollY > 100) {
+            header.classList.add('nav-active');
+            header.classList.remove('rs-upload');
+            
+            
+             
+        } else {
+            header.classList.remove('nav-active');
+            header.classList.add('rs-upload');
+           
+            
+           
+        }
+    }
+    </script>
 </body>
 </html>
