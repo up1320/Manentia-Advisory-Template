@@ -23,15 +23,15 @@
                      <li><a href="https://app.manentiaadvisory.com/#product-section">Products</a></li>
                  </div>
                  <div class="items ">
-                     <li  ><a class='nav-links' href="#feature">Features</a></li>
+                     <li  ><a class='nav-links' href="#ml-demo-img">Features</a></li>
                  </div>
                  
                  
          
             </nav>
             <div class="authentication">
-                <button class="log-in">Log-in</button>
-                <button class="log-in">Sign-Up</button>
+                <button class="log-in">Log-out</button>
+                <button class="log-in">Profile</button>
             </div>
             
          </header>
@@ -49,7 +49,7 @@
 
     </div>
    
-    <section class="ml-demo-container">
+    <section class="ml-demo-container" id="ml-demo-img">
         <div  class="ml-demo-p">
             <h1 >Register New Patient</h1>
             <p style="font-weight: bold; color: black;">Please select the type of image you want to diagnose and enter patient details <hr > </p><p style="font-weight: bold;"> We developed XChesNet, a deep learning algorithm which predict 4 types of diease and mark the infected area with image processing in chest radiographs within 20 Seconds. This algorithm is 91% accurate and currently under develpoment phase.</p>
@@ -205,5 +205,19 @@
         }
     }
     </script>
+    <script>
+        var nav = document.getElementsByClassName("nav-links")
+        for(i=0;i<nav.length;i++){
+            nav[i].addEventListener('click', function (e) {
+             e.preventDefault();
+    
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+        
+        }
+    </script>
+    
 </body>
 </html>

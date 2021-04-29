@@ -1644,10 +1644,12 @@ button.trial-btn:hover{
 }
 .cred{
     display: flex;
-    flex-basis: 50%;
+    flex-basis: 40%;
     justify-content: space-around;
+    border:3px solid #222629;
 }
 .db-connection{
+    margin-top: 20px;
 
 }
 
