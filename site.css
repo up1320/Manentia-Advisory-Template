@@ -1667,6 +1667,7 @@ button.trial-btn:hover{
 .cred{
     flex-basis:40%;
     display: flex;
+    background: #FFFFFF;
     justify-content: space-around;
     text-align: center;
     border: 1px solid #3A0CA3;
@@ -1674,6 +1675,9 @@ button.trial-btn:hover{
     padding: 20px;
     box-shadow: 7px 7px 8px #888888;
     margin: 40px;
+}
+.cred1{
+    margin: 5px;
 }
 .cred1.name{
     display: flex;
@@ -1743,7 +1747,7 @@ button.trial-btn:hover{
 }
 .report-img img{
     max-height: 500px;
-    max-width: 400px;
+    max-width: 500px;
     border: 2px dashed #888888;
     padding: 5px;
     border-radius: 5px;
@@ -1769,9 +1773,9 @@ button.trial-btn:hover{
         transform: scale(1);
     }
     .report-img img{
-        height: 300px;
-        
-        width: 200px;
+        height: 350px;
+        margin-bottom: 35px;
+        width: 350px;
     }
     
 }
@@ -1803,7 +1807,7 @@ button.trial-btn:hover{
     border:1px solid #3A0CA3;
     background: #FFFFFF;
     padding: 20px;
-    max-height: 150px;
+    max-height: 200px;
     flex-basis: 40%;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -1812,20 +1816,22 @@ button.trial-btn:hover{
 
 
 .report-info h1{
+    
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 h1.db-connection{
-    font-size: 40px;
+    font-size: 35px;
     
     text-decoration: underline;
 }
+
 .report-para{
     max-width:80% ;
     flex-basis: 100%;
     background: #FFFFFF;
     margin-top: 20px;
-    max-height: 40%;
+    max-height: 20%;
     padding: 20px;
     border: 1px solid #3A0CA3;
     border-radius: 12px;
@@ -1847,12 +1853,13 @@ h1.db-connection{
     }
     .report-info h1{
         font-size: large;
+       
         margin-bottom: 10px;
     }
     .report-para{
         width: 80%;
         padding: 10px;
-        height: 10%;
+        height: 15%;
     }
     .report-para p{
         font-size: large;
@@ -1875,10 +1882,12 @@ h1.db-connection{
     .report-para{
         width: 80%;
         padding: 10px;
-        height: 10%;
+        
     }
     .report-para p{
-        font-size: medium;
+        font-size: small;
+        font-weight: bold;
+        height: 20%;
     }
 }
 .report-btn{
@@ -1905,8 +1914,45 @@ h1.db-connection{
 .report-date h2{
     text-align: center;
     margin-top: 40px;
+    margin-bottom: 10px;
+   
+}
+.report-date p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
     margin-bottom: 40px;
 }
+.doctors-profile{
+    width: 65%;
+    box-shadow: 7px 7px 8px #888888;
+    margin: 20px;
+    margin: auto;
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 19px;
+
+}
+.doctors-profile h1{
+    text-align: center;
+    font-weight: normal;
+}
+.doctors-profile span{
+    font-weight:bolder;
+    font-size: 40px;
+    
+}
+@media (max-width:400px) {
+    .doctors-profile h1{
+        font-size: medium;
+        margin-bottom: 15px;
+    }
+    .doctors-profile span{
+        font-size: 25px;
+        
+    }
+}
+
 
 
 
