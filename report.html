@@ -10,8 +10,9 @@
     <title>Medical Report</title>
 </head>
 <body style="background:  #F6F9FE;">
-    <div class="container">
-        <header class="report-nav">
+    
+    
+        <header class="rep-nav">
             <!-- <header class="rayscan-nav"> -->
                 <h2> <a href="https://app.manentiaadvisory.com/"><img src="./views/Symbol.png" alt="">Manentia Advisory</a> </h2>
             
@@ -29,70 +30,77 @@
             
                 </nav>
                 <div class="authentication">
-                    <button class="log-in">Log-out</button>
+                    <button class="log-in">Logout</button>
                     <button class="log-in">Profile</button>
                 </div>
         </header>
-    </div>
-    <section class="report-head">
-        <h1>Medical Report</h1>
-    </section>
-    <section class="credentials">
+    
+    <h1 class="report-head">Medical Report</h1>
+    <h1 class="result-head">Results</h1>
+    
+    <div class="credentials">
         <div class="cred">
-            <div class="cred-1">
+            <div class="cred1 name">
                 <h1>Name:</h1>
-                <h1 class="db-connection">Anuj Chandalia</h1>
+                <h1>Anuj Chandalia</h1>
             </div>
-            <div class="cred-1">
-                <h1>Gender:</h1>
-                <h1 class="db-connection">Male</h1>
+            <div class="cred1 age">
+                <h1>Age:</h1>
+                <h1>26</h1>
             </div>
         </div>
         <div class="cred">
-            <div class="cred-1">
-                <h1>Age:</h1>
-                <h1 class="db-connection">26</h1>
-            </div>
-            <div class="cred-1">
+            <div class="cred1 weight">
                 <h1>Weight:</h1>
-                <h1 class="db-connection">50kg</h1>
+                <h1>50</h1>
+            </div>
+            <div class="cred1 gender">
+                <h1>Gender:</h1>
+                <h1>Male</h1>
             </div>
         </div>
-    </section>
-    <section class="report-results">
-        <div class="report-img">
-            <div class="user-img">
-                
+    </div>
+    <div class="report-img">
+         
+            <img  src="./views/lungs.jpeg" alt="">
+        
+         
+            <img   src="./views/lungs.jpg" alt="">
+        
+    </div>
+    <div class="report-results">
+        <div class="report-info-bg">
+            <div class="report-info">
+                <h1>Disease:</h1>
+                <h1 class="db-connection">Covid</h1>
             </div>
-            <div class="result-img"></div>
-        </div>
-        <div class="report-data">
-            <div class="result-head"><h1>Results</h1></div>
-            <div class="report-data-bg">
-                <div class="disease-connection">
-                    <h1 style="font-weight:bolder;">Disease:</h1>
-                    <h1 class="disease" style="text-decoration: underline;font-weight: 700;"></h1>
-                </div>
-                <div class="confidence-connection">
-                    <h1 style="font-weight: 700;">Confidence:</h1>
-                    <h1 class="disease" style="text-decoration: underline;font-weight: 700;"></h1>
-                </div>
-                <div>
-                    <p>Green and Yellow area are infected areas. 
-                        Where AI Diagnosis doesn't find any infection are shown by blue shadded area.</p>
-                </div>
-                
+            <div class="report-info">
+                <h1>Confidence:</h1>
+                <h1 class="db-connection">99%</h1>
             </div>
             
-           
         </div>
-    </section>
-    <div class="report-buttons">
-        <button class="rep-btn">Test On Another</button>
-        <button class="rep-btn" style="background: #E3E2F9;">Print Report</button>
-    </div>
+        <div class="report-para">
+            <p>Green and Yellow area are infected areas. 
+                Where AI Diagnosis doesn't find any infection are shown by blue shadded area.</p>
+        </div>
         
-
+        
+    </div>
+    <div class="report-btn">
+        <button>Test On Another</button>
+        <button style="background: #ECEAFF;">Print Report</button>
+    </div>
+  
+        
+            
+       
+    
+    
+        
+    <div class="report-date">
+        <h2>Report generated on DD/MM/YYYY</h2>
+    </div>
 
     
     <footer style="width: 100%;">
