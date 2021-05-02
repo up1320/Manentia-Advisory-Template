@@ -1640,7 +1640,7 @@ button.trial-btn:hover{
     text-align: center;
     width: 50%;
     padding: 15px;
-    background: #8E85DF;
+    background: #e0aaff9f;
     border-radius:20px ;
     box-shadow: 7px 7px 8px #888888;
 }
@@ -1753,6 +1753,9 @@ button.trial-btn:hover{
     border-radius: 5px;
     margin-bottom: 5px;
 }
+.report-img figcaption{
+    font-size: 32px;
+}
 
 @media (max-width:800px) {
     .report-img{
@@ -1774,8 +1777,12 @@ button.trial-btn:hover{
     }
     .report-img img{
         height: 350px;
-        margin-bottom: 35px;
+        margin-bottom: 15px;
         width: 350px;
+    }
+    .report-img figcaption{
+        font-size: medium;
+        margin-bottom: 35px;
     }
     
 }
@@ -1783,7 +1790,7 @@ button.trial-btn:hover{
     display: flex;
     margin: auto;
     width: 80%;
-    height: 600px;
+    max-height: 2500px;;
     box-shadow: 7px 7px 8px #888888;
     flex-direction: column;
     flex-wrap: wrap;
@@ -1798,17 +1805,22 @@ button.trial-btn:hover{
     flex-direction: row;
     flex-wrap: wrap;
     flex-basis: 100%;
-    max-height: 40%;
-    width: 50%;
-    justify-content: space-between;
+    max-height: 2500px;
+    width: 80%;
+    justify-content: space-around;
     
 }
 .report-info{
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 200px;
+    justify-content: space-evenly;
     border:1px solid #3A0CA3;
     background: #FFFFFF;
     padding: 20px;
-    max-height: 200px;
-    flex-basis: 40%;
+    max-height: 100px;
+    
     margin-top: 20px;
     margin-bottom: 30px;
     border-radius: 8px;
@@ -1816,14 +1828,15 @@ button.trial-btn:hover{
 
 
 .report-info h1{
-    
-    text-align: center;
-    margin-bottom: 15px;
+    font-weight: normal;
+    font-size: larger;
+    text-align: left;
+    /* margin-bottom: 15px; */
 }
 h1.db-connection{
-    font-size: 35px;
+    font-size: 25px;
+    font-weight: bold;
     
-    text-decoration: underline;
 }
 
 .report-para{
@@ -1843,16 +1856,16 @@ h1.db-connection{
 } 
 @media (max-width:1000px) {
     .report-results{
-        width: 80%;
+        width: 100%;
     }
     .report-info{
-        max-height: 100px;
+        max-height: 200px;
         flex-basis: 100%;
         margin-top: 10px;
         margin-bottom: 15px;
     }
     .report-info h1{
-        font-size: large;
+        font-size: medium;
        
         margin-bottom: 10px;
     }
@@ -1867,10 +1880,11 @@ h1.db-connection{
 }
 @media (max-width:400px) {
     .report-results{
-        width: 90%;
+        width: 100%;
     }
     .report-info{
-        max-height: 75px;
+        max-height: 200px;
+        
         flex-basis: 100%;
         margin-top: 10px;
         margin-bottom: 15px;
@@ -1909,6 +1923,7 @@ h1.db-connection{
     background: #FFFFFF;
     border-radius: 5px;
     box-shadow: 7px 7px 8px #888888;
+    cursor: pointer;
 }
 
 .report-date h2{
@@ -1922,6 +1937,13 @@ h1.db-connection{
     font-weight: bold;
     font-size: 20px;
     margin-bottom: 40px;
+}
+@media (max-width:400px) {
+    .report-btn button{
+        width: 300px;
+        font-size: 15px;
+        
+    }  
 }
 .doctors-profile{
     width: 65%;
