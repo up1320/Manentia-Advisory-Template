@@ -117,11 +117,11 @@
         </div>
     </section> -->
     <section class="rs-form-container">
-        <div class="wrapper" >
+        <div class="wrapper" style="z-index: 2;">
             <div class="rs-form">
                 <h1>Contact Us</h1>
-                <div class="rs-form-element">
-                    <form action="">
+                <div class="rs-form-element" >
+                    <form action="" >
                         <input type="text" placeholder="Name" required>
                         <input type="email" placeholder="Email" required>
                         <input type="text" placeholder="Phone Number" required>
@@ -142,7 +142,7 @@
             <div class="form-bg">
                 
                 <div class="form-bg-content">
-                    <div class="rs-contact-info">
+                    <div class="rs-contact-info" >
                         <i class="fas fa-map-pin fa-2x"></i>
                         <h3>Address</h3>
                         <p>PDPU Innovation & Incubation Centre <br>PDPU Campus, Raisan, Gandhinagar,Gujarat-382007</p>
@@ -162,13 +162,13 @@
             </h1>
                 <form action="" name="user-form">
                     
-                    <input type="text" name="name" placeholder="Name*" required><br>
+                    <input class="rs-800-input" type="text" name="name" placeholder="Name*"  required><br>
                     
-                    <input type="email" name="email" placeholder="Email*" required><br>
+                    <input class="rs-800-input" type="email" name="email" placeholder="Email*" required><br>
                     
-                    <input type="text" name="phone" placeholder="Phone Number*" required><br>
+                    <input class="rs-800-input"  type="text" name="phone" placeholder="Phone Number*" required><br>
                     
-                    <select name="us" aria-placeholder="How did you hear about us?" style="width: 100%;">
+                    <select class="rs-800-input"  name="us" aria-placeholder="How did you hear about us?" style="width: 100%;">
                         <option id="dropdown" value="" disabled selected>How did you hear about us?</option>
                         <option >Social Media</option>
                         <option >Friends</option>
@@ -177,8 +177,8 @@
                         <option >Other</option>
                     </select>
                     
-                    <textarea name="message" form="user-form" rows="10" cols="100" placeholder="Type your message here" required></textarea>
-                    <button>Submit</button>
+                    <textarea class="rs-800-input"  name="message" form="user-form" rows="10" cols="100" placeholder="Type your message here" required></textarea>
+                    <button class="rs-800-input">Submit</button>
                 </form>
             
             
@@ -195,6 +195,38 @@
             <li><a href=""><i class="fab fa-linkedin fa-2x"></i></a></li>
         </ul>
     </footer> 
+    <script>
+        var form = document.getElementsByClassName("rs-800-input") 
+        var form_input = (x) =>{
+            if (x.matches) {
+                for(var i=0;i<form.length;i++){
+                    form[i].disabled = true;
+                    
+                }
+                
+            }else{
+                for(var i=0;i<form.length;i++){
+                    form[i].disabled = false;
+                    form[i].style.zIndex= "3";
+                }
+            }
+        }
+        var x= window.matchMedia("(min-width:801px)")
+        form_input(x)
+        x.addListener(form_input)
+        
+        // function myFunction(x) {
+        // if (x.matches) { // If media query matches
+        //     document.body.style.backgroundColor = "yellow";
+        // } else {
+        //     document.body.style.backgroundColor = "pink";
+        // }
+        // }
+
+        // var x = window.matchMedia("(max-width: 700px)")
+        // myFunction(x) // Call listener function at run time
+        // x.addListener(myFunction)
+    </script>
 
 
     <script>
