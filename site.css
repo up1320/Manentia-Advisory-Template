@@ -457,22 +457,283 @@ div.acc-content{
     }
 }
 
-section.product-section{
+div.product-section{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: baseline;
-    background:  linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #C5CFFF;
+    align-items: center;
+    /* background:  linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #C5CFFF; */
+    height: auto;
+    min-height: 1000px;
     
-    z-index: -1;
+    padding: 40px 20px;
     background-size: cover;
+    background-color: #121212;
+    overflow: auto;
+}
+div.product-section p{
+    max-width: 700px;
+    font-size: 20px;
+    line-height: 2;
+    padding: 0 20px;
+    margin-bottom: center;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: normal;
 }
 div.feature-product{
+    flex-basis: 100%;
+    flex-grow: 1;
     display: flex;
-    
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
 }
 div.product{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+}
+
+div.product-img-container{
+    height: 700px;
+    min-height: 300px;
+    min-width: 300px;
+    max-width: 700px;
+    order:-1;
+    flex-basis: 60%;
+    background: #2226293f;
+    border: 2px dashed white;
+    padding: 20px;
+    border-radius: 12px;
+    background-image: url(./views/RayScan/1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: rs-image 15s ease-in 0s infinite alternate forwards;
+    transform: scale(0.8);
+    transition: all .35s ease-in;
+}
+
+
+
+div.product-img-container:hover{
+    transform: scale(.85);
+    box-shadow: 15px 10px 15px #888888;
+}
+@keyframes rs-image {
+    25%{
+        background-image: url(./views/RayScan/2.jpg);
+    }
+    50%{
+        background-image: url(./views/RayScan/3.png);
+    }
+    75%{
+        background-image: url(./views/RayScan/6.png);
+    }
+    100%{
+        background-image: url(./views/RayScan/7.png);
+    }
+    
+    
+}
+div.product-img-container-2{
+    height: 700px;
+    min-height: 300px;
+    min-width: 300px;
+    max-width: 700px;
+    flex-basis: 60%;
+    background: #2226293f;
+    border: 2px dashed white;
+    padding: 20px;
+    border-radius: 12px;
+    background-image: url(./views/retino_scan/7.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: ra-image 15s ease-in 0s infinite alternate forwards;
+    transform: scale(0.8);
+    transition: all .35s ease-in;
+}
+div.product-img-container-2:hover{
+    transform: scale(.85);
+    box-shadow: 15px 10px 15px #888888;
+}
+@keyframes ra-image {
+    25%{
+        background-image: url(./views/retino_scan/bloodvessel.png);
+    }
+    50%{
+        background-image: url(./views/retino_scan/exudates.png);
+    }
+    75%{
+        background-image: url(./views/retino_scan/gray_image.png);
+    }
+    100%{
+        background-image: url(./views/retino_scan/original.png);
+    }
+    
+    
+}
+
+
+
+div.product-img-container:hover{
+    transform: scale(.85);
+    box-shadow: 15px 10px 15px #888888;
+}
+.product-description{
+    flex-basis: 40%;
+    align-self: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.product-description h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.product-description h1,p{
+    text-align: center;
+    
+}
+.product-description p{
+    width: 700px;
+    
+}
+.explore-btn{
+    width: 250px;
+    padding: 15px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    
+    border-radius: 25px;
+    margin: auto;
+    box-shadow: inset 0 0 0 0 #BF5FFF;
+    cursor: pointer;
+    font-size: 25px;
+    transition: all 1s ease-in;
+   
+}
+.ra-explore-btn{
+    width: 250px;
+    padding: 15px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    
+    border-radius: 25px;
+    margin: auto;
+    box-shadow: inset 0 0 0 0 #d4af37;
+    cursor: pointer;
+    font-size: 25px;
+    transition: all 1s ease-in;
+   
+}
+.explore-btn:hover{
+    box-shadow: inset 250px 0 0 0 #BF5FFF;
+    
+    color: white;
+
+}
+.ra-explore-btn:hover{
+    box-shadow: inset 250px 0 0 0 #d4af37;
+    
+    color: white;
+
+}
+@keyframes color-effect {
+    0%{
+        color: white;
+    }
+    100%{
+        color: #BF5FFF;
+        
+    }
+}
+@keyframes ra-color-effect {
+    0%{
+        color:white;
+    }
+    100%{
+        color:#d4af37;
+        
+    }
+}
+@media (max-width:800px) {
+    div.product-section{
+        min-height: 1200px; 
+        flex-direction: column;
+    }
+    div.product-section p{
+        font-size: medium;
+        width: auto;
+    }
+    div.feature-product{
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+    div.product{
+        flex-direction: column;
+        
+    }
+    div.product-img-container{
+        flex-basis: 100%;
+        height: auto;
+        width: auto;
+    }
+    div.product-img-container{
+        flex-basis: 100%;
+        height: auto;
+        width: auto;
+    }
+    div.product-img-container-2{
+        flex-basis: 100%;
+        height: auto;
+        width: auto;
+    }
+    
+    
+    
+}
+@media (max-width:600px) {
+    
+    div.product-img-container{
+        flex-basis: 100%;
+        max-height: 300px;
+        max-width: 300px;
+    }
+    div.product-img-container-2{
+        flex-basis: 100%;
+        height: 300px;
+        width: 300px;
+    }
+    div.product-section p{
+        font-size: small;
+        width: 300px;
+    }
+    div.product-section h1{
+        font-size: medium;
+    }
+    .explore-btn{
+        width: 100px;
+        font-size: small;
+    }
+    .ra-explore-btn{
+        width: 100px;
+        font-size: small;
+    }
+}
+
+/* div.product{
     
     display: flex;
     flex-direction: column;
@@ -524,27 +785,10 @@ div.product button{
     margin-bottom: 15px;
     font-weight: bold;
     transition: all 0.35s ease-in;
-}
-@media (max-width:800px) {
-    div.feature-product{
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    div.product-des p{
-        padding: 5px;
-        
-        font-size: large;
-    }
-    
-}
-@media (max-width:400px) {
-    div.product-des p{
-        padding: 5px;
-        font-size: small;
-    }
-}
+} */
 
-#ratinoscan:hover{
+
+/* #ratinoscan:hover{
     box-shadow: 0 0 25px 1px #0B0D17;
 }
 #rayscan:hover{
@@ -558,7 +802,7 @@ div.product img{
     
     
     
-}
+} */
 section.services{
     
     color:black;
@@ -596,6 +840,7 @@ section p{
 }
 section.services p{
     font-weight: normal;
+    text-align: center;
 }
 @media  (max-width:800px) {
     div.services-container{
@@ -617,43 +862,63 @@ section.services p{
 
 section.testimonials-container{
     background:  linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #C5CFFF;
+    display: flex;
     
+    flex-wrap: wrap;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 section.testimonials-container h1{
     margin-bottom: 40px;
     font-size: 40px;
 }
-section.testimonials-container p{
-    max-width: 900px;
-    font-weight: 900;
+.testimonials-container-inline{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 div.testimonials{
     text-align: center;
     background-color: ivory;
-    margin-bottom: 20px; 
-    padding: 20px;
-    border-radius: 8px;
+    flex-basis: 40%;
+    margin: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    
+}
+
+div.testimonials p{
+    
+        max-width: 700px;
+        font-size: 20px;
+        line-height: 2;
+        padding: 0 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: center;
+    
 }
 div.testimonials::after{
     content: "- doctor";
+    font-weight: bold;
     text-align: center;
 }
 
 div.testimonials img{
-    height: 150px;
-    width: 150px;
+    height: 50px;
+    width: 50px;
     border-radius:50% ;
     
 }
 div.testimonials p::before{
     content: open-quote;
-    font-size: 50px;
+    font-size: 40px;
 }
 div.testimonials p::after{
     content: close-quote;
-    font-size: 50px;
+    font-size: 40px;
     
 }
 @media (max-width:800px) {
@@ -662,7 +927,10 @@ div.testimonials p::after{
         align-items: center;
     }
     section.testimonials-container h1{
-        font-size: 20px;
+        font-size: 15px;
+    }
+    div.testimonials-container-inline{
+        flex-direction: column;
     }
     div.testimonials p{
         font-size: medium;
@@ -676,16 +944,27 @@ div.testimonials p::after{
 }
 @media (max-width:400px){
     section.testimonials-container{
+        padding: 5px;
         justify-content: center;
         align-items: center;
     }
     section.testimonials-container h1{
         font-size: larger;
     }
+    .testimonials{
+        width: 350px;
+        height: 400px;
+    }
+    div.testimonials-container-inline{
+        width: 100%;
+        padding: 0;
+    }
     div.testimonials p{
         font-size: small;
         padding: 0;
         margin-left: -15px;
+        width: 90%;
+        margin: 5px;
     }
     div.testimonials img{
         height: 35px;
@@ -773,7 +1052,9 @@ form{
 form input,textarea,select{
     padding: 10px;
     margin: 10px;
-    
+    outline: none;
+    border: none;
+    background-color: #e0dbdb48;
     
     flex-basis: 50%;
     width: 100%;
@@ -794,6 +1075,7 @@ form button{
     width: 200px;
     font-size: 32px;
     border-radius: 8px;
+    cursor: pointer;
 }
 div.user-form{
     display: flex;
@@ -1531,6 +1813,11 @@ button.trial-btn:hover{
     height: 35px;
     width: 35px;
     vertical-align: middle;
+}
+input,select,textarea{
+    outline: none;
+    border: none;
+    background-color: #e0dbdb48;
 }
 @media (max-width:800px) {
     .rs-upload{
