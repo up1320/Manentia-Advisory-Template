@@ -309,6 +309,13 @@ section{
     width: 100%;
     
 }
+@media (max-width:800px) {
+    section{
+        height: fit-content;
+        padding: 50px 30px;
+    }
+    
+}
 
 section.About{
     display: flex;
@@ -355,6 +362,21 @@ div.about-content h1{
 
 div.about-content h2{
     font-size: 35px;
+}
+@media (max-width:800px) {
+    section.About img{
+        height: 350px;
+        width: 350px;
+    }
+    div.about-content h2{
+        font-size: 20px;
+    }
+    div.about-content h1{
+        font-size: 22px;
+    }
+    div.about-content p{
+        font-size: 15px;
+    }
 }
 
 
@@ -411,6 +433,13 @@ div.acc-content{
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+    }
+    div.acc-by{
+        font-size: large;
+    }
+    div.acc-by img{
+        height: 250px;
+        width: 250px;
     }
 }
 
@@ -500,6 +529,11 @@ div.product button{
     div.feature-product{
         flex-direction: column;
         flex-wrap: wrap;
+    }
+    div.product-des p{
+        padding: 5px;
+        
+        font-size: large;
     }
     
 }
@@ -621,6 +655,24 @@ div.testimonials p::after{
     content: close-quote;
     font-size: 50px;
     
+}
+@media (max-width:800px) {
+    section.testimonials-container{
+        justify-content: center;
+        align-items: center;
+    }
+    section.testimonials-container h1{
+        font-size: 20px;
+    }
+    div.testimonials p{
+        font-size: medium;
+        padding: 0;
+        margin-left: -15px;
+    }
+    div.testimonials img{
+        height: 35px;
+        width: 35px;
+    }
 }
 @media (max-width:400px){
     section.testimonials-container{
@@ -1156,6 +1208,7 @@ button.trial-btn:hover{
 }
 .rs-form-container{
     position: relative;
+    max-height: 1200px;
 }
 .wrapper{
     width: 60vw;
@@ -1172,7 +1225,7 @@ button.trial-btn:hover{
 }
 .rs-form{
     width: 50%;
-    padding-right: 35px;
+    padding: 35px;
     text-align: center;
     height: 100%;
     overflow-y:hidden ;
@@ -1204,6 +1257,7 @@ button.trial-btn:hover{
 }
 .rs-form select{
     margin-bottom: 10px;
+    width: 100%;
 }
 .rs-form textarea{
     margin-bottom: 10px;
@@ -1239,22 +1293,31 @@ button.trial-btn:hover{
 }
 .rs-800{
     position: absolute;
-    top: 30vh;
-    
+    /* top: 30vh; */
+    margin: auto;
+    width: 100%;
     opacity: 0;
     transition: all .35s ease-in;
+}
+.rs-800 form{
+    width: 90%;
+}
+@media (max-width:1200px) {
+    .wrapper{
+        width: 90vw;
+    }
 }
 
 
 @media (max-width:800px) {
     .rs-800{
         opacity: 1;
-        width: 80%;
-        
+        width: 90%;
+        margin-top: -25px;
     }
     .wrapper{
         width: 60vw;
-        
+        opacity: 0;
         flex-wrap: wrap;
     }
     .rs-form button{
