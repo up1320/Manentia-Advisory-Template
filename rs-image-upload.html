@@ -42,8 +42,7 @@
         <section class="rs-upload-sec" >
             <h2 class="upload-head" style="color: whitesmoke;">AI Diagnosis Image Upload</h2>
             <p >Currently this prototype is diagnosing COVID 19, Tuberculosis, Edema and Pneumonia from an <br>X - Ray and COVID 19 from CT Scan.</p><hr>
-            <!-- <h1 style="font-size:32px ; margin-bottom: 20px; text-align: center; color: whitesmoke;" >Register New Patient</h1>
-            <p style="font-weight: bold; color: whitesmoke;">Please select the type of image you want to diagnose and enter patient details.</p> -->
+           
         </section>
         
 
@@ -102,10 +101,10 @@
                             <tr>
                                 <td>
                                     
-                                    <button class="upload-form-btn" style="background: #3A0CA3; color: rgb(255, 255, 255);">Select Image</button>
+                                    <button class="upload-form-btn img-up-btn" type="submit" id="x-ray-btn" style="background: #3A0CA3; color: rgb(255, 255, 255);"><i id="x-ray-upload-i" style="color: aliceblue;"></i>Select Image</button>
                                 </td>
                                 <td>
-                                    <button class="upload-form-btn" style="border-color:#3A0CA3">Diagnose</button>
+                                    <button class="upload-form-btn" class="diag-btn" id="x-ray-daig-btn" style="border-color:#3A0CA3"><span id="x-ray-diag">Diagnose</span> </button>
                                 </td>
                             </tr>
                         </table>
@@ -154,12 +153,12 @@
                             
                             <tr>
                                 <td>
-                                   <button class="upload-form-btn" style="background:#9D4EDD ;color: whitesmoke;">Select Image</button>
+                                   <button class="upload-form-btn img-up-btn" id="ct-btn" style="background:#9D4EDD ;color: whitesmoke;"><i id="ct-upload-i" style="color: aliceblue;"></i>Select Image</button>
                                    
                                 </td>
                                 <td>
                                     
-                                    <button class="upload-form-btn" style="border-color:#9D4EDD; color: #9D4EDD;">Diagnose</button>
+                                    <button class="upload-form-btn" class="diag-btn" id="ct-daig-btn" style="border-color:#9D4EDD; color: #9D4EDD;"> <span id="ct-daig">Diagnose</span></button>
                                 </td>
                             </tr>
                         </table>
@@ -176,7 +175,7 @@
     </section>
     
     <footer>
-        <p>Manentia Advisory</p>
+        <p><img src="./views/Symbol.png" style="height: 25px;width:25px;vertical-align: middle;" alt="">Manentia Advisory</p>
         <p><i class="far fa-copyright" style="color: white;"></i> 2020 All rights reserved</p>
         <ul>
             <li><a href=""><i class="fab fa-facebook-square fa-2x"></i></a></li>
@@ -184,6 +183,8 @@
             <li><a href=""><i class="fab fa-linkedin fa-2x"></i></a></li>
         </ul>
     </footer>
+
+
 
 
     <script>
@@ -205,6 +206,91 @@
         }
     }
     </script>
+    <!-- <script>
+        var ct_diag_btn = document.getElementById("ct-daig-btn");
+        var ct_span = document.getElementById("ct-daig");
+        var onclick = ()=>{
+            ct_diag_btn.addEventListener("click",(event)=>{
+                event.preventDefault();
+                setTimeout(()=>{
+                    ct_span.innerHTML="Diagonising";
+                },3000);
+                ct_span.innerHTML="Diagonise";
+                
+            });
+            // setTimeout(()=>{
+            //     location.href="https://app.manentiaadvisory.com/";
+            // },1000);
+        }
+        onclick()
+        
+    </script>
+    <script>
+        var x_diag_btn = document.getElementById("x-ray-daig-btn");
+        var x_span = document.getElementById("x-ray-diag");
+        var onclick = ()=>{
+            x_diag_btn.addEventListener("click",(event)=>{
+                event.preventDefault();
+                setTimeout(()=>{
+                    x_span.textContent="Diagonising";
+                },3000);
+                x_span.textContent="Diagonise";
+            });
+            // setTimeout(()=>{
+            //     location.href="https://app.manentiaadvisory.com/";
+            // },1000);
+        }
+        onclick(); -->
+        
+    </script>
+    
+    <script>
+        var x_btn = document.getElementById("x-ray-btn");
+        var ix_btn = document.getElementById("x-ray-upload-i");
+        
+        var onclick = ()=>{
+        x_btn.addEventListener('click',(event)=>{
+            event.preventDefault();
+            ix_btn.classList.toggle('fa');
+            ix_btn.classList.toggle('fa-spinner');
+            ix_btn.classList.toggle('fa-spin');
+            setTimeout(() =>{
+            ix_btn.classList.toggle('fa');
+            ix_btn.classList.toggle('fa-spinner');
+            ix_btn.classList.toggle('fa-spin');
+            },3000);
+            // setTimeout(()=>{
+            //     location.href="https://app.manentiaadvisory.com/";
+            // },1000);
+        })
+        
+        } 
+        onclick()       
+    </script>
+     <script>
+        var ct_btn = document.getElementById("ct-btn");
+        var ct_i_btn = document.getElementById("ct-upload-i");
+        
+        var onclick = ()=>{
+        ct_btn.addEventListener('click',(event)=>{
+            event.preventDefault();
+            ct_i_btn.classList.add('fa');
+            ct_i_btn.classList.add('fa-spinner');
+            ct_i_btn.classList.add('fa-spin');
+            setTimeout(() =>{
+            ct_i_btn.classList.remove('fa');
+            ct_i_btn.classList.remove('fa-spinner');
+            ct_i_btn.classList.remove('fa-spin');
+            },3000);
+            // setTimeout(()=>{
+            //     window.location.href="https://app.manentiaadvisory.com/";
+            // },1000);
+        })
+        
+        } 
+        onclick()       
+    </script>
+    
     <script>
         var nav = document.getElementsByClassName("nav-links")
         for(i=0;i<nav.length;i++){
