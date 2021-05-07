@@ -468,7 +468,7 @@ div.product-section{
     align-items: center;
     /* background:  linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #C5CFFF; */
     height: auto;
-    min-height: 1000px;
+    max-height: 2500px;
     
     padding: 40px 20px;
     background-size: cover;
@@ -497,16 +497,17 @@ div.product{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    max-height: 600px;
     flex-basis: 100%;
 }
 
 div.product-img-container{
-    height: 700px;
+    height: 500px;
     min-height: 300px;
     min-width: 300px;
-    max-width: 700px;
+    max-width: 500px;
     order:-1;
     flex-basis: 60%;
     background: #2226293f;
@@ -519,15 +520,15 @@ div.product-img-container{
     background-size: cover;
     animation: rs-image 15s ease-in 0s infinite alternate forwards;
     transform: scale(0.8);
-    transition: all .35s ease-in;
+    transition: transform .35s ease-in;
+    
 }
-
-
-
 div.product-img-container:hover{
-    transform: scale(.85);
-    box-shadow: 15px 10px 15px #888888;
+    transform: scale(0.9);
 }
+
+
+
 @keyframes rs-image {
     25%{
         background-image: url(./views/RayScan/2.jpg);
@@ -545,10 +546,10 @@ div.product-img-container:hover{
     
 }
 div.product-img-container-2{
-    height: 700px;
+    height: 500px;
     min-height: 300px;
     min-width: 300px;
-    max-width: 700px;
+    max-width: 500px;
     flex-basis: 60%;
     background: #2226293f;
     border: 2px dashed white;
@@ -560,12 +561,14 @@ div.product-img-container-2{
     background-size: cover;
     animation: ra-image 15s ease-in 0s infinite alternate forwards;
     transform: scale(0.8);
-    transition: all .35s ease-in;
+    transition: transform .35s ease-in;
+
 }
 div.product-img-container-2:hover{
-    transform: scale(.85);
-    box-shadow: 15px 10px 15px #888888;
+    transform: scale(0.9);
 }
+
+
 @keyframes ra-image {
     25%{
         background-image: url(./views/retino_scan/bloodvessel.png);
@@ -585,10 +588,6 @@ div.product-img-container-2:hover{
 
 
 
-div.product-img-container:hover{
-    transform: scale(.85);
-    box-shadow: 15px 10px 15px #888888;
-}
 .product-description{
     flex-basis: 40%;
     align-self: center;
@@ -669,6 +668,43 @@ div.product-img-container:hover{
         color:#d4af37;
         
     }
+}
+@media (max-width:1400px) {
+    div.product-section{
+        min-height: 1200px; 
+        flex-direction: column;
+    }
+    div.product-section p{
+        font-size: medium;
+        width: auto;
+    }
+    div.feature-product{
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+    div.product{
+        flex-direction: column;
+        
+    }
+    div.product-img-container{
+        flex-basis: 100%;
+        height: auto;
+        width: auto;
+    }
+    div.product-img-container{
+        flex-basis: 100%;
+        height: auto;
+        width: auto;
+    }
+    div.product-img-container-2{
+        flex-basis: 100%;
+        height: auto;
+        width: auto;
+    }
+    
+    
+    
 }
 @media (max-width:800px) {
     div.product-section{
@@ -1071,18 +1107,23 @@ form label{
 }
 form button{
     margin: 10px;
-    padding: 15px;
+    padding: 10px;
     background-color: #515A86;
     color:white;
     font-weight: bold;
-    width: 200px;
-    font-size: 32px;
+    width: 150px;
+    font-size: 20px;
     border-radius: 8px;
     cursor: pointer;
 }
 div.user-form{
     display: flex;
     flex-wrap: wrap;
+}
+@media (max-width:800px) {
+    form select{
+        width: 100%;
+    }
 }
 @media (max-width:400px) {
     form{
@@ -1096,6 +1137,9 @@ div.user-form{
     form button{
         width: 100px;
         font-size: medium;
+    }
+    form select{
+        width: 100%;
     }
 }
 
