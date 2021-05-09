@@ -17,9 +17,13 @@
 
     <!--Navbar-->
     <div class="container">
-        <div class="bg-image" style="background-image: url(./views/3.jpg);"></div>
+
+    
+         <div class="bg-image" style="background-image: url(./views/home.gif);"></div> 
+        
+        
         <header>
-            <h2> <a href="#home-section"><img src="./views/Symbol.png" alt="">Manentia Advisory</a> </h2>
+            <h2> <a href="#home-section"><img src="./views/Symbol.png" alt=""></a> </h2>
         
            <nav>
                
@@ -42,17 +46,18 @@
             
             
         </header>
+        
         <section class="bg" id="home-section">
-           <!--<div class="bg-image" style="background-image: url(3.jpg);"></div>-->
+            
             <div class="bg-content">
                 <h1>Manentia Advisory</h1>
                 <h2>Finding newer, intelligent ways to care for the world.</h2>
                 
             </div>
         </section>
-    </div>
+    
    
-
+    </div>
     <!--About Section-->
     
     <section class="About" id="about-section">
@@ -311,6 +316,13 @@
         
       });
     </script>
+<script>
+    $(window).on('beforeunload', function() {
+    $('body').hide();
+    $(window).scrollTop(0);
+  });
+</script>
+
 
 </body>
 </html>

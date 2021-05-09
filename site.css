@@ -62,13 +62,26 @@ header{
     background: transparent;
     width: 100%;
     display: flex;
+    height: 100px;
     justify-content: space-between;
     align-items: center;
-    padding: 35px 100px 0;
-    animation: load 2s ease-in  forwards;
-    opacity: 0;
+    padding: 20px 100px 0;
+    /* animation: load 2s ease-in  forwards; */
+    /* opacity: 0; */
     color: rgb(255, 255, 255);
     z-index: 24;
+}
+.v-section{
+    
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.v-section img{
+    height: 100vh;
+    width: 100vw;
 }
 @keyframes load{
     100%{
@@ -204,6 +217,7 @@ section{
     position: relative;
     
     justify-content: center;
+    align-items:flex-start ;
     text-align: center;
     min-height: 100vh;
     min-width: 100vw;
@@ -222,59 +236,58 @@ section{
 }
 @keyframes load-image{
     100%{
-        opacity:0.7;
+        opacity:1;
     }
 }
 .bg .bg-content{
     color: rgb(236, 235, 232);
     font-size: xx-large;
-    opacity: 0;
-    margin-top: 250px;
-    animation: content-load 1s ease-in 1s forwards;
+    z-index: 2;
+    margin-top: 150px;
+    
+    
     
 }
-@keyframes content-load {
-    0%{
-        opacity: 0;
-    }   
-    25%{
-        opacity: 0.25;
-    }
-    50%{
-        opacity: 0.5;
-    }
-    75%{
-        opacity: 0.75;
-        
-    }
-    100%{
-        opacity: 1;
-        margin-top: 100px;
-        
-        
-        
-    }
-}
+
 .bg h1{
     font-weight: bold;
+    font-size: 80px;
     margin-bottom: 20px;
+    text-align: left;
+    background: url('./views/landing_text.gif');
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: moveBg 90s linear infinite;
+    -webkit-animation: moveBg 90s linear infinite;
 }
 .bg h2{
     font-weight: normal;
     margin-bottom: 40px;
+    text-align: left;
+    background: url('./views/landing_text.gif');
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: moveBg 90s linear infinite;
+    -webkit-animation: moveBg 90s linear infinite;
 }
 
 @media (max-width:800px) {
     .bg{
         min-height: 600px;
-
+        justify-content: center;
+        align-items: center;
+        
     }
     .bg h1{
         font-size: 38px;
+        text-align: center;
         /* margin-top: -120px; */
     }
     .bg h2{
         font-size: 20px;
+        text-align: center;
     }
 
     button.contact-btn{
@@ -286,7 +299,8 @@ section{
 @media (max-width:400px) {
     .bg{
         min-height: 600px;
-
+        justify-content: center;
+        align-items: center;
     }
     .bg h1{
         font-size: 28px;
@@ -499,7 +513,7 @@ div.product{
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    max-height: 600px;
+    max-height: 800px;
     flex-basis: 100%;
 }
 
@@ -509,7 +523,7 @@ div.product-img-container{
     min-width: 300px;
     max-width: 500px;
     order:-1;
-    flex-basis: 60%;
+    flex-basis: 40%;
     background: #2226293f;
     border: 2px dashed white;
     padding: 20px;
@@ -550,7 +564,7 @@ div.product-img-container-2{
     min-height: 300px;
     min-width: 300px;
     max-width: 500px;
-    flex-basis: 60%;
+    flex-basis: 40%;
     background: #2226293f;
     border: 2px dashed white;
     padding: 20px;
@@ -675,19 +689,15 @@ div.product-img-container-2:hover{
         flex-direction: column;
     }
     div.product-section p{
-        font-size: medium;
+        font-size: small;
         width: auto;
     }
-    div.feature-product{
-        flex-direction: column;
-        flex-wrap: wrap;
-        
-    }
+   
     div.product{
         flex-direction: column;
         
     }
-    div.product-img-container{
+    /* div.product-img-container{
         flex-basis: 100%;
         height: auto;
         width: auto;
@@ -701,10 +711,15 @@ div.product-img-container-2:hover{
         flex-basis: 100%;
         height: auto;
         width: auto;
+    } */
+    .explore-btn{
+        width: 150px;
+        font-size: large;
     }
-    
-    
-    
+    .ra-explore-btn{
+        width: 150px;
+        font-size: large;
+    }
 }
 @media (max-width:800px) {
     div.product-section{
