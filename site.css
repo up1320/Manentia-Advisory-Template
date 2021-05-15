@@ -403,7 +403,7 @@ div.about-content h2{
 .product-section{
     background: #1C152E;
     max-height: 2100px;
-    height: 1100px;
+    height: 900px;
     
     display: flex;
     padding-left: 0px;
@@ -418,7 +418,7 @@ div.about-content h2{
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     /* height: 800px; */
     padding-left: none;
@@ -432,31 +432,32 @@ div.about-content h2{
 .product-description{
     /* top: -10%; */
     
-    position: relative;
-    right: 0;
+    /* position: relative;
+    right: 0; */
     bottom: -20px;
     background: #fff;
-    flex-basis: 50%;
-    height: 100%;
+    flex-basis: 40%;
+    height: 90%;
     border-radius: 50% 50% 0px 50%;
 }
 .product-description h1,.product-description p{
     position: relative;
-    top: 23%;
+    top: 15%;
     text-align: center;
 
 }
 
 
+
 .ra-product-description{
-    top: 10%;
+    /* top: 10%; */
     background: #fff;
-    flex-basis: 50%;
-    height: 100%;
+    flex-basis: 40%;
+    height:90%;
     border-radius: 0 50% 50% 50%;
-    position: relative;
+    /* position: relative;
     left: 0;
-    top: 5%;
+    top: 5%; */
     
 }
 
@@ -514,7 +515,7 @@ div.product-img-container{
     
     border: 14px solid #fff;
     background: #2226293f;
-    margin-left: 40px;
+    margin-left: 140px;
     padding: 20px;
     border-radius: 12px;
     background-image: url(./views/RayScan/1.png);
@@ -553,7 +554,7 @@ div.product-img-container-2{
     width: 500px;
     border: 14px solid #fff;
     background: #2226293f;
-    margin-right: 40px;
+    margin-right: 140px;
     padding: 20px;
     border-radius: 12px;
     background-image: url(./views/retino_scan/7.png);
@@ -585,7 +586,7 @@ button.explore-button {
     border-radius: 100rem;
     position: relative;
     left: 40%;
-    top: 25%;
+    top: 20%;
     padding: 1rem;
     font-family: 'Avenir Next';
     font-size: 1rem;
@@ -629,11 +630,17 @@ button.ra-explore-button:hover{
     box-shadow: none;
     color: white;
 }
+/* @media (min-width:1441px) {
+    .ra-product-description{
+        height: 100%;
+    }
+} */
 @media (max-width:1400px) {
     div.product-img-container{
         height: 500px;
         width: 500px;
     }
+
     div.product-img-container-2{
         height: 500px;
         width: 500px;
@@ -664,8 +671,10 @@ button.ra-explore-button:hover{
     div.product-img-container{
         height: 400px;
         width: 400px;
+        margin-left: 30px;
     }
     div.product-img-container-2{
+        margin-right: 30px;
         height: 400px;
         width: 400px;
         order: -1;
@@ -715,17 +724,20 @@ button.ra-explore-button:hover{
 }
 @media (max-width:800px) {
     div.product-img-container{
-        
+        margin-left: 30px;
         height: 300px;
         width: 300px;
     }
     div.product-img-container-2{
-       
+        margin-right: 30px;
         height: 300px;
         width: 300px;
     }
     .product-section{
-        height: 1400px;
+        height: 1200px;
+    }
+    .product-description,.ra-product-description{
+       width: 80%;
     }
     .product-description p{
         font-weight: bold;
@@ -775,24 +787,27 @@ button.ra-explore-button:hover{
 }
 @media (max-width:400px) {
     div.product-img-container{
-        
+        align-self: center;
+        margin-left: 30px;
         height: 300px;
         width: 300px;
     }
     div.product-img-container-2{
-       
+       margin-right: 30px;
         height: 300px;
         width: 300px;
     }
+    
     .product-section{
-        height: 850px;
-        max-height: 1500px;
+        height: 1000px;
+        
     }
     .product{
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
         align-content: center;
+       
     }
     .product-head{
         font-size: 15px;
@@ -815,15 +830,16 @@ button.ra-explore-button:hover{
     }
     .product-description p{
         top: 10%;
-        font-size: small;
-        width: 350px;
+        font-size: 10px;
+        width: 300px;
     }
     .ra-product-description h1{
         font-size: 20px;
     }
     .ra-product-description p{
-        font-size: small;
-        width: 350px;
+        
+        font-size: 10px;
+        width: 300px;
     }
     
     
