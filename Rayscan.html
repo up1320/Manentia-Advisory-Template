@@ -14,15 +14,15 @@
     <div class="container rs-bg-img">
         <header class="rs-nav">
         <!-- <header class="rayscan-nav"> -->
-            <h2> <a href="https://app.manentiaadvisory.com/"><img src="./views/Symbol.png" alt="">Manentia Advisory</a> </h2>
+            <h2> <a class='nav-links' href="https://app.manentiaadvisory.com/"><img src="./views/Symbol.png" alt="">Manentia Advisory</a> </h2>
         
            <nav>
        
                <div class="items">
-                <li><a href="https://app.manentiaadvisory.com/">Home</a></li>
+                <li><a class='nav-links' href="https://app.manentiaadvisory.com/">Home</a></li>
                 </div>
                 <div class="items">
-                    <li><a href="https://app.manentiaadvisory.com/#product-section">Products</a></li>
+                    <li><a href="https://app.manentiaadvisory.com/#product-section" class='nav-links'>Products</a></li>
                 </div>
                 <div class="items">
                     <li><a class='nav-links' href="#feature">Features</a></li>
@@ -32,13 +32,10 @@
         
             </nav>
             <button id="nav-btn" class="demo-btn" onclick="location.href='http://manentiaadvisory.com:8000/demo/app'">Demo</button>
-            <!-- <div class="authentication">
-                <button class="log-in">Log-in</button>
-                <button class="log-in">Sign-Up</button>
-            </div> -->
+           
         </header>
         <section class="rayscan-container">
-            <!-- <img src="./views/rs-cont (2).jpeg" alt=""> -->
+            
             <h2 class="rs-head">AI Diagnosis</h2>
             <h1 class="rs-title">RayScan</h1>
             <button  class="demo-btn" onclick="location.href='http://manentiaadvisory.com:8000/demo/app'">Try it</button>
@@ -85,37 +82,7 @@
     </section>
     
 
-    <!-- <section class="rs-contact">
-        <h1>Contact Us</h1>
-        <div class="user-form">
-            
-                <form action="" name="user-form">
-                    
-                    <input type="text" name="name" placeholder="Name*" required><br>
-                    
-                    <input type="email" name="email" placeholder="Email*" required><br>
-                    
-                    <input type="text" name="phone" placeholder="Phone Number*" required><br>
-                    
-                    <select name="us" aria-placeholder="How did you hear about us?">
-                        <option id="dropdown" value="" disabled selected>How did you hear about us?</option>
-                        <option >Social Media</option>
-                        <option >Friends</option>
-                        <option >Newspaper</option>
-                        <option >Blog or Publication</option>
-                        <option >Other</option>
-                    </select>
-                    
-                    <textarea name="message" form="user-form" rows="10" cols="100" placeholder="Type your message here" required></textarea>
-                    <button>Submit</button>
-                </form>
-            
-            
-        </div>
-        <div class="rs-info">
-
-        </div>
-    </section> -->
+    
     <section class="rs-form-container">
         <div class="wrapper" style="z-index: 2;">
             <div class="rs-form">
@@ -215,17 +182,7 @@
         form_input(x)
         x.addListener(form_input)
         
-        // function myFunction(x) {
-        // if (x.matches) { // If media query matches
-        //     document.body.style.backgroundColor = "yellow";
-        // } else {
-        //     document.body.style.backgroundColor = "pink";
-        // }
-        // }
-
-        // var x = window.matchMedia("(max-width: 700px)")
-        // myFunction(x) // Call listener function at run time
-        // x.addListener(myFunction)
+       
     </script>
 
 
@@ -287,23 +244,6 @@
         
       });
     </script>
-    <!-- <script>
-    const nav_button = document.getElementById('nav-btn');
-    window.onscroll = () => {
-        if (window.scrollY > 2) {
-            nav_button.classList.add('btn-active');
-            nav_button.classList.remove('demo-btn');
-            
-             
-        } else {
-            nav_button.classList.remove('btn-active');
-            nav_button.classList.add('demo-btn');
-            
-           
-        }
-    }
-     
-     
-    </script> -->
+   
 </body>
 </html>
