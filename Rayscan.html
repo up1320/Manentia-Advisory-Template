@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>RayScan</title>
 </head>
-<body>
+<body onload="loader()">
+    <div class="preloader">
+
+    </div>
     <div class="container rs-bg-img">
         <header class="rs-nav">
         <!-- <header class="rayscan-nav"> -->
@@ -243,6 +246,14 @@
         
         
       });
+    </script>
+    <script>
+        var preloader = document.querySelector(".preloader")
+        function loader(){
+            
+            preloader.style.display='none';
+        }
+        
     </script>
    
 </body>

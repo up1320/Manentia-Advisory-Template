@@ -18,7 +18,10 @@
     <script src="https://kit.fontawesome.com/1c3eab352a.js" crossorigin="anonymous"></script>
     
 </head>
-<body>
+<body onload="loader()"> 
+    <div class="preloader">
+
+    </div>
 
     <!--Navbar-->
     <div class="container">
@@ -440,6 +443,14 @@
 
     }
 })
+</script>
+<script>
+    var preloader = document.querySelector(".preloader")
+    function loader(){
+        
+        preloader.style.display='none';
+    }
+    
 </script>
 </body>
 </html>

@@ -9,7 +9,10 @@
      <script src="https://kit.fontawesome.com/1c3eab352a.js" crossorigin="anonymous"></script>
     <title>X-Ray And CT-Scan Diagnosis</title>
 </head>
-<body>
+<body onload="loader()">
+    <div class="preloader">
+
+    </div>
     <div class="upload-container">
         <header class="rs-upload rs-upload-header" >
             <h2> <a class='nav-links' href="https://app.manentiaadvisory.com/" ><img src="./views/Symbol.png" alt="" style="font-weight: normal;">Manentia Advisory </a></h2>
@@ -214,12 +217,10 @@
                 event.preventDefault();
                 ct_span.innerHTML="Diagonising";
                 
-                // ct_span.innerHTML="Diagonise";
+                
                 
             });
-            // setTimeout(()=>{
-            //     location.href="https://app.manentiaadvisory.com/";
-            // },1000);
+            
         }
         onclick()
         
@@ -233,9 +234,7 @@
                     x_span.textContent="Diagonising";
                 
             });
-            // setTimeout(()=>{
-            //     location.href="https://app.manentiaadvisory.com/";
-            // },1000);
+            
         }
         onclick();
         
@@ -251,14 +250,7 @@
             ix_btn.classList.toggle('fa');
             ix_btn.classList.toggle('fa-spinner');
             ix_btn.classList.toggle('fa-spin');
-            // setTimeout(() =>{
-            // ix_btn.classList.toggle('fa');
-            // ix_btn.classList.toggle('fa-spinner');
-            // ix_btn.classList.toggle('fa-spin');
-            // },30000);
-            // setTimeout(()=>{
-            //     location.href="https://app.manentiaadvisory.com/";
-            // },1000);
+           
         })
         
         } 
@@ -274,14 +266,7 @@
             ct_i_btn.classList.add('fa');
             ct_i_btn.classList.add('fa-spinner');
             ct_i_btn.classList.add('fa-spin');
-            // setTimeout(() =>{
-            // ct_i_btn.classList.remove('fa');
-            // ct_i_btn.classList.remove('fa-spinner');
-            // ct_i_btn.classList.remove('fa-spin');
-            // },30000);
-            // setTimeout(()=>{
-            //     window.location.href="https://app.manentiaadvisory.com/";
-            // },1000);
+            
         })
         
         } 
@@ -300,6 +285,14 @@
         });
         
         }
+    </script>
+    <script>
+        var preloader = document.querySelector(".preloader")
+        function loader(){
+            
+            preloader.style.display='none';
+        }
+        
     </script>
     
 </body>

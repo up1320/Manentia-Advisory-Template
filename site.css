@@ -20,6 +20,14 @@ html{
     font-weight: normal;
 }
 
+div.preloader{
+    height: 100vh;
+    z-index: 99999;
+    background-color: #222222;
+    background-image: url(./views/preloader.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+}
 /* Landing Page */
 
 header nav li{
@@ -2013,6 +2021,13 @@ input,select,textarea{
     .rs-upload{
         padding: 10px 30px;
     }
+    nav{
+        margin-top: -15px;
+    }
+    .rs-upload-header{
+        height: 120px;
+        padding-top: 5px;
+    }
     
     .rs-demo-btn{
         margin-bottom: 5px;
@@ -2199,14 +2214,23 @@ input,select,textarea{
 .log-in:hover{
     box-shadow: inset 150px 0 0 0 #1e4975;
 }
-
+.rep-nav{
+    position: static;
+    background-color: #222629;
+}
 .report-head{
     margin: auto;
     margin-top: 40px;
-    font-size: 60px;
+    font-size: 40px;
     margin-bottom: 40px;
     text-align: center;
 }
+@media (max-width:800px) {
+    header{
+        padding-top: 5px;
+    }
+}
+/*
 .result-head{
     margin: auto;
     margin-top: 60px;
@@ -2309,10 +2333,7 @@ input,select,textarea{
         font-size: medium;
     }
 }
-.rep-nav{
-    position: static;
-    background-color: #222629;
-}
+
 
 .report-img{
     margin: auto;
@@ -2414,7 +2435,7 @@ input,select,textarea{
     font-weight: normal;
     font-size: larger;
     text-align: left;
-    /* margin-bottom: 15px; */
+    /* margin-bottom: 15px; 
 }
 h1.db-connection{
     font-size: 25px;
@@ -2556,7 +2577,7 @@ h1.db-connection{
         font-size: 25px;
         
     }
-}
+} */
 
 
 

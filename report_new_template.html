@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report</title>
+    <script src="https://kit.fontawesome.com/1c3eab352a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="report.css">
+    <link rel="stylesheet" href="site.css">
+    <link rel="icon" href="./views/RayScan.png">
+</head>
+<body onload="loader()">
+    <div class="preloader">
+
+    </div>
+    <header class="rep-nav">
+        
+            <h2> <a class='nav-links' href="https://app.manentiaadvisory.com/"><img src="./views/Symbol.png" alt="">Manentia Advisory</a> </h2>
+        
+           <nav>
+       
+               <div class="items">
+                <li><a class='nav-links' href="https://app.manentiaadvisory.com/">Home</a></li>
+                </div>
+                <div class="items">
+                    <li><a class='nav-links' href="https://app.manentiaadvisory.com/#product-section">Products</a></li>
+                </div>
+                
+                
+                
+        
+            </nav>
+            <div class="authentication">
+                <button class="log-in">Logout</button>
+                <button class="log-in">Profile</button>
+            </div>
+    </header>
+    <h1 class="report-head">Medical Report</h1>
+    <section class="results">
+        <div class="cred">
+            <div class="doctor-cred">
+                <h1>Consulted By: <span class="doctor-name">Anuj Chandalia</span></h1>
+                <h1>Hospital: <span class="hospital-name">Parul</span> </h1>
+            </div>
+            <div class="patient-cred">
+                <h1>Name: <span class="patient-name">Anuj Chandalia</span> </h1>
+                <h1>Age: <span class="patient-name">22</span></h1>
+                <h1>Weight: <span class="patient-name">64</span></h1>
+                <h1>Gender: <span class="patient-name">Male</span></h1>
+            </div>
+            <div class="disease-container">
+                <div class="disease">
+                    <h1>Disease</h1>
+                    <div class="gauge">
+                        <div class="gauge__body">
+                        <div class="gauge__fill"></div>
+                        <div class="gauge__cover"></div>
+                        </div>
+                    </div>
+
+                </div>
+               
+                
+            </div>
+        </div>
+        <div class="results-img">
+            <div class="report-img">
+                <figure>
+                    <img  src="./views/lungs.jpeg" alt="">
+                    <figcaption style="text-align: center;font-weight: bold; ">Original Image</figcaption>
+                </figure>
+                <figure>
+                    <img src="./views/lungs.jpg" alt="">
+                    <figcaption style="text-align: center;font-weight: bold;">Predicted Image</figcaption>
+                </figure>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium et perferendis soluta nisi quasi autem est! Dolor nesciunt est dolorum.</p>
+            <div class="report-btn">
+                <button>Test Again</button>
+                <button style="background: #ECEAFF;">Print Report</button>
+            </div>
+
+        </div>
+        
+        
+    </section>
+    
+    <div class="report-date">
+        <h2>Report generated on DD/MM/YYYY</h2>
+        <p>This is only protype version, please don't consider it as Final Product.</p>
+        <p id="disclaimer" style="font-weight: normal;color: #888888;">This report is a software generated interpretation and Manentia Advisory Inc. will not be responsible in any form any caused to life due to use of this software</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer style="width: 100%;">
+        <p><img src="./views/Symbol.png" style="height: 25px;width:25px;vertical-align: middle;" alt="">Manentia Advisory</p>
+        <p><i class="far fa-copyright" style="color: white;"></i> 2020 All rights reserved</p>
+        <ul>
+            <li><a href=""><i class="fab fa-facebook-square fa-2x"></i></a></li>
+            <li><a href=""><i class="fab fa-instagram fa-2x"></i></a></li>
+            <li><a href=""><i class="fab fa-linkedin fa-2x"></i></a></li>
+        </ul>
+    </footer> 
+
+
+    <script>
+        const gaugeElement = document.querySelector(".gauge");
+        
+        function setGaugeValue(gauge, value) {
+        if (value < 0 || value > 1) {
+            return;
+        }
+
+        gauge.querySelector(".gauge__fill").style.transform = `rotate(${
+            value / 2
+        }turn)`;
+        gauge.querySelector(".gauge__cover").textContent = `${Math.round(
+            value * 100
+        )}%`;
+        }
+
+        setGaugeValue(gaugeElement, 0.95);
+    </script>
+    <script>
+        var preloader = document.querySelector(".preloader")
+        function loader(){
+            
+            preloader.style.display='none';
+        }
+        
+    </script>
+</body>
+</html>

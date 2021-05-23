@@ -1,0 +1,293 @@
+body{
+    background: #F0F0F3;
+}
+div.preloader{
+    height: 100vh;
+    z-index: 99999;
+    background-color: #222222;
+    background-image: url(./views/preloader.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.results{
+    padding: 30px 25px;
+}
+.results{
+    transform: translateY(-5%);
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+.results-img{
+    flex-basis: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.results-img p{
+    margin: auto;
+    /* margin-top: 150px; */
+    border-radius: 16px;
+    margin-top: 20px;
+    box-shadow: -10px -10px 30px #FFFFFF, 10px 10px 30px rgba(174, 174, 192, 0.4);
+}
+.report-img{
+    display: flex;
+   
+    
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 16px;
+
+    box-shadow: -10px -10px 30px #FFFFFF, 10px 10px 30px rgba(174, 174, 192, 0.4);
+}
+.report-img img{
+    
+    max-width: 400px;
+    max-height: 400px;
+    margin: 20px;
+
+}
+
+
+.cred {
+    flex-basis: 40%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.cred h1{
+    font-size: 25px ;
+    font-weight: normal;
+    margin: 15px;
+}
+.cred span{
+    font-weight: bold;
+}
+
+.doctor-cred{
+    
+    max-height: 150px;
+    margin: 35px;
+    padding: 20px;
+    width: 90%;
+    flex-basis:100% ;
+    box-shadow: -10px -10px 30px #FFFFFF, 10px 10px 30px rgba(174, 174, 192, 0.4);
+    border-radius: 16px;
+}
+.patient-cred{
+    
+    margin: 35px;
+    max-height: 230px;
+    width: 90%;
+    padding: 15px;
+    flex-basis:100% ;
+    box-shadow: -10px -10px 30px #FFFFFF, 10px 10px 30px rgba(174, 174, 192, 0.4);
+    border-radius: 16px;
+}
+.disease-container{
+    height: 150px;
+    margin:35px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 90%;
+    padding: 0px;
+    flex-basis:100% ;
+    box-shadow: -10px -10px 30px #FFFFFF, 10px 10px 30px rgba(174, 174, 192, 0.4);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-wrap: wrap;
+    
+}
+.disease-container h1{
+    position: relative;
+    font-weight: bold;
+    top: 25%;
+}
+.disease{
+    padding: 20px;
+    flex-basis: 100%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.gauge {
+    width: 100%;
+    max-width: 200px;
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+    color: #000;
+  }
+  
+  .gauge__body {
+    width: 100%;
+    height: 0;
+    padding-bottom: 50%;
+    background: #b4c0be;
+    position: relative;
+    border-top-left-radius: 100% 200%;
+    border-top-right-radius: 100% 200%;
+    overflow: hidden;
+  }
+  
+  .gauge__fill {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: inherit;
+    height: 100%;
+    background: red;
+    transform-origin: center top;
+    transform: rotate(0.25turn);
+    transition: transform 0.2s ease-out;
+  }
+  
+  .gauge__cover {
+    width: 75%;
+    height: 150%;
+    background: #F0F0F3;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+  
+    /* Text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25%;
+    box-sizing: border-box;
+  }
+  .report-btn{
+      margin: auto;
+  }
+  .report-btn button{
+    width: 150px;
+    height: 75px;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 20px;
+    border: none;
+    background: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 7px 7px 8px #888888;
+    cursor: pointer;
+}
+.report-date h2{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+   
+}
+.report-date p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+  @media (max-width:1200px) {
+      .results{
+          flex-wrap: wrap;
+      }
+  }
+  @media (max-width:800px) {
+    
+    .doctor-cred{
+        width: 120%;
+    }
+    .patient-cred{
+        width: 120%;
+    }
+    .disease-container{
+        width: 120%;
+    }
+    .results-img{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .results{
+        flex-wrap: wrap;
+    }
+    .report-img{
+        flex-wrap: wrap;
+    }
+    .report-img img{
+        height: 400px;
+        width: 400px;
+    }
+}
+  @media (max-width:600px) {
+    .cred h1{
+        font-size: 20px;
+    }
+    .doctor-cred{
+        width: 120%;
+    }
+    .patient-cred{
+        width: 120%;
+    }
+    .disease-container{
+        width: 120%;
+    }
+    .report-img img{
+        width: 350px;
+        height: 350px;
+    }
+    .results-img p{
+        font-size: medium;
+        margin-top: 20px;
+    }
+}
+
+  @media (max-width:400px) {
+      .cred h1{
+          font-size: 15px;
+      }
+      .doctor-cred{
+          width: 120%;
+      }
+      .patient-cred{
+          width: 120%;
+      }
+      .disease-container{
+          width: 120%;
+      }
+      .report-img img{
+          width: 300px;
+          height: 300px;
+      }
+      .results-img p{
+          font-size: medium;
+          margin-top: 20px;
+      }
+      .report-btn button{
+        width: 120px;
+        font-size: 15px;
+        
+    } 
+    #disclaimer{
+        font-size: small;
+    } 
+  }
+  
