@@ -23,7 +23,7 @@ html{
 div.preloader{
     height: 100vh;
     z-index: 99999;
-    background-color: #222222;
+    background-color: #000;
     background-image: url(./views/preloader.gif);
     background-repeat: no-repeat;
     background-position: center;

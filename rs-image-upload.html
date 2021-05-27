@@ -107,7 +107,7 @@
                                     <button class="upload-form-btn img-up-btn" type="submit" id="x-ray-btn" style="background: #3A0CA3; color: rgb(255, 255, 255);">Select Image</button>
                                 </td>
                                 <td>
-                                    <button class="upload-form-btn" class="diag-btn" id="x-ray-daig-btn" style="border-color:#3A0CA3"><span id="x-ray-diag">Diagonise  </span> <i id="x-ray-upload-i" style="color: black;transform: scale(2);"></i> </button>
+                                    <button class="upload-form-btn" class="diag-btn" onload="diagnose()" id="x-ray-daig-btn" style="border-color:#3A0CA3"><span id="x-ray-diag">Diagonise  </span> <i id="x-ray-upload-i" style="color: black;transform: scale(2);"></i> </button>
                                 </td>
                             </tr>
                         </table>
@@ -161,7 +161,7 @@
                                 </td>
                                 <td>
                                     
-                                    <button class="upload-form-btn" class="diag-btn" id="ct-daig-btn" style="border-color:#fc0fc0; color: #fc0fc0;"> <span id="ct-daig">Diagonise  </span> <i id="ct-upload-i" style="color: black;transform: scale(2);"></i></button>
+                                    <button class="upload-form-btn" onload="diagnose()" class="diag-btn" id="ct-daig-btn" style="border-color:#fc0fc0; color: #fc0fc0;"> <span id="ct-daig">Diagonise  </span> <i id="ct-upload-i" style="color: black;transform: scale(2);"></i></button>
                                 </td>
                             </tr>
                         </table>
@@ -209,69 +209,7 @@
         }
     }
     </script>
-    <script>
-        var ct_diag_btn = document.getElementById("ct-daig-btn");
-        var ct_span = document.getElementById("ct-daig");
-        var onclick = ()=>{
-            ct_diag_btn.addEventListener("click",(event)=>{
-                event.preventDefault();
-                ct_span.innerHTML="Diagonising";
-                
-                
-                
-            });
-            
-        }
-        onclick()
-        
-    </script>
-    <script>
-        var x_diag_btn = document.getElementById("x-ray-daig-btn");
-        var x_span = document.getElementById("x-ray-diag");
-        var onclick = ()=>{
-            x_diag_btn.addEventListener("click",(event)=>{
-                event.preventDefault();
-                    x_span.textContent="Diagonising";
-                
-            });
-            
-        }
-        onclick();
-        
-    </script>
-    
-    <script>
-        var x_btn = document.getElementById("x-ray-daig-btn");
-        var ix_btn = document.getElementById("x-ray-upload-i");
-        
-        var onclick = ()=>{
-        x_btn.addEventListener('click',(event)=>{
-            event.preventDefault();
-            ix_btn.classList.toggle('fa');
-            ix_btn.classList.toggle('fa-spinner');
-            ix_btn.classList.toggle('fa-spin');
-           
-        })
-        
-        } 
-        onclick()       
-    </script>
-     <script>
-        var ct_btn = document.getElementById("ct-daig-btn");
-        var ct_i_btn = document.getElementById("ct-upload-i");
-        
-        var onclick = ()=>{
-        ct_btn.addEventListener('click',(event)=>{
-            event.preventDefault();
-            ct_i_btn.classList.add('fa');
-            ct_i_btn.classList.add('fa-spinner');
-            ct_i_btn.classList.add('fa-spin');
-            
-        })
-        
-        } 
-        onclick()       
-    </script>
+   
     
     <script>
         var nav = document.getElementsByClassName("nav-links")
@@ -291,6 +229,9 @@
         function loader(){
             
             preloader.style.display='none';
+        }
+        function diagnose(){
+            preloader.style.display='block';
         }
         
     </script>

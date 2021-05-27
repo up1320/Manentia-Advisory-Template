@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="report.css">
     <link rel="stylesheet" href="site.css">
     <link rel="icon" href="./views/RayScan.png">
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+
 </head>
 <body onload="loader()">
     <div class="preloader">
@@ -52,13 +54,13 @@
             <div class="disease-container">
                 <div class="disease">
                     <h1>Disease</h1>
-                    <div class="gauge">
-                        <div class="gauge__body">
-                        <div class="gauge__fill"></div>
-                        <div class="gauge__cover"></div>
+                    <div class="confidence">
+                        <div class="progress blue"> <span class="progress-left"> <span class="progress-bar"></span> </span> <span class="progress-right"> <span class="progress-bar"></span> </span>
+                            <div class="progress-value">80%</div>
                         </div>
                     </div>
-
+                    
+                    
                 </div>
                
                 
@@ -134,11 +136,13 @@
     </script>
     <script>
         var preloader = document.querySelector(".preloader")
-        function loader(){
+         function loader(){
             
             preloader.style.display='none';
         }
         
     </script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 </body>
 </html>
