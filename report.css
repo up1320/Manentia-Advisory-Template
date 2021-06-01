@@ -44,7 +44,7 @@ div.preloader{
    
     
     flex-direction: row;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     
     border-radius: 16px;
@@ -387,5 +387,25 @@ div.preloader{
     .confidence{
         transform: scale(0.7);
     }
+  }
+  .ratino-img{
+      min-height: 400px;
+      
+  }
+  .dd{
+      margin-bottom: -5px;
+  }
+  figure select{
+      margin-top: -2px;
+      margin: auto;
+      width: 80%;
+      align-self: center;
+  }
+  figure.generated_dr{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
   }
   
