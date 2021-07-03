@@ -6,50 +6,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="site.css">
      <link rel="icon" href="./views/RayScan.png">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="site2.css">
      <script src="https://kit.fontawesome.com/1c3eab352a.js" crossorigin="anonymous"></script>
     <title>X-Ray And CT-Scan Diagnosis</title>
+    <style>
+        .radio-input {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .ml-demo img{
+            height: 400px !important;
+            width: 400px !important;
+            margin: 0px !important;
+        }
+        input{
+            margin: 20px !important;
+            width: 300px !important;
+            height: 75px !important;
+            background: #F5F5FA !important;
+            
+            border: none !important;
+/* Shadow 3 */
+
+box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), 5px 5px 10px rgba(170, 170, 204, 0.25), 10px 10px 20px rgba(170, 170, 204, 0.5), -10px -10px 20px #FFFFFF !important;
+border-radius: 20px !important;
+        }
+        .radio{
+            height: 45px !important;
+            margin: 0px !important;
+            
+            width: 20px !important;
+            vertical-align: middle !important;
+        }
+        label{
+            margin: 45px;
+            font-size: 35px;
+        }
+        
+
+        #yolo_i{
+            display: none;
+        }
+        
+        #ct{
+            display: none;
+        }
+       
+    </style>
 </head>
 <body onload="loader()">
     <div class="preloader">
 
     </div>
-    <div class="upload-container">
-        <header class="rs-upload rs-upload-header" >
-            <h2> <a class='nav-links' href="https://app.manentiaadvisory.com/" ><img src="./views/Symbol.png" alt="" style="font-weight: normal;">Manentia Advisory </a></h2>
-            
-            <nav>
-        
-                <div class="items">
-                 <li><a class='nav-links' href="https://app.manentiaadvisory.com/" style="font-weight: normal;">Home</a></li>
-                 </div>
-                 <div class="items ">
-                     <li><a class='nav-links' href="https://app.manentiaadvisory.com/#product-section" style="font-weight: normal;">Products</a></li>
-                 </div>
-                 <div class="items ">
-                     <li  ><a class='nav-links' href="#ml-demo-img" style="font-weight: normal;">Features</a></li>
-                 </div>
-                 
-                 
-         
-            </nav>
-            <div class="authentication">
-                <button class="log-in">Log-out</button>
-                <button class="log-in">Profile</button>
-            </div>
-            
-         </header>
-         
-            
-           
-    
-        <section class="rs-upload-sec" >
-            <h2 class="upload-head" style="color: whitesmoke;font-weight: normal;">AI Diagnosis Image Upload</h2>
-            <p style="font-weight: normal;">Currently this prototype is diagnosing COVID 19, Tuberculosis, Edema and Pneumonia from an <br>X - Ray and COVID 19 from CT Scan.</p><hr>
-           
-        </section>
+    <div >
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         
 
+            
+            <div class="container-fluid mt-4 mx-4">
+                <a class="navbar-brand" href="#"> <img class="brand-logo" src="./views/Symbol.png" alt=""></a>
+                
+                    <div class="d-flex flex-forward-reverse">
+                        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+                            
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#about-section">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#product-section">Products</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#service-section">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active"  id="contactBtn">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active"><button class="log-in" style="font-size:15px ;">Logout</button></a>
+                                    
+                                </li>
+                                <li class="nav-item">
+                                    
+                                    <a class="nav-link active"  ><button class="log-in" style="font-size:15px ;">Profile</button></a>
+                                </li>
+                                </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </nav>
     </div>
+    <section class="rs-upload-sec upload-container" >
+        <h2 class="upload-head" style="color: whitesmoke;font-weight: normal;">AI Diagnosis Image Upload</h2>
+        <p style="font-weight: normal;">Currently this prototype is diagnosing COVID 19, Tuberculosis, Edema and Pneumonia from an <br>X - Ray and COVID 19 from CT Scan.</p><hr>
+       
+    </section>
    
     <section class="ml-demo-container" id="ml-demo-img">
         <div  class="ml-demo-p">
@@ -64,117 +121,65 @@
         
     </section> 
     
-    <section class="upload-box">
+    <section class="upload-box" style="flex-wrap: wrap;">
        
-            
-            
-                <div class="upload-info">
-                    <h1>Test X-ray Images</h1>
-                    <form action="" >
-                        <table >
-                            <th colspan="2" style="font-size: 30px;color: cornflowerblue;">Patient Details</th>
-                            <tr style="margin-top: 20px; ">
-                                <td class="label">Name:</td>
-                                <td><input type="text" name="name"></td>
-                            </tr>
+                     <div style="display: flex;justify-content: center;align-items: center;">
+                        <div class="ml-demo" id="grad">
+                            <img src="./views/bw.png" class="not-infected" alt="">
+                            <img src="./views/Gradcam.png" class="infected" alt="">
                             
-                            <tr>
-                                <td class="label"> Age:</td>
-                                <td><input type="text" name="age"></td>
-                            </tr>
-                            <tr>
-                                <td class="label"> Weight:</td>
-                                <td><input type="text" name="weight"></td>
-                            </tr>
-                            <tr>
-                                <td class="label"> Blood Type:</td>
-                                <td><input type="text" name="blood"></td>
-                            </tr>
+                        </div>
+                        <div class="ml-demo" id="ct">
+                            <img src="./views/ct_dect.png" class="not-infected" alt="">
+                            <img src="./views/ct_org.png" class="infected" alt="">
                             
-                            <tr>
-                                <td class="label"> Gender:</td>
-                                <td><select name="" id="">
-                                    <option   disabled selected>Gender</option>
-                                    <option>Male</option>
-                                    <option>Female</option>
-                                    <option>Other</option>
-                                </select></td>
-                            </tr>
+                        </div>
+                        <div class="ml-demo" id="yolo_i">
+                            <img src="./views/yolo_dect.png" class="not-infected" alt="">
+                            <img src="./views/yolo_org.png" class="infected" alt="">
                             
-                            <tr>
-                                <td>
-                                    
-                                    <button class="upload-form-btn img-up-btn" type="submit" id="x-ray-btn" style="background: #3A0CA3; color: rgb(255, 255, 255);">Select Image</button>
-                                </td>
-                                <td>
-                                    <button class="upload-form-btn" class="diag-btn" onload="diagnose()" id="x-ray-daig-btn" style="border-color:#3A0CA3"><span id="x-ray-diag">Diagonise  </span> <i id="x-ray-upload-i" style="color: black;transform: scale(2);"></i> </button>
-                                </td>
-                            </tr>
-                        </table>
-                    </form>
+                        </div>
+                      <div>
+                        <form action="" id="mainForm" onsubmit="return confirmfinish();">
+                            <div style="display: flex;justify-content: space-evenly ;flex-wrap: wrap;margin-top: 20px ;font-weight: bold;">
+                                <label for="gradcam" ><input onclick="clicked()" class="radio" type="radio" name="rs-radio-input" id="gradcam" checked>Gradcam</label>
+                                                              <label for="yolo">
+                                                              <input onclick="clicked()" class="radio" type="radio" name="rs-radio-input" id="yolo">YOLO</label>
+                                                              <label for="ctscan">
+                                                              <input onclick="clicked()" class="radio" type="radio" name="rs-radio-input" id="ctscan">CT-Scan</label>
+                              </div>
+                            <div style="display: flex;justify-content: center;align-items: center;flex-wrap: wrap;">
+                                <input type="text" placeholder="Name">
+                                <input type="text" name="" placeholder="Age">
+                            </div>
+                            <div style="display: flex;justify-content: center;align-items: center;flex-wrap: wrap;">
+                                <input type="text" placeholder="Weight">
+                                <input type="text" name="" placeholder="Blood Group">
+                            </div>
+                            <div style="display: flex;justify-content: center;align-items: center;flex-wrap: wrap;">
+                                <input type="text" placeholder="Gender" >
+                            </div>
+                            <div style="display: flex;justify-content: center;align-items: center;flex-wrap: wrap;">
+                                <button style="background-color: rgba(36, 23, 66, 0.5);box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), 5px 5px 10px rgba(170, 170, 204, 0.25), 10px 10px 20px rgba(170, 170, 204, 0.5), -10px -10px 20px #FFFFFF;
+                                border-radius: 32px;">Upload</button>
+                                <button style="background-color: rgb(36, 23, 66);box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), 5px 5px 10px rgba(170, 170, 204, 0.25), 10px 10px 20px rgba(170, 170, 204, 0.5), -10px -10px 20px #FFFFFF;
+                                border-radius: 32px;">Diagonise</button>
+                            </div>
+                        </form>
+                
+                      </div>  
+                    </div>
                     
-                </div>
+                    <div id="confirmationDiv" style="display:none; border:1px solid black; padding:10px; margin-top:10px; width:500px;">
+                        Are you sure you want to submit the form?<br>
+                        <input type="button" value="Yes" onclick="confirmed = true; document.getElementById('mainForm').submit();">
+                        <input type="button" value="No" onclick="document.getElementById('confirmationDiv').style.display='none'; return false;">
+                    </div>
         
         
             
             
-              
-                <div class="upload-info" style="border-color: #5A189A;box-shadow: 10px 10px 10px #888888;">
-                    <h1 style="background:#fc0fc0 ;color: rgb(255, 255, 255);">Test CT Scan Images</h1>
-                   
-                    <form action="" >
-                        <table >
-                            
-                            <th colspan="2" style="font-size: 30px;color: #f04ac6;">Patient Details</th>
-                            <tr style="margin-top: 20px; ">
-                                <td class="label">Name:</td>
-                                <td><input type="text" name="name"></td>
-                            </tr>
-                            
-                            <tr>
-                                <td class="label"> Age:</td>
-                                <td><input type="text" name="age"></td>
-                            </tr>
-                            <tr>
-                                <td class="label"> Weight:</td>
-                                <td><input type="text" name="weight"></td>
-                            </tr>
-                            <tr>
-                                <td class="label"> Blood Type:</td>
-                                <td><input type="text" name="blood"></td>
-                            </tr>
-                            
-                            <tr>
-                                <td class="label"> Gender:</td>
-                                <td><select name="" id="">
-                                    <option   disabled selected>Gender</option>
-                                    <option>Male</option>
-                                    <option>Female</option>
-                                    <option>Other</option>
-                                </select></td>
-                            </tr>
-                            
-                            <tr>
-                                <td>
-                                   <button class="upload-form-btn img-up-btn" id="ct-btn" style="background:#fc0fc0 ;color: whitesmoke;">Select Image</button>
-                                   
-                                </td>
-                                <td>
-                                    
-                                    <button class="upload-form-btn" onload="diagnose()" class="diag-btn" id="ct-daig-btn" style="border-color:#fc0fc0; color: #fc0fc0;"> <span id="ct-daig">Diagonise  </span> <i id="ct-upload-i" style="color: black;transform: scale(2);"></i></button>
-                                </td>
-                            </tr>
-                        </table>
-                    </form>
-                    
-                </div>
-        
 
-        
-        <!-- <div class="img-upload-box">
-            <div class="img-upload"></div>
-            <div class="upload-info"></div>
-        </div> -->
     </section>
     
     <footer>
@@ -186,8 +191,45 @@
             <li><a href=""><i class="fab fa-linkedin fa-2x"></i></a></li>
         </ul>
     </footer>
+    <script type="text/javascript">     
+        var confirmed = false;
+    
+        function confirmfinish(){
+            if(!confirmed){
+                document.getElementById('confirmationDiv').style.display='block';
+                return false;
+            } else {
+                return true;
+            }
+        }
+    </script>
 
+    <script>
+        var grad_r = document.getElementById("gradcam")
+        var ct_r = document.getElementById("ctscan")
+        var grad_i = document.getElementById("grad")
+        var ct_i =document.getElementById("ct")
+        var yolo_i = document.getElementById("yolo_i")
+        var yolo_r = document.getElementById("yolo")
+        function clicked(){
+            if(grad_r.checked){
+                ct_i.style.display = "none";
+                grad_i.style.display ="block";
+                yolo_i.style.display="none"
+            }else if(ct_r.checked){
+                grad_i.style.display ="none";
+                yolo_i.style.display="none";
+                ct_i.style.display = "block";
+            }else if(yolo_r.checked){
+                grad_i.style.display ="none";
+                yolo_i.style.display="block";
+                ct_i.style.display = "none";
+            }
 
+        }
+        
+       
+    </script>
 
 
     <script>
@@ -235,6 +277,8 @@
         }
         
     </script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+     <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
     
 </body>
 </html>

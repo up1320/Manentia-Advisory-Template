@@ -1,0 +1,640 @@
+
+        .nav-flex-container{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        a.nav-link.active{
+            font-size: larger !important;
+            margin-left: 20px !important;
+            color: white !important;
+            font-weight: normal ;
+        }
+        .brand-logo{
+            height: 50px;
+            width: 50px;
+        }
+        .product-section{
+            height: auto;
+        }
+        .product-container{
+            height: 90%;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .rayscan{
+            height: 700px;
+            width: 600px;
+            background: linear-gradient(
+            270deg
+            ,#a317b5 0%,#d125d3 100%);
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+       
+        .rayscan:hover{
+            cursor: pointer;
+        }
+        .ratinoscan:hover{
+            cursor: pointer;
+        }
+        .rayscan img{
+            height: 200px;
+            width: 200px;
+            margin-bottom: 50px;
+        }
+        .rayscan p{
+            margin-top: 40px;
+            width: 650px;
+            text-align: center;
+        }
+        .ratinoscan{
+            height: 700px;
+            width: 600px;
+            background-color: white;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .ratinoscan img{
+            height: 200px;
+            width: 200px;
+            margin-bottom: 50px;
+            color: white;
+        }
+        .ratino-img{
+            width: 250px;
+        }
+        .ratinoscan p{
+            margin-top: 40px;
+            width: 650px;
+            text-align: center;
+        }
+        .bg-image-overlay::after{
+            background-image: linear-gradient(
+                    to top,
+                    black,
+                    rgba(0, 0, 0, 0.661),
+                    rgb(255,0,0,0)
+                );
+
+        }
+        .rayscan:hover .ra-demo-btn{
+            background: white;
+            color: black;
+        }
+        .ra-demo-btn{
+            width:150px;
+            background: transparent;
+            font-weight: bold;
+            color: white;
+            height: 50px;
+            outline: none;
+            border-radius: 50px;
+            border:3px solid white ;
+            transition: all 0.3s ease-in;
+        }
+        .ratinoscan:hover .rs-demo-btn{
+            background: black;
+            color: white;
+        }
+        .rs-demo-btn{
+            width:150px;
+            height: 50px;
+            font-weight: bold;
+            background: transparent;
+            outline: none;
+            border: 3px solid black ;
+            color: black;
+            border-radius: 50px;
+            transition: all 0.3s ease-in;
+        }
+
+@media (max-width:1200px) {
+    .rayscan,.ratinoscan{
+        width: 500px;
+    }
+    .ratinoscan h4{
+        font-size: large;
+    }
+    .rayscan h4{
+        font-size: large;
+    }
+    .ratinoscan p{
+        width: 450px;
+    }
+    .rayscan p{
+        width: 450px;
+    }
+}
+
+@media (max-width:1000px) {
+    .rayscan,.ratinoscan{
+        width: 400px;
+    }
+    .ratinoscan p{
+        font-size: medium;
+        width: 400px;
+        
+    }
+    .rayscan p{
+        font-size: medium;
+        width: 400px;
+    }
+    
+}
+@media (max-width:800px) {
+    .rayscan,.ratinoscan{
+        width: 300px;
+    }
+    .ratinoscan h4{
+        font-size: small;
+    }
+    .rayscan h4{
+        font-size: small;
+    }
+    .ratinoscan p{
+        font-size: medium;
+        width: 200px;
+        
+        
+    }
+    .rayscan p{
+        font-size: medium;
+        width: 200px;
+    }
+    
+}
+@media (max-width:600px) {
+    .product-section{
+        height: 100%;
+
+    }
+    .product-container{
+        flex-direction: column;
+        
+    }
+    .product-container h1{
+        display: none;
+    }
+    .rayscan,.ratinoscan{
+        width: 500px;
+        height: 800px;
+    }
+    .ratinoscan h4{
+        font-size: large;
+    }
+    .rayscan h4{
+        font-size: large;
+    }
+    .ratinoscan p{
+        font-size: medium;
+        width: 400px;
+        
+        
+    }
+    .rayscan p{
+        font-size: medium;
+        width: 400px;
+    }
+}
+@media (max-width:400px) {
+    .rayscan,.ratinoscan{
+        width: 350px;
+        height: 800px;
+    }
+    .ratinoscan h4{
+        font-size: small;
+    }
+    .rayscan h4{
+        font-size: small;
+    }
+    .ratinoscan p{
+        font-size: medium;
+        width: 300px;
+        
+        
+    }
+    .rayscan p{
+        font-size: medium;
+        width: 300px;
+    }
+}
+
+
+.bg-modal{
+    display: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    top:0;
+    height:100%;
+    width:100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.5);
+    
+}
+
+.bg-modal-content{
+    /* background: linear-gradient(
+        270deg
+        ,#a317b5 0%,#d125d3 100%); */
+    margin: 5% auto;
+    height: 80%;
+    padding: 20px;
+    width: 60%;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+    animation-name: modal-open;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+.bg-modal a {
+    text-decoration: none !important;
+    color: #fff !important;
+
+}
+.bg-modal-body h1 a{
+    font-size: 2rem;
+}
+.bg-modal-header{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    padding-left:10% ;
+    padding-right: 10%;
+}
+.bg-modal-content h2{
+    color: white;
+}
+.bg-modal-body{
+    display: flex;
+    width: 80%;
+    height: 60%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.modal-social{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.modal-social i{
+    margin: 20px;
+}
+.x-close{
+    color:#ccc;
+    
+    font-size: 30px;
+}
+.x-close:hover,.x-close:focus{
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+#mail-email{
+    font-size: 40px;
+}
+@keyframes modal-open {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.mail{
+    width:500px;
+    height:400px;
+    background:#ff8789;
+    position:relative;
+    transform-style:preserve-3d;
+    cursor:pointer;
+  }
+  .mail:before{
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    border-left:250px solid transparent;
+    border-right:250px solid #ff393c;
+    border-top:200px solid transparent;
+    border-bottom:200px solid #ff393c;
+   z-index:5;
+  }
+  .mail:after{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    border-left:250px solid #ff5355;
+    border-right:250px solid transparent;
+    border-top:200px solid transparent;
+    border-bottom:200px solid #ff5355;
+    z-index:4;
+  }
+  
+  
+  .cover:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    border-left:250px solid transparent;
+    border-right:250px solid transparent;
+    border-top:200px solid #ff8789;
+    border-bottom:200px solid transparent;
+    z-index:6;
+    transform-origin:top;
+    transform:rotateX(0deg);
+    transition:all 1s 1s ease;
+  }
+  .letter{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index:3;
+    top:0;
+    left:15px;
+    width:90%;
+    height:90%;
+    background:#dedede;
+    border-radius:20px;
+    transition:all 0.5s ease-in;
+    
+  }
+  .mail:hover .cover:before{
+    transform:rotateX(180deg);
+   transition:all 1s ease;
+  }
+  .mail:hover .letter{
+    top:-170px;
+    transition: all 1s 1s ease;
+  }
+  #mail-email{
+    font-size: 30px !important;
+    color: #fff !important;
+    font-weight: bold !important;
+}
+  
+  @media (max-width:400px) {
+    .mail{
+        width:300px;
+        height:200px;
+        background:#ff8789;
+        position:relative;
+        transform-style:preserve-3d;
+        cursor:pointer;
+      }
+      .mail:before{
+        content:"";
+        position:absolute;
+        top:0;
+        right:0;
+        border-left:150px solid transparent;
+        border-right:150px solid #ff393c;
+        border-top:100px solid transparent;
+        border-bottom:100px solid #ff393c;
+       z-index:5;
+      }
+      .mail:after{
+        content:"";
+        position:absolute;
+        left:0;
+        top:0;
+        border-left:150px solid #ff5355;
+        border-right:150px solid transparent;
+        border-top:100px solid transparent;
+        border-bottom:100px solid #ff5355;
+        z-index:4;
+      }
+      
+      
+      .cover:before{
+        content:"";
+        position:absolute;
+        top:0;
+        left:0;
+        border-left:150px solid transparent;
+        border-right:150px solid transparent;
+        border-top:100px solid #ff8789;
+        border-bottom:100px solid transparent;
+        z-index:6;
+        transform-origin:top;
+        transform:rotateX(0deg);
+        transition:all 1s 1s ease;
+      }
+      #mail-email{
+        font-size: 15px !important;
+        color: #fff;
+    }
+    .bg-modal-body img{
+        height: 100px;
+        width: 100px;
+
+    }
+      
+  } 
+      
+ 
+.ra-modal{
+    display: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    top:0;
+    height:100%;
+    width:100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.8);
+    animation-name: ra-modal-open;
+    animation-duration: .8s;
+    animation-timing-function: ease-in;
+}
+@keyframes ra-modal-open{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.ra-modal-header h1{
+    color: black;
+}
+.ra-modal-content{
+    width: 70%;
+    height: 80%;
+    margin: 5% auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.ra-modal-body{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(
+        270deg
+        ,#a317b5 0%,#d125d3 100%);
+    
+}
+.ra-modal-body img{
+    height: 100%;
+    width: 100%;
+   
+    transition: all 0.5s ease-in;
+}
+.ra-modal-body img:hover{
+    opacity: 1;
+}
+.ra-modal-body p{
+    color: white;
+    height: 300px;
+    width: 450px;
+    font-size: larger;
+    line-height: 1.45;
+}
+.ra-modal-body button:hover{
+    background: white;
+    color: black;
+}
+
+.rs-modal{
+    display: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    top:0;
+    height:100%;
+    width:100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.8);
+    animation-name: ra-modal-open;
+    animation-duration: .8s;
+    animation-timing-function: ease-in;
+}
+@keyframes ra-modal-open{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.rs-modal-header h1{
+    color: white;
+}
+.rs-modal-content{
+    width: 70%;
+    height: 80%;
+    margin: 5% auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.rs-modal-body{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(
+        270deg
+        ,#a317b5 0%,#d125d3 100%);
+    
+}
+.rs-modal-body img{
+    height: 100%;
+    width: 100%;
+   
+    transition: all 0.5s ease-in;
+}
+.rs-modal-body img:hover{
+    opacity: 1;
+}
+.rs-modal-body p{
+    color: white;
+    height: 300px;
+    width: 450px;
+    font-size: larger;
+    line-height: 1.45;
+}
+.rs-modal-body button:hover{
+    background: white;
+    color: black;
+}
+.demo-sec{
+    background: linear-gradient(
+        270deg
+        ,#a317b5 0%,#d125d3 100%);
+    color: white;
+}
+.try-demo-btn{
+    position: relative;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    border: 3px solid #fff;
+    transition: all 0.5s ease-in;
+}
+.try-demo-btn:hover{
+    background: white;
+    color: black;
+}
+#button {
+    display: inline-block;
+    background-color:#a317b5 ;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #button:active {
+    background-color: #555;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }

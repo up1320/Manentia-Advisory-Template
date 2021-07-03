@@ -1,0 +1,150 @@
+.intro{
+    height: 600px;
+    background-image: url(./views/about_us_wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.intro h1{
+    font-size: 50px;
+}
+.section-title{
+    font-size: 45px;
+}
+.achievements{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.achievements img{
+    height: 400px;
+    width: 500px;
+    
+    margin: 50px;
+    background-color: #888888;
+}
+.achievements-ls li{
+    list-style: disc;
+    line-height: 2;
+    font-size: 20px;
+}
+.achievements div{
+    width: 700px;
+}
+.certificates{
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+}
+.card{
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card img{
+    height: 500px;
+    width: 500px;
+    
+}
+.card h2{
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.research-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.research{
+    width: 500px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    border: 2px solid black;
+    border-top: none;
+    margin: 40px;
+    
+}
+.research img{
+    width: inherit;
+    height: 300px;
+}
+.research h1{
+    font-weight: normal;
+    width: 450px;
+    margin: 20px;
+    text-align: center;
+}
+.res-btn{
+    width: 150px;
+    height: 50px;
+    margin: 20px;
+}
+
+@media (max-width:800px) {
+    
+    
+    
+    .certificates{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:500px) {
+    .achievements img{
+        width: 350px;
+        height: 400px;
+        margin: 10px;
+    }
+    .achievements-ls li{
+        font-size: 15px;
+    }
+    .section-title{
+        font-size: 30px;
+    }
+    .card{
+        padding: 20px;
+    }
+    .card h2{
+        font-size: 20px;
+    }
+    .card img{
+        width: 350px;
+        height: 400px;
+    }
+    .research{
+        width:350px;
+    }
+    .research h1{
+        font-size: 15px;
+    }
+}
+@media (max-width:400px) {
+    section{
+        padding: 10px;
+    }
+    .achievements img{
+        width: 275px;
+        height: 300px;
+        margin: 10px;
+    }
+    .card img{
+        width: 300px;
+        height: 300px;
+        
+    }
+    .research{
+        width:300px;
+    }
+}
