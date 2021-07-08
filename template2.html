@@ -120,7 +120,10 @@
                     
                                 </div>
                                
-                                <h1 id="mail-email" style="margin-top: 15px;">manentiaadvisory@gmail.com</h1>
+                                <h3 class="mail-email">manentiaadvisory@gmail.com</h1>
+                                <h3 class="mail-email"><i class="fas fa-phone-alt fa-2x" style="font-size: medium; text-align: center;"></i> 7283964334</h3>
+                                <h3 class="mail-email"><i class="fas fa-map-pin fa-2x" style="font-size: medium; text-align: center;"></i> PDPU Innovation & Incubation Centre <br>PDPU Campus, Raisan, Gandhinagar,Gujarat-382007</h3>
+
                                 <img src="./views/google-play-badge.png" style="margin: 0px;" alt="">
                                 <!-- <div class="modal-social">
                                 <a href="" ><i class="fab fa-facebook-square fa-2x"></i></a>
@@ -138,43 +141,158 @@
     </div>
    
     <!--Services-->
-    <section class="product-section" style="background-color: black;display: flex;justify-content: center;align-items: center;color: white;" id="product-section">
+
+    
+    <section class="product-section" style="background-color: black;display: flex;justify-content: center;align-items: center;color: white;width: 100%;" id="product-section">
         <h1 style="margin-bottom: 50px;">Our Products</h1>
-        <div class="product-container" >
-            <div class="rayscan">
-                
-                <img src="./views/lungs-outline.png" alt="">
-                <h2>Rayscan</h2>
-                <h4>Decode Pulmonary Disease by AI Diagonsis</h4>
-                <p>RayScan uses three highly accurate deep learning algorithms to 
-                    detect and mark the infected areas in X-Ray and CT-Scan Images.</p>
-                    <button class="ra-demo-btn" id="ra-modal-btn">Know More</button>
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12">
+                <div id="product-list" class="owl-carousel">
+                  <!--Product 1-->
+                  <div class="item">
+                    <div class="shadow-effect" style=" background: linear-gradient(
+                      270deg
+                      ,#a317b5 0%,#d125d3 100%)">
+                      <img class="img-circle" src="./views/lungs-outline.png" alt="img3">
+                      
+                      <div class="product-name">AI-Diagnosis</div>
+                      <h4>Decode Pulmonary Disease by AI Diagonsis</h4>
+                      <p>RayScan uses three highly accurate deep learning algorithms to 
+                          detect and mark the infected areas in X-Ray and CT-Scan Images.</p>
+                          <button class="ra-demo-btn" id="ra-modal-btn">Know More</button>
+                    </div>
+                  </div>
+                    
+                  
+                  <!--Product 2-->
+                  <div class="item">
+                      <div class="shadow-effect" style="background-color: white;color: #000;">
+                        <img class="img-circle" src="./views/retino_scan/bloodvessel.png" alt="img2">
+                        <div class="product-name">Icare</div>
+                        <h4>Analyse Diabetic retinopathy through AI</h4>
+                        <p>iCare Is Platform Which Can Detects The Symptoms Of Diabetes Retinopathy Using Fundus Image And Shows Area Effected By Microaneurysms, Hemorrhages & Exudates</p>
+                        <button class="rs-demo-btn" id="rs-modal-btn">Know More</button>
+                     </div> 
+                    </div>
+                  
+                  <!--Product 3-->
+                  <div class="item">
+                    <div class="shadow-effect" style=" background: linear-gradient(
+                      270deg
+                      ,#a317b5 0%,#d125d3 100%)">
+                      <img class="img-circle" src="./views/brain-outline.png"  alt="img1">
+                      
+                      <div class="product-name">Brain Tumor Detection</div>
+                      <p>With Powerful Deep Learning Algorithm and Image Processing, Manentia Advisory detecting stage of Brain Tumor, Marking Location of Brain Tumor and calculating size of brain tumor.
+                        In Brain Tumor Detection, we are finding stage of Brain Tumor Cancer listed below:
+                        1. Meningioma
+                        2. Glioma
+                        3. Pituitary Tumor</p>
+                        <button class="ra-demo-btn" id="rs-modal-btn" onclick="tumor()">Know More</button>
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+              </div>
             </div>
-            <div class="ratinoscan">
+          </div>
+        
+        <!-- <div class="container-fluid">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                    
+                <div class="carousel-inner ">
+                  <div class="carousel-item active">
+                  <div class="container-fluid">
+                      <div class="row">
+                          <div class="col-lg-12 ">
+                              
+                          </div>
+                        </div>
+                        
+                      </div>
+      
+                  </div>
+                    
+                  <div class="carousel-item">
+                      <div class="container-fluid">
+                          <div class="row">
+                              <div class="col-lg-12 ">
+                                  <div class="ratinoscan" style="margin: auto;">
+                                
+                                      <img id="ratino-img" src="./views/retino_scan/bloodvessel.png" alt="">
+                                      <h2>iCare</h2>
+                                      <h4>Analyse Diabetic retinopathy through AI</h4>
+                                      <p>iCare Is Platform Which Can Detects The Symptoms Of Diabetes Retinopathy Using Fundus Image And Shows Area Effected By Microaneurysms, Hemorrhages & Exudates</p>
+                                      
+                                        <button class="rs-demo-btn" id="rs-modal-btn">Know More</button>
+                                        
+                                    
+                                        
+                                  </div>
+                              </div>
+                              
+                            </div>
+          
+                      </div>
+                     
+                  </div>
+                  <div class="carousel-item">
+                      <div class="container-fluid">
+                          <div class="row">
+                              <div class="col-lg-12 ">
+                                  <div class="brain-care" style="margin: auto;">
+                                
+                                      <img id="ratino-img" src="./views/brain-outline.png" alt="">
+                                      <h2>Brain Tumor Detection</h2>
+                                      <p>Coming Soon....</p>
+                                      
+                                      <button class="ra-demo-btn" id="rs-modal-btn" onclick="tumor()">Know More</button>
+                                        
+                                    
+                                        
+                                  </div>
+                              </div>
+                              
+                            </div>
+          
+                      </div>
+                     
+                  </div>
+                  
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
               
-              <img id="ratino-img" src="./views/retino_scan/bloodvessel.png" alt="">
-              <h2>RatinoScan</h2>
-              <h4>Analyse Diabetic retinopathy through AI</h4>
-              <p>RatinoScan Is Platform Which Can Detects The Symptoms Of Diabetes Retinopathy Using Fundus Image And Shows Area Effected By Microaneurysms, Hemorrhages & Exudates</p>
-              
-                <button class="rs-demo-btn" id="rs-modal-btn">Know More</button>
-                
-            
-                
-            </div>
+
         </div>
+            -->
+    
     </section>
 
     <div class="ra-modal" id="ra-modal">
         <div class="ra-modal-content">
             <div class="ra-modal-header">
-                <h1>RayScan</h1>
+                <h1>AI Diagnosis</h1>
             </div>
             <div class="ra-modal-body">
-                <div style="height: 100%;width: 45%;"><img src="./views/RayScan/3.png" alt=""></div>
+                <div class="modal-img-container"><img src="./views/RayScan/3.png" alt=""></div>
                 <div class="ra-modal-text">
-                    <p>RayScan uses three highly accurate deep learning algorithms to detect and mark the infected areas in X-Ray and CT-Scan Images.
-                        RayScan Aims to Detecting Respiratory And Lung Diseases With Significant 
+                    <p>AI Diagnosis uses three highly accurate deep learning algorithms to detect and mark the infected areas in X-Ray and CT-Scan Images.
+                        AI Diagnosis Aims to Detecting Respiratory And Lung Diseases With Significant 
                         Symptoms Using X-Ray & CT-Scan Images And Provides Quick Diagnosis Reports. 
                         And Also Marks The Infected Areas Within The Images For Easy Examination</p>
                     <button class="ra-demo-btn" >More</button>
@@ -189,12 +307,12 @@
     <div class="rs-modal" id="rs-modal">
         <div class="rs-modal-content">
             <div class="rs-modal-header">
-                <h1>RatinoScan</h1>
+                <h1>iCare</h1>
             </div>
             <div class="rs-modal-body">
-                <div style="height: 100%;width: 45%;"><img src="./views/retino_scan/7.png" alt=""></div>
+                <div class="modal-img-container"><img src="./views/retino_scan/7.png" alt=""></div>
                 <div class="rs-modal-text">
-                    <p>RatinoScan Is Platform Which Can Detects The Symptoms Of Diabetes 
+                    <p>iCare Is Platform Which Can Detects The Symptoms Of Diabetes 
                         Retinopathy Using Fundus Image And Shows Area Effected By Microaneurysms, 
                         Hemorrhages & Exudates.For RetinoScan, we have developed algorithms which detect stage of Diabetic Retinopathy Diseases and 
                         generate various screening images from single fundus image.</p>
@@ -218,7 +336,7 @@
                     <i class="fas fa-newspaper fa-4x"></i>
                     <div class="service-data">
                         <h4>Report Generation</h4>
-                        <p>AI Diagnosis: RayScan uses Artificial Intelligence and the latest technologies to provide patients rapid diagnosis reports with high accuracy.</p>
+                        <p>AI Diagnosis: AI Diagnosis uses Artificial Intelligence and the latest technologies to provide patients rapid diagnosis reports with high accuracy.</p>
                     </div>
                     
                     
@@ -392,8 +510,8 @@
         <p style="color: black; font-size: 25px;">Explore</p>
         
         <div style="display: flex;justify-content: center;align-items: center;">
-            <button class="try-demo-btn"> Rayscan</button>
-            <button class="try-demo-btn">RatinoScan</button>
+            <button class="try-demo-btn">AI Diagnosis</button>
+            <button class="try-demo-btn">iCare</button>
         </div>
     </section>
 
@@ -417,6 +535,66 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();
+</script>
+<script>
+    $(document).ready(function($){
+  "use strict"
+  
+  $("#product-list").owlCarousel({
+    loop:true,
+    center:true,
+    items:3,
+    margin:0,
+    autoplay:true,
+    dots:true,
+    autoplayTimeout:8500,
+    smartSpeed:450,
+    responsive:{
+      0:{
+        items:1
+      },
+      500:{
+          items:1
+      },
+      800:{
+        items:2,
+        autowidth:true
+      },
+      1170:{
+        items:3
+      }
+    }
+  });
+  $('.owl-carousel').owlCarousel({
+    animateOut: 'fadeOut',
+    autoplayHoverPause:true,
+    loop:true,
+    autoplay:true,
+    center:true,
+    margin:15,
+    nav:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        800:{
+            items:1,
+            autowidth:true,
+        
+        },
+        1000:{
+            items:3
+        }
+
+    }
+})
+});
+</script>
+<script>
+    function tumor(){
+        alert("Coming Soon")
+    }
 </script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>

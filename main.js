@@ -62,30 +62,7 @@ btn.on('click', function(e) {
   $('html, body').animate({scrollTop:0}, '300');
 });
 
-$('.owl-carousel').owlCarousel({
-    animateOut: 'fadeOut',
-    autoplayHoverPause:true,
-    loop:true,
-    autoplay:true,
-    center:true,
-    margin:15,
-    nav:true,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        800:{
-            items:1,
-            autowidth:true,
-        
-        },
-        1000:{
-            items:3
-        }
 
-    }
-})
 
 // var preloader = document.querySelector(".preloader")
 //     function loader(){

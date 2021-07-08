@@ -618,7 +618,7 @@ section p{
 }
 
 
-section.testimonials-container{
+section.-container{
     
     display: flex;
     background-color: #EAF2F7;
@@ -1025,8 +1025,8 @@ header button:hover{
 }
 
 .rs-head{
-    
-    font-size: 80px;
+    transform: translateY(-125px);  
+    font-size: 100px;
     margin: 20px;
     color: white;
     opacity: 0;
