@@ -137,6 +137,36 @@ border-radius: 20px !important;
             }
         }
     </style>
+    <style>
+        @media (max-width:990px) {
+            .navbar{
+            position: relative;
+           
+        }
+        .brand-logo{
+            height: 80px;
+            width: 80px;
+        }
+        .navbar-brand .brand-logo{
+            
+            position: absolute !important;
+            left: 50% !important;
+            transform:translate(-50%,-50%) !important;  /* 50% of your logo width */
+            display: inline !important;
+        }
+        .navbar .navbar-toggler{
+            position: absolute;
+            margin: auto;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            
+            bottom: -90px;
+            z-index: 1510000 !important;
+        }
+            
+        }
+       
+    </style>
 </head>
 <body >
     

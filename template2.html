@@ -16,6 +16,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
     <script src="https://kit.fontawesome.com/1c3eab352a.js" crossorigin="anonymous"></script>
+    <style>
+        @media (max-width:990px) {
+            .navbar{
+            position: relative;
+           
+        }
+        .brand-logo{
+            height: 80px;
+            width: 80px;
+        }
+        .navbar-brand .brand-logo{
+            
+            position: absolute !important;
+            left: 50% !important;
+            transform:translate(-50%,-50%) !important;  /* 50% of your logo width */
+            display: inline !important;
+        }
+        .navbar .navbar-toggler{
+            position: absolute;
+            margin: auto;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            
+            bottom: -90px;
+            z-index: 1510000 !important;
+        }
+            
+        }
+       
+    </style>
     
 </head>
 <body > 
@@ -58,11 +88,11 @@
             
     
                 
-                <div class="container-fluid mt-4 mx-4">
+                <div class="container-fluid mt-4 mx-4" >
                     <a class="navbar-brand" href="#"> <img class="brand-logo" src="./views/Symbol.png" alt=""></a>
                     
                             
-                                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                                <button class="navbar-toggler navbar-toggler-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
                             
@@ -97,8 +127,8 @@
         
         <section class="bg" id="home-section">
             
-            <div class="bg-content">
-                <h1 data-aos="fade-up" data-aos-duration="5000" data-aos-offset="300" data-aos-easing="ease-in">Manentia Advisory</h1>
+            <div class="bg-content" >
+                <h1 data-aos="fade-up" data-aos-duration="5000" data-aos-offset="300" data-aos-easing="ease-in">Manentia <span>Advisory</span></h1>
                 <h2 data-aos="fade-up" data-aos-duration="5000" data-aos-offset="100" data-aos-easing="ease-in" data-aos-delay="500">Finding newer, intelligent ways to care for the world.</h2>
                 
             </div>
@@ -145,7 +175,7 @@
     
     <section class="product-section" style="background-color: black;display: flex;justify-content: center;align-items: center;color: white;width: 100%;" id="product-section">
         <h1 style="margin-bottom: 50px;">Our Products</h1>
-        <div class="container-fluid">
+        <div class="container-fluid" style="width: 100%;margin: auto;">
             <div class="row">
               <div class="col-sm-12">
                 <div id="product-list" class="owl-carousel">
@@ -156,8 +186,8 @@
                       ,#a317b5 0%,#d125d3 100%)">
                       <img class="img-circle" src="./views/lungs-outline.png" alt="img3">
                       
-                      <div class="product-name">AI-Diagnosis</div>
-                      <h4>Decode Pulmonary Disease by AI Diagonsis</h4>
+                      <div class="product-name">Decode Pulmonary Disease by AI Diagonsis</div>
+                      <h4>AI-Diagnosis</h4>
                       <p>RayScan uses three highly accurate deep learning algorithms to 
                           detect and mark the infected areas in X-Ray and CT-Scan Images.</p>
                           <button class="ra-demo-btn" id="ra-modal-btn">Know More</button>
@@ -169,8 +199,8 @@
                   <div class="item">
                       <div class="shadow-effect" style="background-color: white;color: #000;">
                         <img class="img-circle" src="./views/retino_scan/bloodvessel.png" alt="img2">
-                        <div class="product-name">Icare</div>
-                        <h4>Analyse Diabetic retinopathy through AI</h4>
+                        <div class="product-name">Analyse Diabetic retinopathy through AI</div>
+                        <h4>EyeCare</h4>
                         <p>iCare Is Platform Which Can Detects The Symptoms Of Diabetes Retinopathy Using Fundus Image And Shows Area Effected By Microaneurysms, Hemorrhages & Exudates</p>
                         <button class="rs-demo-btn" id="rs-modal-btn">Know More</button>
                      </div> 
@@ -184,8 +214,8 @@
                       <img class="img-circle" src="./views/brain-outline.png"  alt="img1">
                       
                       <div class="product-name">Brain Tumor Detection</div>
-                      <p>With Powerful Deep Learning Algorithm and Image Processing, Manentia Advisory detecting stage of Brain Tumor, Marking Location of Brain Tumor and calculating size of brain tumor.
-                        In Brain Tumor Detection, we are finding stage of Brain Tumor Cancer listed below:
+                      <h4>Brain Tumor Detection</h4>
+                      <p>With Powerful Deep Learning Algorithm and Image Processing, we are finding stage of Brain Tumor Cancer listed below:
                         1. Meningioma
                         2. Glioma
                         3. Pituitary Tumor</p>

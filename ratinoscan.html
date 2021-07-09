@@ -101,8 +101,8 @@
             align-items: center;
         }
       .upload-box    .ml-demo img{
-            height: 400px !important;
-            width: 400px !important;
+            height: 300px !important;
+            width: 300px !important;
             margin: 0px !important;
         }
       .upload-box input{
@@ -191,12 +191,12 @@ border-radius: 20px !important;
 }
 @media (max-width:400px) {
     .not-infected{
-        height: 300px;
-        width: 300px;
+        height: 300px !important;
+        width: 300px !important;
     }
     .infected{
-        height: 300px;
-        width: 300px;
+        height: 300px !important;
+        width: 300px !important;
     }
 }
 @media (max-width:400px) {
@@ -221,6 +221,7 @@ border-radius: 20px !important;
 
 }
   </style>
+  
 
 </head>
 
@@ -244,7 +245,7 @@ border-radius: 20px !important;
                 );
                 z-index: -2;"></div>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent" style="box-shadow: none !important;">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="box-shadow: none !important;">
   
 
       
@@ -294,7 +295,7 @@ border-radius: 20px !important;
                 z-index: -2;"></div>
     <div class="bg-text">
       <h1 data-aos="fade-up" data-aos-duration="5000" data-aos-offset="300" data-aos-easing="ease-in" style="font-weight: bold; ">iCare</h1>
-      <h1 style="margin-bottom: 25px;">Diabetic Ratinopathy Detection App </h1>
+      <h1 style="margin-bottom: 25px;text-align: center;">Diabetic Ratinopathy Detection App </h1>
       <button class="rs-demo-btn" id="demo" style="z-index: 99;">Know More</button>
 
     </div>
@@ -356,9 +357,9 @@ border-radius: 20px !important;
    <div>
      <form action="">
          <div style="display: flex;justify-content: space-evenly ;flex-wrap: wrap;margin-top: 20px ;font-weight: bold;">
-             <label for="eyeCare" ><input onclick="clicked()" class="radio" type="radio" name="rs-radio-input" id="eyeCare" checked> iCare</label>
+             <label for="eyeCare" ><input onclick="clicked()" class="radio" type="radio" name="rs-radio-input" id="eyeCare" checked> Diabetic Ratinopathy</label>
                                            <label for="glaucoma">
-                                           <input onclick="clicked()" class="radio" type="radio" name="rs-radio-input" id="glaucoma"> Glaucoma</label>
+                                           <input onclick="clicked()" class="radio" type="radio" name="rs-radio-input" id="glaucoma"> Brain Tumor Detection</label>
                                            
            </div>
          <div style="display: flex;justify-content: center;align-items: center;flex-wrap: wrap;">
