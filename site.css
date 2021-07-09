@@ -247,15 +247,17 @@ section{
 }
 
 
+
 .bg h1{
     font-weight: bold;
-    
+    margin-top: -75px;
     font-size: 100px;
     margin-bottom: 20px;
     text-align: center;
     background: url('./views/landing_text.gif');
     background-clip: text;
     -webkit-background-clip: text;
+    
     color: transparent;
     animation: moveBg 90s linear infinite;
     -webkit-animation: moveBg 90s linear infinite;
@@ -270,6 +272,15 @@ section{
     color: transparent;
     animation: moveBg 90s linear infinite;
     -webkit-animation: moveBg 90s linear infinite;
+}
+.bg .bg-content p{
+    font-size: 32px;
+    text-align: center !important;
+   
+    margin: auto;
+    
+    
+   
 }
 
 @media (max-width:800px) {
@@ -308,17 +319,21 @@ section{
         align-items: center;
     }
     .bg h1{
-        font-size: 60px;
-        
+        font-size: 51px;
+        margin-top: -120px;
     }
     .bg h2{
         font-size: 24px;
+        
     }
 
     button.contact-btn{
         width: 200px;
         padding: 15px 30px;
         font-size: small;
+    }
+    .bg .bg-content p{
+        font-size: 16px;
     }
     
 }
@@ -655,7 +670,7 @@ div.testimonials{
 
 .image img{
     max-height: 80px;
-    max-width: 80px;
+    width: 60px !important;
     border-radius: 50%;
 }
 figcaption{

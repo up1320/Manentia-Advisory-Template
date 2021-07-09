@@ -17,6 +17,15 @@
         body{
             overflow: hidden;
         }
+        .custom-file-upload{
+            width: 150px !important;
+            background-color: rgba(36, 23, 66, 0.5) !important ;box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), 5px 5px 10px rgba(170, 170, 204, 0.25), 10px 10px 20px rgba(170, 170, 204, 0.5), -10px -10px 20px #FFFFFF !important;
+                                border-radius: 32px !important;
+ 
+        }
+        input[type="file"] {
+            display: none;
+        }
      
         
         .radio-input {
@@ -312,6 +321,10 @@ border-radius: 20px !important;
                             <div class="new-upload-form" style="display: flex;justify-content: center;align-items: center;flex-wrap: wrap;">
                                 <button style="background-color: rgba(36, 23, 66, 0.5);box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), 5px 5px 10px rgba(170, 170, 204, 0.25), 10px 10px 20px rgba(170, 170, 204, 0.5), -10px -10px 20px #FFFFFF;
                                 border-radius: 32px;">Upload</button>
+                                <label class="custom-file-upload">
+                                    <input type="file"/>
+                                    Select Image
+                                </label>
                                 <button style="background-color: rgb(36, 23, 66);box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), 5px 5px 10px rgba(170, 170, 204, 0.25), 10px 10px 20px rgba(170, 170, 204, 0.5), -10px -10px 20px #FFFFFF;
                                 border-radius: 32px;">Diagonise</button>
                             </div>
