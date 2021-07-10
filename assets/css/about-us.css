@@ -1,6 +1,6 @@
 .intro{
     height: 600px;
-    background-image: url(./views/about_us_wallpaper.jpg);
+    background-image: url(../views/about_us_wallpaper.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -93,7 +93,7 @@
     margin: 20px;
 }
 
-@media (max-width:1100px) {
+@media (max-width:800px) {
     
     
     
@@ -101,7 +101,7 @@
         flex-wrap: wrap;
     }
 }
-@media (max-width:600px) {
+@media (max-width:500px) {
     .achievements img{
         width: 350px;
         height: 400px;

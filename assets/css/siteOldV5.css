@@ -217,8 +217,8 @@ section{
     justify-content: center;
     align-items:center ;
     text-align: center;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    min-width: 100vw;
     color: white;
 }
 .bg-image{
@@ -243,13 +243,11 @@ section{
     color: rgb(236, 235, 232);
     font-size: xx-large;
     z-index: 2;
-    position: relative;
 }
-
 
 .bg h1{
     font-weight: bold;
-    margin-top: -75px;
+    margin-top: -200px;
     font-size: 100px;
     margin-bottom: 20px;
     text-align: center;
@@ -271,12 +269,7 @@ section{
     animation: moveBg 90s linear infinite;
     -webkit-animation: moveBg 90s linear infinite;
 }
-.bg .bg-content p{
-    font-size: 28px;
-    text-align: center !important;
-    line-height: 1.25;
-    margin: auto;
-}
+
 @media (max-width:800px) {
     .bg{
         min-height: 600px;
@@ -285,12 +278,12 @@ section{
         
     }
     .bg h1{
-        font-size: 80px;
+        font-size: 38px;
         text-align: center;
         /* margin-top: -120px; */
     }
     .bg h2{
-        font-size: 40px;
+        font-size: 20px;
         text-align: center;
     }
 
@@ -300,12 +293,6 @@ section{
         font-size: medium;
     }
 }
-@media (max-width:600px) {
-    .bg h2{
-        font-size: 32px;
-
-    }
-}
 @media (max-width:400px) {
     .bg{
         min-height: 600px;
@@ -313,22 +300,17 @@ section{
         align-items: center;
     }
     .bg h1{
-        font-size: 51px;
-        margin-top: -120px;
+        font-size: 32px;
         
     }
     .bg h2{
-        font-size: 24px;
+        font-size: 14px;
     }
 
     button.contact-btn{
         width: 200px;
         padding: 15px 30px;
         font-size: small;
-    }
-    .bg .bg-content p{
-        font-size: 16px;
-        line-height: 1.5;
     }
     
 }
@@ -665,7 +647,7 @@ div.testimonials{
 
 .image img{
     max-height: 80px;
-    width: 50px !important;
+    max-width: 80px;
     border-radius: 50%;
 }
 figcaption{
@@ -1087,8 +1069,7 @@ header button:hover{
 }
 @media (max-width:800px) {
     .rs-head{
-        font-size: 80px;
-        text-align: center;
+        font-size: 40px;
         margin: 10px;
     }
     .rs-title{
@@ -1101,7 +1082,7 @@ header button:hover{
 }
 @media (max-width:400px) {
     .rs-head{
-        font-size: 60px;
+        font-size: 20px;
         margin: 10px;
     }
     .rs-title{

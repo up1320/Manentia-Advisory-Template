@@ -4,42 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="site.css">
-    <link rel="icon" href="./views/RayScan.png">
-    <link rel="stylesheet" href="site2.css">
+    <link rel="stylesheet" href="./assets/css/site.css">
+    <link rel="icon" href="./assets/views/RayScan.png">
+    <link rel="stylesheet" href="./assets/css/site2.css">
     <script src="https://kit.fontawesome.com/1c3eab352a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>AI-Diagnosis</title>
+    <title>AI Diagnosis</title>
     <style>
         @media (max-width:990px) {
             .navbar{
             position: relative;
-           
+
         }
         .brand-logo{
             height: 80px;
             width: 80px;
         }
-        .navbar-brand .brand-logo{
-            
-            position: absolute !important;
-            left: 50% !important;
-            transform:translate(-50%,-50%) !important;  /* 50% of your logo width */
-            display: inline !important;
         }
-        .navbar .navbar-toggler{
-            position: absolute;
-            margin: auto;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            
-            bottom: -90px;
-            z-index: 1510000 !important;
-        }
-            
-        }
-       
+
     </style>
 </head>
 <body onload="loader()">
@@ -53,7 +36,7 @@
     
                 
                 <div class="container-fluid mt-4 mx-4">
-                    <a class="navbar-brand" href="#"> <img class="brand-logo" src="./views/Symbol.png" alt=""></a>
+                    <a class="navbar-brand" href="#"> <img class="brand-logo" src="./assets/views/Symbol.png" alt=""></a>
                     
                        
                             <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,16 +46,13 @@
                                 
                                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-end">
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#about-section">About</a>
+                                        <a class="nav-link active" aria-current="page" href="https://manentiaadvisory.com:8000/demo/about">About</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link active" href="#product-section">Products</a>
+                                        <a class="nav-link active" href="./index.html#product-section">Products</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link active" href="#service-section">Services</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link active"  id="contactBtn">Contact</a>
+                                        <a class="nav-link active" href="#feature">Services</a>
                                     </li>
                                     </ul>
                             </div>
@@ -84,9 +64,9 @@
         
         <section class="rayscan-container">
             
-            <h2 class="rs-head">AI Diagnosis</h2>
-            
-            <button  class="demo-btn" onclick="location.href='http://manentiaadvisory.com:8000/demo/app'">Try it</button>
+            <!-- <h2 class="rs-head">AI Diagnosis</h2> -->
+            <h1 class="rs-head">AI Diagnosis</h1>
+            <button  class="demo-btn" onclick="location.href='https://manentiaadvisory.com:8000/demo/app'">Try it</button>
         </section>
     </div>
     
@@ -127,7 +107,7 @@
         <div class="trial-img"></div>
         <h1 >Ready to Dive in?</h1>
         <p>As of now, our product is completely free and soon we'll be rolling out new features based on the user reviews. You can explore and use our product by clicking on the link below.</p><hr>
-        <button class="trial-btn" onclick="location.href='http://manentiaadvisory.com:8000/demo/app'" >Try Demo</button>
+        <button class="trial-btn" onclick="location.href='https://manentiaadvisory.com:8000/demo/app'" >Try Demo</button>
     </section>
     
 
@@ -203,12 +183,12 @@
     
     
     <footer style="width: 100%;">
-        <p><img src="./views/Symbol.png" style="height: 25px;width:25px;vertical-align: middle;" alt="">Manentia Advisory</p>
-        <p><i class="far fa-copyright" style="color: white;"></i> 2020 All rights reserved</p>
+        <p><img src="./assets/views/Symbol.png" style="height: 25px;width:25px;vertical-align: middle;" alt="">Manentia Advisory</p>
+        <p><i class="far fa-copyright" style="color: white;"></i> 2021 All rights reserved</p>
         <ul>
-            <li><a href=""><i class="fab fa-facebook-square fa-2x"></i></a></li>
-            <li><a href=""><i class="fab fa-instagram fa-2x"></i></a></li>
-            <li><a href=""><i class="fab fa-linkedin fa-2x"></i></a></li>
+            <li><a onclick="location.href='https://www.facebook.com/Manentia-Advisory-104776714817045/'"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+            <li><a onclick="location.href='https://www.instagram.com/manentia.advisory/'"><i class="fab fa-instagram fa-2x"></i></a></li>
+            <li><a onclick="location.href='https://www.linkedin.com/in/manentiaadvisory/'"><i class="fab fa-linkedin fa-2x"></i></a></li>
         </ul>
     </footer> 
     <script>
@@ -293,6 +273,7 @@
         
       });
     </script>
+    
     <script>
         var preloader = document.querySelector(".preloader")
         function loader(){
