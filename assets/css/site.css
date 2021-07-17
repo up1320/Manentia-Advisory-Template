@@ -257,8 +257,8 @@ section{
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    animation: moveBg 90s linear infinite;
-    -webkit-animation: moveBg 90s linear infinite;
+    
+   
 }
 .bg h2{
     font-weight: bolder;
@@ -268,14 +268,27 @@ section{
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    animation: moveBg 90s linear infinite;
-    -webkit-animation: moveBg 90s linear infinite;
+   
 }
 .bg .bg-content p{
     font-size: 28px;
     text-align: center !important;
     line-height: 1.25;
     margin: auto;
+}
+.bg-heading{
+    
+    animation: heading 1.5s ease-in;
+   
+}
+@keyframes heading {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+       
+    }
 }
 @media (max-width:800px) {
     .bg{
@@ -829,93 +842,7 @@ div.image-gallery img{
         width: 80px;
     }
 }
-div.user-form{
-    flex-direction: column;
-    justify-content: stretch;
-    border: 3px solid #282828;
-    padding:5px;
-    box-shadow:10px 10px 8px #888888 ;
-    border-radius: 10px;
-}
-div.user-form h1{
-   text-align: center;
-   align-self: center;
-   font-weight: 600;
-    font-size: 40px;
-    line-height: 32px;
-    letter-spacing: 0.2em;
-    margin-bottom: 1rem;
-}
 
-
-
-
-form{
-    text-align: center;
-    margin: auto;
-    
-    width: 100%;
-    display: flex;
-    align-self: flex-start;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    flex-grow: 1;
-}
-form input,textarea,select{
-    padding: 10px;
-    margin: 10px;
-    outline: none;
-    border: none;
-    background-color: #e0dbdb48;
-    
-    flex-basis: 50%;
-    width: 90%;
-}
-.dropdown{
-    opacity: 0.9;
-}
-form label{
-    align-self: flex-start ;
-    font-weight: bold;
-}
-form button{
-    margin: 10px;
-    padding: 10px;
-    background-color: #515A86;
-    color:white;
-    font-weight: bold;
-    width: 150px;
-    font-size: 20px;
-    border-radius: 8px;
-    cursor: pointer;
-}
-div.user-form{
-    display: flex;
-    flex-wrap: wrap;
-}
-@media (max-width:800px) {
-    form select{
-        width: 100%;
-    }
-}
-@media (max-width:400px) {
-    form{
-        padding: 5px;
-        margin: 0;
-    }
-    div.user-form h1{
-        font-size: larger;
-        margin-top: 10px;
-    }
-    form button{
-        width: 100px;
-        font-size: medium;
-    }
-    form select{
-        width: 100%;
-    }
-}
 
 footer{
     position: relative;
@@ -1028,9 +955,9 @@ button.demo-btn{
     border-radius: 4px;
     font-size: medium;
     font-weight: bold;
-    background: #427bb4; 
-    border: 2px solid #427bb4;
-    box-shadow: inset 0 0 0 0 #1f3a55;
+    background: #a317b5; 
+    border: 2px solid #a317b5;
+    box-shadow: inset 0 0 0 0 #620d6d;
     transition: all .35s ease-in;
     cursor: pointer;
     margin-bottom: 15px;
@@ -1038,7 +965,7 @@ button.demo-btn{
     /* color: black; */
 }
 header button:hover{
-    box-shadow: inset 200px 0 0 0 #1f3a55;
+    box-shadow: inset 200px 0 0 0 #620d6d;
     color: white;
 }
 
@@ -1063,16 +990,16 @@ header button:hover{
     
 }
 .rayscan-container button{
-    box-shadow: inset 0 0 0 0 #427bb4;
+    box-shadow: inset 0 0 0 0 ;
     width: 300px;
     height: 70px;
-    background: transparent;
+    background: #a317b5;
     color: white;
     /* color: black; */
     font-size: 25px;
     opacity: 0;
     animation: load-rs 1s ease-in 1s forwards;
-    border: 2px solid #427bb4;
+    
 }
 @keyframes load-rs {
     100%{
@@ -1082,7 +1009,7 @@ header button:hover{
     
 }
 .rayscan-container button:hover{
-    box-shadow: inset 300px 0 0 0 #427bb4;
+    box-shadow: inset 300px 0 0 0 #da29f1;
     color: white;
 }
 @media (max-width:800px) {
@@ -1122,7 +1049,7 @@ header button:hover{
     
 }
 .rs-bg-img{
-    background-image: url(../views/HD_PD.png);
+    background:linear-gradient(45deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../views/purple_lungs.jpg) center center/cover no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -1158,12 +1085,12 @@ header button:hover{
     
 }
 .ai-diagnosis{
-    background-color: #0f1214;
+    background-color: black;
 }
 .ai-diagnosis h1{
     margin-bottom: 20px;
     font-size: 40px;
-    color: #6a9ed3;
+    color: #a317b5;
 }
 .ai-diagnosis p{
    margin-bottom: 24px;
@@ -1172,8 +1099,8 @@ header button:hover{
     
 }
 .ai-diagnosis hr{
-    background-color: #6a9ed3;
-    height: 3px;
+    background-color: #fff !important;
+    height: 3px !important;
     width: 300px;
 }
 
@@ -1199,33 +1126,36 @@ header button:hover{
     }
 }
 .rs-services-container{
-    background: #F3F5FF;
+    background: #000;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
 .rs-service{
     text-align: center;
-    background-color: white;
+    background-color: #a317b5;
     
     margin: 10px;
     height: 400px;
     width: 400px;
     padding: 10px;
     flex-basis: 30%;
-    box-shadow: -10px -10px 30px #FFFFFF, 10px 10px 30px rgba(174, 174, 192, 0.4);
+    /* box-shadow: -10px -10px 30px #333, 10px 10px 30px rgba(174, 174, 192, 0.4); */
     border-radius: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center ;
 }
+.rs-service h1{
+    color: white;
+}
 
 
 .rs-service p{
     width: 300px;
     margin-top: 10px;
-    
+    color: white;
     text-align: center;
 }
 
@@ -1234,7 +1164,7 @@ header button:hover{
 .rs-trial h1{
     margin-bottom: 20px;
     font-size: 40px;
-    color: #6a9ed3;
+    color: #a317b5;
     
 }
 .trial-btn{
@@ -1245,13 +1175,14 @@ header button:hover{
     font-size: large;
     color:white;
     font-weight: bold;
-    box-shadow: inset 0 0 0 0 #2e557c;
-    background-color: #6a9ed3;
+    box-shadow: inset 0 0 0 0 #da29f1;
+    background-color: #a317b5;
     transition: all .35s ease-in;
     cursor: pointer;
+    border: #a317b5;
 }
 button.trial-btn:hover{
-    box-shadow: inset 250px 0 0 0 #2e557c;
+    box-shadow: inset 250px 0 0 0 #da29f1;
 }
 
 .rs-contact h1{
@@ -1262,7 +1193,8 @@ button.trial-btn:hover{
     position: relative;
 }
 .trial-img{
-    background-image: url(../views/lungs.jpeg);
+    background-color: #fff;
+    background-image: url(../views/lungs-purple-outline.jpg);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -1310,157 +1242,150 @@ button.trial-btn:hover{
         width: 100px;
     }
 }
-.rs-form-container{
-    position: relative;
-    max-height: 1200px;
-}
-.wrapper{
-    width: 60vw;
-    font-family: 'Manrope', sans-serif;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    height: 100vh;
-    border: 3px solid #282828;
+.contact-us-section{
+    width:100%;
+    height:auto;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
     
-    box-shadow:10px 10px 8px #888888 ;
-    border-radius: 10px;
-    background-color: white;
-    transition: opacity .5s ease-in;
-}
-.rs-form{
-    width: 50%;
-    padding: 35px;
-    text-align: center;
-    height: 100%;
-    overflow-y:hidden ;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    
-    
-}
-
-.rs-form button{
-    background-color: #6a9ed3;
-    box-shadow: inset 0 0 0 0 #2e557c;
-    transition: all .5s ease-in;
-    cursor: pointer;
-}
-.rs-form button:hover{
-    box-shadow: inset 200px 0 0 0 #2e557c;
-}
-.rs-form h1{
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-.rs-form input {
-    margin-bottom: 10px;
-}
-.rs-form select{
-    margin-bottom: 10px;
-    width: 100%;
-}
-.rs-form textarea{
-    margin-bottom: 10px;
-}
-
-
-.form-bg{
-    background-image: url(../views/contact-rs.jpg);
-    background-position: center;
-    background-size: cover;
-    width: 50%;
-    color: white;
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    
-}
-.form-bg-content{
-    background-color: #212529ce;
-    height: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.rs-contact-info h3{
-    margin-bottom: 5px;
-    font-size: 20px;
-    
-}
-.rs-contact-info p{
-    margin-bottom: 25px;
-    font-size: medium;
-    
-}
-.rs-800{
-    position: absolute;
-    /* top: 30vh; */
+  }
+  .contact-form{
+    width:80%;
+    border:1px solid black;
+    display:flex;
+    justify-content:center;
     margin: auto;
-    width: 100%;
-    opacity: 0;
-    transition: all .35s ease-in;
-}
-.rs-800 form{
-    width: 90%;
-}
-@media (max-width:1200px) {
-    .wrapper{
-        width: 90vw;
+    
+  }
+  .first-container{
+    width:50%;
+  }
+  .second-container{
+    width:50%;
+  }
+  
+  .contact-form .first-container{
+    background:linear-gradient(45deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url("https://images.unsplash.com/photo-1494145904049-0dca59b4bbad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80") center center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+    
+  }
+  .contact-form .first-container .info-container div{
+   
+    margin:24px 0;
+  }
+  .contact-form .first-container .info-container div h3{
+    color:#fff;
+    font-size:18px;
+    font-weight:400;
+    line-height:1.2;
+    padding-bottom:10px;
+    
+  }
+  .contact-form .first-container .info-container div p{
+    font-size:16px;
+    line-height:1.6;
+    color:#a317b5;
+  }
+  .contact-form .first-container .info-container div:first-of-type p{
+    max-width:260px;
+    color:#999
+  }
+  .contact-form .second-container{
+    padding:30px;
+  }
+  .contact-form .second-container form{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+  }
+  .contact-form .second-container h2{
+    font-size:30px;
+    font-size:400;
+    color:#333;
+    line-height:1.2;
+    text-align:center;
+    margin-bottom:20px;
+  }
+  .contact-form .second-container form .form-group{
+    margin-bottom:10px;
+    width:90%;
+  }
+  .contact-form .second-container form .form-group *{
+    min-height:55px;
+    border:1px solid #e6e6e6;
+    padding:0 20px;
+    
+  }
+  .contact-form .second-container form .form-group label{
+    display:flex;
+    align-items:center;
+    width:100%;
+    border:1px solid #e6e6e6;
+    font-size:16px;
+    color:#333;
+    text-transform:uppercase;
+    margin-top:-1px;
+  }
+  
+  .contact-form .second-container form .form-group input{
+    width:100%;
+    font-size:15px;
+    margin-top:-2px
+  }
+  .contact-form .second-container form .form-group input::placeholder,
+  .contact-form .second-container form .form-group textarea::placeholder{
+    color:#999;
+  }
+  .contact-form .second-container form .form-group textarea{
+    width:100%;
+    min-height:80px;
+    resize:none;
+    padding:10px 20px;
+    margin-top:-1px;
+  }
+  .contact-form .second-container form button{
+    width:200px;
+    height:50px;
+    background:#a317b5;
+    color:#fff;
+    font-size:17px;
+    font-weight:600;
+    text-transform:uppercase;
+    border:0;
+    
+    
+    cursor:pointer;
+    transition:all 0.3s ease-in;
+  }
+  .contact-form .second-container form button:hover{
+    background:#333;
+  }
+  
+  @media screen and (max-width:800px){
+    .contact-us-section{
+        padding-left: 0px;
+        padding-right: 0px;
     }
-}
-
-
-@media (max-width:800px) {
-    .rs-800{
-        opacity: 1;
-        width: 90%;
-        margin-top: -25px;
+    .contact-form{
+      width:90%;
     }
-    .wrapper{
-        width: 60vw;
-        opacity: 0;
-        flex-wrap: wrap;
+  }
+  @media screen and (max-width:700px){
+    .contact-form{
+      flex-direction:column-reverse;
     }
-    .rs-form button{
-        width: 50%;
-        font-size: small;
-        padding: 5px;
+    .contact-form > *{
+      width:100%;
     }
-    .rs-form h1{
-        margin-top: 10px;
-        margin-bottom: 15px;
+    .contact-form .first-container{
+      padding:40px 0;
     }
-    .rs-form input {
-        margin-bottom: 5px;
-    }
-    .rs-form select{
-        margin-bottom: 5px;
-    }
-    .rs-form textarea{
-        margin-bottom: 5px;
-    }
-    .form-bg{
-        width: 50%;
-    }
-    div.rs-contact-info h1{
-        font-size: small;
-    }
-    div.rs-contact-info p{
-        font-size: small;
-        width: 150px;
-    }
-}
-@media (max-width:400px) {
-    .wrapper{
-        opacity: 0;
-    }
-}
+  }
 
 /* --------------------------------------------------------------------------
 -----------------------------------------------------------------------------

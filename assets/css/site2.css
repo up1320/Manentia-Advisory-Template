@@ -412,11 +412,12 @@
     /* background: linear-gradient(
         270deg
         ,#a317b5 0%,#d125d3 100%); */
+        
     margin: 5% auto;
     height: 100%;
-    padding: 20px;
-    width: 60%;
-    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+    padding: 40px;
+    width: 40%;
+    
     animation-name: modal-open;
     animation-duration: 1s;
     animation-timing-function: ease-in;
@@ -433,7 +434,7 @@
 
 }
 .bg-modal-body h1 a{
-    font-size: 2rem;
+    font-size: 20px;
 }
 .bg-modal-header{
     text-align: center;
@@ -451,42 +452,60 @@
 }
 .bg-modal-body{
     display: flex;
-    width: 90%;
-    height: 60%;
+    width: 100%;
+    height: 100%;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 
-.modal-social{
+.bg-modal-header{
+    background-color: #4169be;
+    width: 100%;
+    height: 10%;
+    border-top-left-radius:20px ;
+    border-top-right-radius:20px;
+}
+.bg-modal-body-content{
+    width: 100%;
+    height: 90%;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
 }
-.modal-social i{
-    margin: 20px;
+.bg-modal-body-content h3{
+    margin:10px;
+    color: #4169be;
+    font-weight:normal ;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+   
+
 }
-.x-close{
-    color:#ccc;
+.bg-modal-body-content img{
     
-    font-size: 30px;
+    width: 120px;
 }
-.x-close:hover,.x-close:focus{
-    color: black;
-    cursor: pointer;
-    text-decoration: none;
+
+.letter-logo{
+    height: 30px;
+    width: 30px;
+    
+    margin: auto;
 }
-#mail-email{
-    font-size: 40px;
-}
+
+
+
+
 @keyframes modal-open {
     from{opacity: 0;}
     to{opacity: 1;}
 }
 /* #a317b5 0%,#d125d3 */
 .mail{
-    width:900px;
-    height:600px;
+    width:500px;
+    height:400px;
     background:#de53e0;
     
     transform-style:preserve-3d;
@@ -497,10 +516,10 @@
     position:absolute;
     top:0;
     right:0;
-    border-left:450px solid transparent;
-    border-right:450px solid #a317b5;
-    border-top:300px solid transparent;
-    border-bottom:300px solid #a317b5;
+    border-left:250px solid transparent;
+    border-right:250px solid #a317b5;
+    border-top:200px solid transparent;
+    border-bottom:200px solid #a317b5;
    z-index:5;
   }
   .mail:after{
@@ -508,10 +527,10 @@
     position:absolute;
     left:0;
     top:0;
-    border-left:450px solid #d125d3;
-    border-right:450px solid transparent;
-    border-top:300px solid transparent;
-    border-bottom:300px solid #d125d3;
+    border-left:250px solid #d125d3;
+    border-right:250px solid transparent;
+    border-top:200px solid transparent;
+    border-bottom:200px solid #d125d3;
     z-index:4;
   }
   
@@ -521,10 +540,10 @@
     position:absolute;
     top:0;
     left:0;
-    border-left:450px solid transparent;
-    border-right:450px solid transparent;
-    border-top:300px solid #de53e0;
-    border-bottom:300px solid transparent;
+    border-left:250px solid transparent;
+    border-right:250px solid transparent;
+    border-top:200px solid #de53e0;
+    border-bottom:200px solid transparent;
     z-index:6;
     transform-origin:top;
     transform:rotateX(0deg);
@@ -540,7 +559,9 @@
     left:35px;
     width:90%;
     height:90%;
-    background:#dedede;
+    
+    background-color: #fff;
+    
     border-radius:20px;
     transition:all 0.5s ease-in;
     
@@ -554,341 +575,56 @@
     transition: all 1s 1s ease;
   }
   .mail-email{
-    font-size: 30px !important;
+    font-size: 15px !important;
     color: #a317b5 !important;
     font-weight: bold !important;
 }
   
-  @media (max-width:1000px) {
-    .mail{
-        width:800px;
-        height:400px;
-        background:#de53e0;
-        
-        transform-style:preserve-3d;
-        cursor:pointer;
-      }
-      .mail:before{
-        content:"";
-        position:absolute;
-        top:0;
-        right:0;
-        border-left:400px solid transparent;
-        border-right:400px solid #a317b5;
-        border-top:200px solid transparent;
-        border-bottom:200px solid #a317b5;
-       z-index:5;
-      }
-      .mail:after{
-        content:"";
-        position:absolute;
-        left:0;
-        top:0;
-        border-left:400px solid #d125d3;
-        border-right:400px solid transparent;
-        border-top:200px solid transparent;
-        border-bottom:200px solid #d125d3;
-        z-index:4;
-      }
-      
-      
-      .cover:before{
-        content:"";
-        position:absolute;
-        top:0;
-        left:0;
-        border-left:400px solid transparent;
-        border-right:400px solid transparent;
-        border-top:200px solid #de53e0;
-        border-bottom:200px solid transparent;
-        z-index:6;
-        transform-origin:top;
-        transform:rotateX(0deg);
-        transition:all 1s 1s ease;
-      }
-      .letter{
-        position:absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index:3;
-        top:0;
-        left:35px;
-        width:90%;
-        height:90%;
-        background:#dedede;
-        border-radius:20px;
-        transition:all 0.5s ease-in;
-        
-      }
-      .mail:hover .cover:before{
-        transform:rotateX(180deg);
-       transition:all 1s ease;
-      }
-      .mail:hover .letter{
-        top:-200px;
-        transition: all 1s 1s ease;
-      }
-      .mail-email{
-        font-size: 20px !important;
-        color: #a317b5 !important;
-        font-weight: bold !important;
-    }
-    .mail:hover .letter{
-        top:-150px;
-        transition: all 1s 1s ease;
-      }
-    .bg-modal-header{
-        display: none;
-    }
-      
-  } 
-  @media (max-width:800px) {
-    .mail{
-        width:500px;
-        height:400px;
-        background:#de53e0;
-        
-        transform-style:preserve-3d;
-        cursor:pointer;
-      }
-      .mail:before{
-        content:"";
-        position:absolute;
-        top:0;
-        right:0;
-        border-left:250px solid transparent;
-        border-right:250px solid #a317b5;
-        border-top:200px solid transparent;
-        border-bottom:200px solid #a317b5;
-       z-index:5;
-      }
-      .mail:after{
-        content:"";
-        position:absolute;
-        left:0;
-        top:0;
-        border-left:250px solid #d125d3;
-        border-right:250px solid transparent;
-        border-top:200px solid transparent;
-        border-bottom:200px solid #d125d3;
-        z-index:4;
-      }
-      
-      
-      .cover:before{
-        content:"";
-        position:absolute;
-        top:0;
-        left:0;
-        border-left:250px solid transparent;
-        border-right:250px solid transparent;
-        border-top:200px solid #de53e0;
-        border-bottom:200px solid transparent;
-        z-index:6;
-        transform-origin:top;
-        transform:rotateX(0deg);
-        transition:all 1s 1s ease;
-      }
-      .letter{
-        position:absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index:3;
-        top:0;
-        left:35px;
-        width:90%;
-        height:100%;
-        background:#dedede;
-        border-radius:20px;
-        transition:all 0.5s ease-in;
-        
-      }
-      .mail:hover .cover:before{
-        transform:rotateX(180deg);
-       transition:all 1s ease;
-      }
-      .mail:hover .letter{
-        top:-200px;
-        transition: all 1s 1s ease;
-      }
-      
-    .mail:hover .letter{
-        top:-150px;
-        transition: all 1s 1s ease;
-      }
-      .bg-modal-body img{
-        width: 100px;
-      }
-  }
-   @media (max-width:800px) {
-    .mail{
-        width:500px;
-        height:400px;
-        background:#de53e0;
-        
-        transform-style:preserve-3d;
-        cursor:pointer;
-      }
-      .mail:before{
-        content:"";
-        position:absolute;
-        top:0;
-        right:0;
-        border-left:250px solid transparent;
-        border-right:250px solid #a317b5;
-        border-top:200px solid transparent;
-        border-bottom:200px solid #a317b5;
-       z-index:5;
-      }
-      .mail:after{
-        content:"";
-        position:absolute;
-        left:0;
-        top:0;
-        border-left:250px solid #d125d3;
-        border-right:250px solid transparent;
-        border-top:200px solid transparent;
-        border-bottom:200px solid #d125d3;
-        z-index:4;
-      }
-      
-      
-      .cover:before{
-        content:"";
-        position:absolute;
-        top:0;
-        left:0;
-        border-left:250px solid transparent;
-        border-right:250px solid transparent;
-        border-top:200px solid #de53e0;
-        border-bottom:200px solid transparent;
-        z-index:6;
-        transform-origin:top;
-        transform:rotateX(0deg);
-        transition:all 1s 1s ease;
-      }
-      .letter{
-        position:absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index:3;
-        top:0;
-        left:35px;
-        width:90%;
-        height:100%;
-        background:#dedede;
-        border-radius:20px;
-        transition:all 0.5s ease-in;
-        
-      }
-      .mail:hover .cover:before{
-        transform:rotateX(180deg);
-       transition:all 1s ease;
-      }
-      .mail:hover .letter{
-        top:-200px;
-        transition: all 1s 1s ease;
-      }
-      .mail-email{
-        font-size: 20px !important;
-        color: #a317b5 !important;
-        font-weight: bold !important;
-    }
-    .mail:hover .letter{
-        top:-150px;
-        transition: all 1s 1s ease;
-      }
-      .bg-modal-body img{
-        width: 100px;
-      }
-  }
-  @media (max-width:600px) {
-    .mail{
-        width:300px;
-        height:200px;
-        background:#de53e0;
-        
-        transform-style:preserve-3d;
-        cursor:pointer;
-      }
-      .mail:before{
-        content:"";
-        position:absolute;
-        top:0;
-        right:0;
+ @media (max-width:700px) {
+     .mail{
+         width: 300px;
+         height: 200px;
+     }
+     .mail:before{
         border-left:150px solid transparent;
         border-right:150px solid #a317b5;
         border-top:100px solid transparent;
         border-bottom:100px solid #a317b5;
-       z-index:5;
-      }
-      .mail:after{
-        content:"";
-        position:absolute;
-        left:0;
-        top:0;
+     }
+     .mail:after{
         border-left:150px solid #d125d3;
         border-right:150px solid transparent;
         border-top:100px solid transparent;
         border-bottom:100px solid #d125d3;
-        z-index:4;
-      }
-      
-      
-      .cover:before{
-        content:"";
-        position:absolute;
-        top:0;
-        left:0;
+
+     }
+     .cover:before{
         border-left:150px solid transparent;
         border-right:150px solid transparent;
         border-top:100px solid #de53e0;
         border-bottom:100px solid transparent;
-        z-index:6;
-        transform-origin:top;
-        transform:rotateX(0deg);
-        transition:all 1s 1s ease;
-      }
-      .letter{
-        position:absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index:3;
-        top:0;
-        left:15px;
-        width:90%;
-        height:100%;
-        background:#dedede;
-        border-radius:20px;
-        transition:all 0.5s ease-in;
-        
-      }
-      .mail:hover .cover:before{
-        transform:rotateX(180deg);
-       transition:all 1s ease;
-      }
-      .mail:hover .letter{
-        top:-200px;
+     }
+     .letter{
+         left: 20px;
+     }
+     .letter-logo{
+         height: 15px;
+         width: 15px;
+     }
+     .bg-modal-body-content h3{
+         font-size: small;
+         margin: 5px;
+     }
+     
+     .bg-modal-body-content img{
+         width: 100px;
+     }
+     .mail:hover .letter{
+        top:-130px;
         transition: all 1s 1s ease;
       }
-      .mail-email{
-        font-size: 10px !important;
-        color: #a317b5 !important;
-        font-weight: bold !important;
-    }
-    .mail:hover .letter{
-        top:-150px;
-        transition: all 1s 1s ease;
-      }
-      .bg-modal-body img{
-        width: 100px;
-      }
-      
-  }
+
+ }
   
       
  
