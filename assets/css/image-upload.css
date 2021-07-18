@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&display=swap');
+body{
+    overflow: hidden;
+}
+.custom-file-upload{
+    width: 150px !important;
+    border:1px solid rgba(170, 170, 204, 0.25);
+    cursor: pointer;
+    font-size:20px;
+    padding:5px;
+    padding-top: 8px;
+    height: 54px;
+    color: white;
+    text-align: center;
+    background-color: rgba(36, 23, 66, 0.5) !important ;box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), 5px 5px 10px rgba(170, 170, 204, 0.25), 10px 10px 20px rgba(170, 170, 204, 0.5), -10px -10px 20px #FFFFFF !important;
+                        border-radius: 32px !important;
+
+}
+input[type="file"] {
+    display: none;
+}
+
+
+.radio-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.ml-demo img{
+    height: 400px !important;
+    width: 400px !important;
+    margin: 0px !important;
+}
+.new-form-input{
+    margin: 20px !important;
+    width: 300px !important;
+    height: 75px !important;
+    background: #F5F5FA !important;
+    
+    border: none !important;
+/* Shadow 3 */
+
+box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), 5px 5px 10px rgba(170, 170, 204, 0.25), 10px 10px 20px rgba(170, 170, 204, 0.5), -10px -10px 20px #FFFFFF !important;
+border-radius: 20px !important;
+}
+.checkbox-input{
+    height: 25px !important;
+    margin: 0px !important;
+    box-shadow: none !important;
+    width: 20px !important;
+    
+}
+.checkbox-label{
+    font-size: medium !important;
+    margin: 10px !important;
+}
+.radio{
+    height: 25px !important;
+    margin: 0px !important;
+    box-shadow: none !important;
+    width: 20px !important;
+    vertical-align: middle !important;
+}
+.radio-input>label{
+    font-size: large !important;
+    margin: 10px !important;
+}
+label{
+    margin: 45px;
+    font-size: 35px;
+}
+
+
+#yolo_i{
+    display: none;
+}
+
+#ct{
+    display: none;
+}
+.custom-tooltip{
+    position: relative;
+}
+.new-form-button{
+    background-color: rgba(36, 23, 66, 0.5);
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), 5px 5px 10px rgba(170, 170, 204, 0.25), 10px 10px 20px rgba(170, 170, 204, 0.5), -10px -10px 20px #FFFFFF;
+    border-radius: 32px;
+    width: 150px;
+    height: 54px;
+    font-size: 20px;
+    color: white;
+}
+.hovercard { 
+position: absolute; 
+opacity: 0; 
+z-index: 1;
+left: 50%;
+top: -90px;
+transform: translateX(-50%);
+}
+
+.custom-tooltip:hover .hovercard { 
+opacity: 1; 
+transition: 0.5s;
+transition-delay: 0.1s;
+}
+.tooltiptext {
+display: flex; 
+flex-direction: column; 
+justify-content: flex-start; 
+background-color: #92b4db;
+font-family: 'Cantarell', sans-serif;
+padding: 18px; 
+border-radius: 5px; 
+font-size: small;
+color: black; 
+line-height: 15px;
+transition: 1s;
+width: 200px;
+
+}
+
+.custom-tooltip .tooltiptext::after {
+content: "";
+position: absolute;
+top: 100%;
+left: 50%;
+margin-left: -5px;
+border-width: 5px;
+border-style: solid;
+border-color: #92b4db transparent transparent transparent;
+}
+.ml-demo{
+    margin: 50px !important;
+}
+.rs-service{
+    justify-content: flex-start;
+}
+.disease-info{
+    width: 400px !important;
+    font-size: medium !important;
+}
+.upload-box{
+    height: auto;
+}
+
+
+
+.brand-logo{
+    height: 80px;
+    width: 80px;
+}
+
+@media (max-width:1100px) {
+   .upload-img-form{
+       flex-direction: column;
+       flex-wrap: wrap;
+       justify-content: center;
+       align-items: center;
+   } 
+}
+@media (max-width:700px) {
+    .new-upload-form{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:600px) {
+    section{
+        padding: 10px;
+    }
+    .ml-demo img{
+        height: 350px !important;
+        width:350px !important;
+    }
+    .new-form-button{
+        margin: 15px;
+    }
+    .custom-file-upload{
+        margin: 15px !important;
+    }
+    .rs-service{
+        height: auto;
+        min-height: 300px;
+        width: 320px;
+    }
+    .rs-service p{
+        width: 250px !important;
+    }
+    .ml-demo-container h1{
+        margin-top: 20px;
+    }
+    .ml-demo-container p{
+        margin: 10px auto ;
+    }
+}
